@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Nrhiav hauv Kasm rau",
+    "link_string": "Qhib Link hauv Kasm"
+  },
+  "text": {
+    "header1": "Qhib kev sib txuas ruaj ntseg thiab tsis qhia npe siv Kasm Qhib-hauv-Ib cais.",
+    "header2": "Kasm Qhib nyob rau hauv Isolation browser txuas ntxiv muab txoj cai-nias cov ntawv qhia zaub mov xaiv qhib lub vev xaib txuas hauv qhov chaw ua haujlwm cais browser. Qhov no ua rau nws yooj yim thiab seamless kom muaj kev nyab xeeb qhib qhov tsis txaus ntseeg / tsis zoo URLs lossis tswj koj tus kheej. Txij li cov nplooj ntawv web tau muab tso rau hauv qhov chaw ua haujlwm tej thaj chaw deb browser, es tsis yog ua tiav ntawm koj lub computer hauv zos, koj tuaj yeem muaj kev nyab xeeb thiab tsis qhia npe cuam tshuam nrog lub vev xaib.",
+    "header3": "Saib Kasm cov ntaub ntawv kom paub meej ntxiv.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Qhib Txoj Kev",
+    "card_title3": "Qhib Hauv",
+    "card_title4": "Advanced Options",
+    "card_title5": "Tshawb nrhiav cav",
+    "card_title6": "Hloov Cov Ntawv",
+    "form1": "Siv Go",
+    "form2": "Siv Cast Key",
+    "form3": "New Tab",
+    "form4": "Qhov rai tshiab"
+  },
+  "title": {
+    "tooltip1": "Mus yuav qhib qhov URL hauv qhov chaw ua haujlwm tshiab, txoj kev Cast Key yog rau qhov chaw ua haujlwm uas twb muaj lawm",
+    "tooltip2": "Thaum qhib cov ntawv hauv Kasm Workspaces kev sib kho tshwj tsis yog cov hlua yog qhov siv tau URL nws yuav raug xa mus rau lub tshuab tshawb nrhiav",
+    "tooltip3": "Yog tias qhib cov ntawv hauv Chaw Ua Haujlwm koj yuav xav hloov cov hlua hla mus rau Chaw Ua Haujlwm (Nrhiav kev txhawb nqa tus qauv RegExp nrog tus lej / regexp / g)"
+  }
+}

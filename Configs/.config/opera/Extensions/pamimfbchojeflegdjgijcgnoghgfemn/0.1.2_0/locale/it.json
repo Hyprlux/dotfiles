@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Cerca in Kasm per",
+    "link_string": "Apri collegamento in Kasm"
+  },
+  "text": {
+    "header1": "Apri collegamenti in modo sicuro e anonimo utilizzando Kasm Open-in-Isolation.",
+    "header2": "L'estensione del browser Kasm Open in Isolation fornisce un'opzione del menu di scelta rapida per aprire i collegamenti Web in un browser isolato di Workspaces. In questo modo è facile e senza soluzione di continuità aprire in sicurezza URL sospetti/non sicuri o mantenere la tua privacy. Poiché la pagina Web viene visualizzata all'interno del browser dell'area di lavoro remota, anziché eseguita sul tuo computer locale, puoi interagire in modo sicuro e anonimo con la pagina Web.",
+    "header3": "Consulta la documentazione di Kasm per ulteriori dettagli.",
+    "card_title1": "Kasam rurale",
+    "card_title2": "Metodo aperto",
+    "card_title3": "Apri dentro",
+    "card_title4": "Opzioni avanzate",
+    "card_title5": "Motore di ricerca",
+    "card_title6": "Sostituisci testo",
+    "form1": "Usa Vai",
+    "form2": "Usa la chiave di trasmissione",
+    "form3": "Nuova scheda",
+    "form4": "Nuova finestra"
+  },
+  "title": {
+    "tooltip1": "Go aprirà l'URL in una nuova area di lavoro, il metodo Cast Key è per un'area di lavoro in esecuzione esistente",
+    "tooltip2": "Quando si apre del testo in una sessione di Kasm Workspaces, a meno che la stringa non sia un URL valido, verrà passato a un motore di ricerca",
+    "tooltip3": "Se si apre il testo in un'area di lavoro, è possibile sostituire le stringhe passate all'area di lavoro (Find supporta RegExp standard con delimitatori /regexp/g)"
+  }
+}

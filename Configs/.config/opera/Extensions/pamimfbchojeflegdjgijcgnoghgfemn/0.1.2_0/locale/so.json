@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Kasm ka raadi",
+    "link_string": "Ku fur Linkiga Kasm"
+  },
+  "text": {
+    "header1": "Si badbaado leh oo qarsoodi ah u fur xiriiriyeyaasha adigoo isticmaalaya Kasm Open-in-isolation.",
+    "header2": "Kasm Open in Go'doominta biraawsarku wuxuu bixiyaa midig-guji ikhtiyaarka menu si aad u furto isku xirka shabakada browserka go'doonsan. Tani waxay ka dhigaysa mid fudud oo aan dhib lahayn in si badbaado leh loo furo URL-yada shakiga leh/aan badbaadada lahayn ama lagu ilaaliyo qarsoodigaaga. Maadaama bogga shabakada lagu dhex sameeyay browserka goobta shaqada ee fog, halkii lagu fulin lahaa kombayutarka degaankaaga, waxaad si badbaado leh oo qarsoodi ah ula macaamili kartaa bogga shabakadda.",
+    "header3": "Faahfaahin dheeraad ah ka eeg dukumeentiyada Kasm",
+    "card_title1": "Kasam Miyiga",
+    "card_title2": "Habka Furan",
+    "card_title3": "Fur gudaha",
+    "card_title4": "Ikhtiyaar sare",
+    "card_title5": "Mashiinka Raadinta",
+    "card_title6": "Beddel qoraalka",
+    "form1": "Isticmaal Go",
+    "form2": "Isticmaal Furaha Cast",
+    "form3": "Tab Cusub",
+    "form4": "Daaqadda Cusub"
+  },
+  "title": {
+    "tooltip1": "Go waxa uu URL ka furi doonaa goob shaqo oo cusub, habka Cast Key waxa loogu talagalay goob shaqo oo jirta",
+    "tooltip2": "Markaad qoraalka ka furayso fadhiga Kasm Workspaces ilaa xadhiggu aanu ahayn URL sax ah waxa loo gudbin doonaa makiinad goobeed",
+    "tooltip3": "Haddii aad qoraalka ka furto goobta shaqada waxaa laga yaabaa inaad rabto inaad bedesho xargaha loo gudbiyay goobta shaqada (Raadi waxay taageertaa heerka RegExp oo leh xadeeyayaal /regexp/g)"
+  }
+}

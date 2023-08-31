@@ -1,0 +1,24 @@
+body {
+  margin: 8px; padding: 8px
+}
+
+#save_confirm {
+  color: #198754;
+  display: none;
+}
+
+html {
+  width: 630px;
+}
+
+#remove_regexp {
+  cursor: pointer;
+}
+
+.accordion-button.collapsed {
+  background:rgba(0,0,0,.03);
+}
+
+h5 {
+  display:inline;
+}

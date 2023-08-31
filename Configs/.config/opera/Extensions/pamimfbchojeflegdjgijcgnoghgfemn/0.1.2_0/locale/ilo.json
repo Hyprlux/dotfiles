@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Agbirok iti Kasm para iti",
+    "link_string": "Luktan ti Link iti Kasm"
+  },
+  "text": {
+    "header1": "Luktan dagiti silpo a Natalged ken Di Nainaganan babaen ti panagusar ti Kasm Open-in-Isolation.",
+    "header2": "Ti Kasm Open in Isolation a ekstension ti browser ket mangipaay ti kannawan a panagpidut ti pagpilian ti menu tapno manglukat kadagiti silpo ti web iti maysa a naisina a browser ti Workspaces. Daytoy ti mamagbalin a nalaka ken awan ti pagkuranganna a sitatalged a manglukat kadagiti mapagduaduaan/saan a natalged nga URL wenno tapno mataginayon ti kinapribado. Gapu ta ti panid ti web ket naiparang iti uneg ti adayo a browser ti pagtrabahuan, imbes a maipatungpal iti lokal a kompiuteram, kabaelam ti sitatalged ken saan a nainaganan a makilangen iti panid ti web.",
+    "header3": "Kitaen ti dokumentasion ti Kasm para kadagiti kanayonan a detalye.",
+    "card_title1": "Kasam nga Away",
+    "card_title2": "Open nga Pamay-an",
+    "card_title3": "Luktan ti In",
+    "card_title4": "Dagiti Narang-ay a Pagpilian",
+    "card_title5": "Search Engine",
+    "card_title6": "Sukatan ti Teksto",
+    "form1": "Usaren ti Go",
+    "form2": "Usaren ti Cast Key",
+    "form3": "Baro a Tab",
+    "form4": "Baro a Bintana"
+  },
+  "title": {
+    "tooltip1": "Ti Go ket manglukat ti URL iti baro nga Espasio ti Trabaho, ti pamay-an ti Cast Key ket para iti addan nga agtartaray nga espasio ti trabaho",
+    "tooltip2": "No manglukat ti teksto iti sesion ti Kasm Workspaces malaksid no ti kuerdas ket balido nga URL daytoy ket maipasa iti makina ti panagbiruk",
+    "tooltip3": "No manglukat ti teksto iti maysa nga Espasio ti Trabaho mabalinmo a kayat a sukatan dagiti kuerdas a naipasa iti Espasio ti Trabaho (Ti Find ket mangsuporta ti pagalagadan a RegExp nga addaan kadagiti delimiter /regexp/g) ."
+  }
+}

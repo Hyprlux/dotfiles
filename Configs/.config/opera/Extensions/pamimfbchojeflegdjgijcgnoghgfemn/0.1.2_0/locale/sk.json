@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Vyhľadajte v Kasme",
+    "link_string": "Otvorte odkaz v Kasme"
+  },
+  "text": {
+    "header1": "Otvárajte odkazy bezpečne a anonymne pomocou Kasm Open-in-Isolation.",
+    "header2": "Rozšírenie prehliadača Kasm Open in Isolation poskytuje možnosť ponuky kliknutím pravým tlačidlom myši na otváranie webových odkazov v izolovanom prehliadači Workspaces. Vďaka tomu je ľahké a bezproblémové bezpečne otvárať podozrivé/nebezpečné adresy URL alebo zachovať súkromie. Keďže sa webová stránka vykresľuje v prehliadači vzdialeného pracovného priestoru, nie je spustená na vašom lokálnom počítači, môžete s webovou stránkou bezpečne a anonymne interagovať.",
+    "header3": "Ďalšie podrobnosti nájdete v dokumentácii Kasm.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Otvorená metóda",
+    "card_title3": "Otvoriť v",
+    "card_title4": "Pokročilé nastavenia",
+    "card_title5": "Vyhľadávač",
+    "card_title6": "Nahradiť text",
+    "form1": "Použite Go",
+    "form2": "Použite kľúč Cast",
+    "form3": "Nová karta",
+    "form4": "Nové okno"
+  },
+  "title": {
+    "tooltip1": "Go otvorí adresu URL v novom pracovnom priestore, metóda Cast Key je pre existujúci spustený pracovný priestor",
+    "tooltip2": "Pri otváraní textu v relácii Kasm Workspaces, pokiaľ reťazec nie je platnou URL, sa odošle do vyhľadávacieho nástroja",
+    "tooltip3": "Ak otvárate text v pracovnom priestore, možno budete chcieť nahradiť reťazce odovzdané do pracovného priestoru (Find podporuje štandardný RegExp s oddeľovačmi /regexp/g)"
+  }
+}

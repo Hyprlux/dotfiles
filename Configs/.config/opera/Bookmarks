@@ -1,0 +1,546 @@
+{
+   "checksum": "56b942714815f5c219a5a0199095238a",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13337895190953107",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "custom_root": {
+         "pinboard": {
+            "children": [  ],
+            "date_added": "13337895190953462",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000907",
+            "id": "7",
+            "name": "Pinboard",
+            "type": "folder"
+         },
+         "speedDial": {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13337970154102484",
+                  "date_last_used": "0",
+                  "guid": "0774f1cf-29cf-4462-bc1f-cc3a48907213",
+                  "id": "22",
+                  "meta_info": {
+                     "imageDataType": "2",
+                     "imageID": "8ACBCBC4580A835E53824894FFAD91FA8340C0D5045E72A4D06C8261F86FD154",
+                     "imageType": "2",
+                     "nav_timestamp": "1.691509354104574e+12",
+                     "nav_timestamp_reset_version": "1",
+                     "partner_id": "eneba_all_suggestions",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/6dd5c8a6265451399d25dda25344378bb3473b9d.png",
+                     "partner_url": "https://www.eneba.com/?af_id=operastandard2021",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/eneba_all_suggestions"
+                  },
+                  "name": "Eneba",
+                  "type": "url",
+                  "url": "https://www.eneba.com/"
+               }, {
+                  "date_added": "13337970183369131",
+                  "date_last_used": "0",
+                  "guid": "846b9529-628a-4b67-8191-0fa21d707730",
+                  "id": "23",
+                  "meta_info": {
+                     "imageDataType": "2",
+                     "imageID": "555680A95B49577BFD5D09F9C7EF1A7EB03505815760A64E162ACF8D9AD7A0B1",
+                     "imageType": "2",
+                     "nav_timestamp": "1.691509383372733e+12",
+                     "nav_timestamp_reset_version": "1",
+                     "partner_id": "cdkeys_global_suggestions",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/c96908af5200ddcc2e4a168527458b3d2299eb28.png",
+                     "partner_url": "https://cdkeys.pxf.io/opera-desktop-global",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/cdkeys_global_suggestions"
+                  },
+                  "name": "CDKeys",
+                  "type": "url",
+                  "url": "https://www.cdkeys.com/"
+               }, {
+                  "date_added": "13337970271403819",
+                  "date_last_used": "0",
+                  "guid": "4467b7ae-87ec-4ed6-9d12-6af8dff79cd4",
+                  "id": "24",
+                  "meta_info": {
+                     "imageDataType": "2",
+                     "imageID": "27D4210D420B1013497AADD7554538BDE4FFB8B1B1379252C662418BFA2BFD5E",
+                     "imageType": "2",
+                     "nav_timestamp": "1.691509471405801e+12",
+                     "nav_timestamp_reset_version": "1",
+                     "partner_id": "pccomponentes_es_suggestions",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/370545e22f3041619375605b189dcc3afff9b3d0.png",
+                     "partner_url": "https://www.awin1.com/cread.php?awinmid=20982&awinaffid=141629",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/pccomponentes_es_suggestions"
+                  },
+                  "name": "PcComponentes",
+                  "type": "url",
+                  "url": "https://www.pccomponentes.com/"
+               }, {
+                  "date_added": "13337970313786034",
+                  "date_last_used": "0",
+                  "guid": "048da486-b915-4496-9b47-2e65845fbaca",
+                  "id": "25",
+                  "meta_info": {
+                     "imageDataType": "2",
+                     "imageID": "37C21D352B8573DB91D78B1709C37EC1978074D3855D0BEF2B07712D4E34D73F",
+                     "imageType": "2",
+                     "nav_timestamp": "1.691509513788485e+12",
+                     "nav_timestamp_reset_version": "1",
+                     "partner_id": "mediamarkt_es_suggestions",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/20f3b7ff91a65cfc385f1d4141a08d02a859a95e.png",
+                     "partner_url": "https://clk.tradedoubler.com/click?p=270504&a=2069277&epi=ssd_mx",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/mediamarkt_es_suggestions"
+                  },
+                  "name": "MediaMarkt",
+                  "type": "url",
+                  "url": "https://www.mediamarkt.es/"
+               }, {
+                  "date_added": "13337895191264775",
+                  "date_last_used": "0",
+                  "guid": "0783ada0-4292-45d4-b44d-3a04c60ef31e",
+                  "id": "11",
+                  "meta_info": {
+                     "favicon_url": "https://sd-images.operacdn.com/api/v1/images/53ce809298293c5fb667806d31b28da7cb41ffe6.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/7f04e2fb73f4ec7f2ca125d2842523c757d3cf8b.png",
+                     "imageDataType": "2",
+                     "imageID": "0A04E00C4607F268D1000DD29FB11AC16E1DC38E9CCD535B084AF87ABA45F514",
+                     "imageType": "2",
+                     "impression_url": "https://speeddials.opera.com/impressions/eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZDQkMtSFM1MTIifQ.iKKV6VgQRBbWDk44UPBYnPbZf3a7TkTHPoQMt2EnypFlEas7PvbuIqZ41ptllqhkOSGMaW2Q38RIg2fk_U7c_n1sDBoFlKMhilZXUue27l5FBRxUaPVXpxybAZo5q0qwuMU1hEXdkHrAQS_V-y9Jgd3Rpj2JaxiJ0Dd6T-s1G0ner-U4K-qNP63XW-_VH6JX-uRGQKxbYPGyZv519Z2086guiKbZGf7m6-rEOsera-j-vDx3NkQo2HWl5PpAZhMrfu3uQqE54SMyAzpHaIK-cpDMj_TM_7hLjLW2N5DZdNpZ_oN6BhHdqy2osC6F02boSiDFYE4wsuhQeO4niLGhCQ.3LMtsU9wq7cN7h7JAx6ADQ.JgqY0-knQ2Wv12Rkki3blLtlDqKa49NRJt44AZCVjLewD314Mz7c9jfqEKJuZAnJo8UjIaRU8ASqtcSH-JMaiL3B0TbwnUrWwEMuSbDdNdVKtDKL33D8aVPqLX_dVeup56X6-JTenwJ1FMIgcQjdWV8ygsGbsYT9_MoTQzheEnEgStbk7BtXGtQCixbtq3tvRD1eDWd89PqA0nm2_lukA_XZqNzmIMZHIIRKnDgu1JYCsuFZGCtEnemoo0qy6TZyNMxcQN_ZYCWRf-POtWQ4ifUvkSkLy8EkrnYZMr0QQh2fkW5ACDc1s2RJhR0ucUFsVroeJ52mbWZCzd2XU2ABMdV7_qZUb_sjeR-rM7CTccMWEnwaQjbDpJPbzltGuGPzQetoE3_28lUCKWtNy2j_ryQGEoqDSVMbcWimY5jjhxKylldYPFay9C9KFWDZiNLCuRj-xVayh3CVdqtSZxBw9ZJ8hyX8yHTnij0_T4YbjoE0AIvjDckRzmym7O3kZOcB.uqQMbkhMTxIOPWi7MeBTi8JVxhHaj6n39sgORc0szfI",
+                     "nav_timestamp": "1.691434886303189e+12",
+                     "nav_timestamp_reset_version": "1",
+                     "partner_id": "admarket_amazon_es",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/7f04e2fb73f4ec7f2ca125d2842523c757d3cf8b.png",
+                     "partner_url": "https://operadesktoptiles.ampxdirect.com/?partner=operadesktoptiles&sub1=10188&sub2=operabrowser&ctaid=74357&match-methods=deterministic&v=1.3&source=als_tiles",
+                     "ping_url": "https://speeddials.opera.com/api/v2/ping/admarket_amazon_es",
+                     "replaceability": "0",
+                     "revision": "20230828",
+                     "server_position": "1"
+                  },
+                  "name": "Amazon",
+                  "type": "url",
+                  "url": "http://www.amazon.es/"
+               }, {
+                  "date_added": "13337970344874082",
+                  "date_last_used": "0",
+                  "guid": "e9e6de07-84f8-493b-9955-7401a46a0b0b",
+                  "id": "26",
+                  "meta_info": {
+                     "imageDataType": "2",
+                     "imageID": "2A92688CA7090717C82EEB462BA67335213E3BB70D9A3CEEC30BB2D83DD6E4A7",
+                     "imageType": "2",
+                     "original_image_id_for_custom_sd": "fallback"
+                  },
+                  "name": "Gmail",
+                  "type": "url",
+                  "url": "https://mail.google.com/"
+               }, {
+                  "date_added": "13337970634623806",
+                  "date_last_used": "0",
+                  "guid": "8f8423dc-d583-4a19-961d-714d071aa556",
+                  "id": "27",
+                  "meta_info": {
+                     "imageDataType": "2",
+                     "imageID": "1761B0DE8DE10B9AFE64BC08D1D6CAB243F129182CD54D5E517AF295874CAB76",
+                     "imageType": "2"
+                  },
+                  "name": "Boards | Trello",
+                  "type": "url",
+                  "url": "https://trello.com/"
+               }, {
+                  "date_added": "13337970690485890",
+                  "date_last_used": "0",
+                  "guid": "ead6bba7-3501-4ce7-b621-f80c88c711d8",
+                  "id": "28",
+                  "meta_info": {
+                     "imageDataType": "2",
+                     "imageID": "AB288434BD37BCAA6892BCA73DF07259824B9A2E24AE59AF8CB9CB53CA19C212",
+                     "imageType": "2"
+                  },
+                  "name": "MyAnimeList",
+                  "type": "url",
+                  "url": "https://myanimelist.net/"
+               }, {
+                  "date_added": "13337970726005552",
+                  "date_last_used": "0",
+                  "guid": "c8c68d17-098e-4c16-a649-257f38cb9685",
+                  "id": "29",
+                  "meta_info": {
+                     "imageDataType": "2",
+                     "imageID": "53BF310E3D058013D40B6276CEF9955751375AC9DF962FB46E9F568221249C34",
+                     "imageType": "2"
+                  },
+                  "name": "Crunchyroll",
+                  "type": "url",
+                  "url": "https://www.crunchyroll.com/"
+               }, {
+                  "date_added": "13337970755385323",
+                  "date_last_used": "0",
+                  "guid": "3ae0a11b-f52d-4582-abb3-7a60634b2e3e",
+                  "id": "30",
+                  "meta_info": {
+                     "imageDataType": "0",
+                     "imageType": "1"
+                  },
+                  "name": "AniWave",
+                  "type": "url",
+                  "url": "https://aniwave.to/home/"
+               } ],
+               "date_added": "13337895191177716",
+               "date_last_used": "0",
+               "date_modified": "13337970755385323",
+               "guid": "54309cbc-a5f7-46e7-b1a1-7b30932d2ce7",
+               "id": "10",
+               "meta_info": {
+                  "speed_dial_root_folder_guid": "0310710f-4b34-4b58-9707-94af95368263"
+               },
+               "name": "portlux",
+               "type": "folder"
+            } ],
+            "date_added": "13337895190953459",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000904",
+            "id": "6",
+            "name": "Speed Dials",
+            "type": "folder"
+         },
+         "trash": {
+            "children": [ {
+               "date_added": "13337970075871421",
+               "date_last_used": "0",
+               "guid": "50d63f25-0d28-4ff8-ace0-cc3367f33487",
+               "id": "21",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/e68d6aed5a71c8bf08435cccec050aba8ceec72f.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/5b55c5ac8ad26cfde69b4b97b103300b118b47e0.png",
+                  "imageDataType": "2",
+                  "imageID": "D4C229DF3C080822928F9A9B27E303FBE4D2EF6DC7A6C726D0A31C7864487DA7",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "chess_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/5b55c5ac8ad26cfde69b4b97b103300b118b47e0.png",
+                  "partner_url": "https://redirector.opera.com/redirect?type=syn&rid=719",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/chess_es",
+                  "replaceability": "0",
+                  "revision": "20230630",
+                  "server_position": "20",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "Chess.com",
+               "type": "url",
+               "url": "https://www.chess.com/"
+            }, {
+               "date_added": "13337970073855776",
+               "date_last_used": "0",
+               "guid": "19f813e0-3526-400d-b099-1b99d2e99962",
+               "id": "20",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/80cc9157023974d38a7b9483641ad5453b1a53bd.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/96cbd9f43946756c23d70d2d61804a77cb1e301a.png",
+                  "imageDataType": "2",
+                  "imageID": "2B0AECCC077DEBAB480F311309A481544DCD0DC7D543F21996386894A43BEF3E",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "worldofwarships_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/96cbd9f43946756c23d70d2d61804a77cb1e301a.png",
+                  "partner_url": "https://track.wargaming-aff.com/click?pid=2435&offer_id=52&sub1=OperaES",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/worldofwarships_es",
+                  "replaceability": "0",
+                  "revision": "20221121",
+                  "server_position": "19",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "World of Warships",
+               "type": "url",
+               "url": "https://worldofwarships.eu/"
+            }, {
+               "date_added": "13337970071705332",
+               "date_last_used": "0",
+               "guid": "baa6fb7d-9215-4afb-a187-bc91dc880bd2",
+               "id": "19",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/233baccb175ff5a4b2092e19a03e992b12c5935f.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/5ad79c2bc2ec18cadc5a24aa9c57208dcf368934.png",
+                  "imageDataType": "2",
+                  "imageID": "E40DA428CFE34907FAF5B00C69392F7AFF02A70E08C513875CB5C7C28FF0EA22",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "vueling_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/5ad79c2bc2ec18cadc5a24aa9c57208dcf368934.png",
+                  "partner_url": "https://clk.tradedoubler.com/click?p=275411&a=2063806",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/vueling_es",
+                  "replaceability": "0",
+                  "revision": "20230706",
+                  "server_position": "18",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "Vueling",
+               "type": "url",
+               "url": "https://www.vueling.com/es"
+            }, {
+               "date_added": "13337970069522518",
+               "date_last_used": "0",
+               "guid": "4559fd03-7af4-48cc-82e8-ee4bf5c088a7",
+               "id": "18",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/ee7ac644ed8a171b804967678bbae857f73ef595.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/9c3233238197473f2d51ed87de914460688fd1ca.png",
+                  "imageDataType": "2",
+                  "imageID": "8353A69A51165EFFF905EDFBE2C74CDF18B984EFD917C775F4ECED920634BA4E",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "edreams_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/9c3233238197473f2d51ed87de914460688fd1ca.png",
+                  "partner_url": "https://www.awin1.com/cread.php?awinmid=10573&awinaffid=141629&clickref=SD",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/edreams_es",
+                  "replaceability": "0",
+                  "revision": "20220701",
+                  "server_position": "16",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "eDreams",
+               "type": "url",
+               "url": "https://www.edreams.es/"
+            }, {
+               "date_added": "13337970067039169",
+               "date_last_used": "0",
+               "guid": "7c896402-6108-46c3-84b0-66e288c87498",
+               "id": "17",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/715d913c7b599bf074ab0f0a70a15c0283e8c459.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/82b43531a21ba33932522cd6ed6c523cbde7f05e.png",
+                  "imageDataType": "2",
+                  "imageID": "6034446D963763EEB2B6BE00DA4EC6B4AFC75D415F89D06CBFB9DD27E61C869E",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "leroymerlin_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/82b43531a21ba33932522cd6ed6c523cbde7f05e.png",
+                  "partner_url": "https://www.awin1.com/cread.php?awinmid=20598&awinaffid=141629&clickref=SD",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/leroymerlin_es",
+                  "replaceability": "0",
+                  "revision": "20220701",
+                  "server_position": "15",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "Leroy Merlin",
+               "type": "url",
+               "url": "https://www.leroymerlin.es/"
+            }, {
+               "date_added": "13337970064685285",
+               "date_last_used": "0",
+               "guid": "d913df99-f7cc-44e1-b9f0-051e446ea18f",
+               "id": "16",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/51534851ba3e7f4dd435f50cd5dcc0ca5aca705b.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/8b2d3dff97e2e843655821ff13d5fd7d0bb1e717.png",
+                  "imageDataType": "2",
+                  "imageID": "562FC082CC87C52BBC55C44F2805E599509A1CEB73199CDCC618093CB85393A2",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "grover_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/8b2d3dff97e2e843655821ff13d5fd7d0bb1e717.png",
+                  "partner_url": "https://clk.tradedoubler.com/click?p=320451&a=2069277",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/grover_es",
+                  "replaceability": "0",
+                  "revision": "20230707",
+                  "server_position": "14",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "Grover",
+               "type": "url",
+               "url": "https://www.grover.com/"
+            }, {
+               "date_added": "13337970061524551",
+               "date_last_used": "0",
+               "guid": "fe566052-3806-4359-8dea-3d28a93b82ae",
+               "id": "15",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/e2d5382d781d7fd6b6b6dfb20f1672c7aef783a5.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/e99ceaf6913b805db85d3dff46d72b741af46dba.png",
+                  "imageDataType": "2",
+                  "imageID": "2ACC0763F0FAE684C8CFCBE3A8CA446688B753FCB7E467CE407978E593BA18FB",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "elcorteingles_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/e99ceaf6913b805db85d3dff46d72b741af46dba.png",
+                  "partner_url": "https://www.awin1.com/cread.php?awinmid=13075&awinaffid=141629&clickref=&p=",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/elcorteingles_es",
+                  "replaceability": "0",
+                  "revision": "20180514",
+                  "server_position": "8",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "El Corte Ingles",
+               "type": "url",
+               "url": "https://www.elcorteingles.es/"
+            }, {
+               "date_added": "13337970057875339",
+               "date_last_used": "0",
+               "guid": "7fdc4182-72e8-4dc7-aa4c-29141e02f8e4",
+               "id": "14",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/609fa7dfdac6e13e43d220628faf73eb0bc67ff2.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/357e67fbe70aca70be251ab6f315df5df594500c.png",
+                  "imageDataType": "2",
+                  "imageID": "2FC1809E63C60C94A0810C41221FA9EF79F436FBF0ACEC4695D2B594765EAECC",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "aliexpress_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/357e67fbe70aca70be251ab6f315df5df594500c.png",
+                  "partner_url": "https://s.click.aliexpress.com/e/_A86rRT",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/aliexpress_es",
+                  "replaceability": "0",
+                  "revision": "20230320",
+                  "server_position": "4",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "AliExpress",
+               "type": "url",
+               "url": "http://aliexpress.com/"
+            }, {
+               "date_added": "13337970055107366",
+               "date_last_used": "0",
+               "guid": "ad435f5e-91d6-41fe-8ba4-ed2d34acf53a",
+               "id": "13",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/e1db847af0a87787f307ee6942ed7d643488d419.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/3a07ed8977c2b792f3940924aaac029238f92e71.png",
+                  "imageDataType": "2",
+                  "imageID": "E647B15ABE8EB7A0669584D81C1D72BAA1F862B57E589D11F4E2E7AB6D065009",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "booking_com_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/3a07ed8977c2b792f3940924aaac029238f92e71.png",
+                  "partner_url": "https://www.booking.com/index.html?aid=343353",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com_es",
+                  "replaceability": "0",
+                  "revision": "20230704",
+                  "server_position": "3",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "Booking.com",
+               "type": "url",
+               "url": "https://www.booking.com/"
+            }, {
+               "date_added": "13337969968373480",
+               "date_last_used": "0",
+               "guid": "1104fbfa-d21b-44f5-af2a-16fc5962f74b",
+               "id": "12",
+               "meta_info": {
+                  "favicon_url": "https://sd-images.operacdn.com/api/v1/images/f4c2d7eab32599ff8ad5c7d6720cd8c797372479.png",
+                  "imageData": "https://sd-images.operacdn.com/api/v1/images/3e0b5da0e976232819b743067e60d978f5830c88.png",
+                  "imageDataType": "2",
+                  "imageID": "BEAB0D49D4283EE9B4FA2EAC1CADED8E20346FA7A3994A4E9C961AFD8186CC90",
+                  "imageType": "2",
+                  "impression_url": "",
+                  "nav_timestamp": "1.691434886303189e+12",
+                  "nav_timestamp_reset_version": "1",
+                  "partner_id": "ebay_es",
+                  "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/3e0b5da0e976232819b743067e60d978f5830c88.png",
+                  "partner_url": "https://www.ebay.es/?mkcid=1&mkrid=1185-53479-19255-0&siteid=186&campid=5337315324&customid=&toolid=10001&mkevt=1",
+                  "ping_url": "https://speeddials.opera.com/api/v2/ping/ebay_es",
+                  "replaceability": "0",
+                  "revision": "20221124",
+                  "server_position": "2",
+                  "undoTrashParentId": "10",
+                  "undoTrashParentIndex": "1"
+               },
+               "name": "eBay",
+               "type": "url",
+               "url": "http://www.ebay.es/"
+            } ],
+            "date_added": "13337895190953464",
+            "date_last_used": "0",
+            "date_modified": "13337970075871421",
+            "guid": "00000000-0000-4000-a000-000000000905",
+            "id": "9",
+            "name": "Trash",
+            "type": "folder"
+         },
+         "unsorted": {
+            "children": [  ],
+            "date_added": "13337895190953452",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000901",
+            "id": "4",
+            "name": "Unsorted bookmarks",
+            "type": "folder"
+         },
+         "unsyncedPinboard": {
+            "children": [  ],
+            "date_added": "13337895190953463",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000908",
+            "id": "8",
+            "name": "Unsynchronized Pinboard",
+            "type": "folder"
+         },
+         "userRoot": {
+            "children": [  ],
+            "date_added": "13337895190953457",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "00000000-0000-4000-a000-000000000902",
+            "id": "5",
+            "name": "Other bookmarks",
+            "type": "folder"
+         }
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13337895190953109",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Imported bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13337895190953110",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

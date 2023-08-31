@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Ku lavisisa eka Kasm for",
+    "link_string": "Vula Link eka Kasm"
+  },
+  "text": {
+    "header1": "Pfula swihlanganisi Hi ku Hlayiseka na hi ku nga tiviwi hi ku tirhisa Kasm Open-in-Isolation.",
+    "header2": "Xiengetelo xa xihlamusela-marito xa Kasm Open in Isolation xi nyika nhlawulo wa menyu wa ku tikhoma hi xinene ku pfula swihlanganisi swa webu eka xihlamusela-marito lexi nga xoxe xa Tindhawu ta Ntirho. Leswi swi endla leswaku swi olova no pfumala swiphiqo ku pfula hi ku hlayiseka ti-URL leti kanakanisaka/leti nga hlayisekangiki kumbe ku hlayisa vuhlayiseki bya wena. Tanihi leswi tluka ra webu ri endliwaka endzeni ka xihlamusela-marito xa ndhawu yo tirhela ya le kule, ematshan’weni yo endliwa eka khompyuta ya wena ya laha kaya, u kota ku tirhisana ni tluka ra webu hi ku hlayiseka ni hi ku nga tiviwi.",
+    "header3": "Vona matsalwa ya Kasm ku kuma vuxokoxoko byo engetela.",
+    "card_title1": "Kasam Xifundzha xa le makaya",
+    "card_title2": "Ndlela yo Pfula",
+    "card_title3": "Pfula In",
+    "card_title4": "Swihlawulekisi swa le Henhla",
+    "card_title5": "Injhini yo Lavisisa",
+    "card_title6": "Cinca Tsalwa",
+    "form1": "Tirhisa Go",
+    "form2": "Tirhisa Xilotlelo xa Cast",
+    "form3": "Thebhu Leyintshwa",
+    "form4": "Fasitere Lerintshwa"
+  },
+  "title": {
+    "tooltip1": "Go yi ta pfula URL eka Ndhawu leyintshwa yo Tirha, ndlela ya Cast Key i ya ndhawu yo tirhela leyi tirhaka leyi nga kona",
+    "tooltip2": "Loko u pfula tsalwa eka seshini ya Kasm Workspaces handle ka loko ntambhu yi ri URL leyi tirhaka yi ta hundziseriwa eka njhini yo lavisisa",
+    "tooltip3": "Loko u pfula tsalwa eka Ndhawu yo Tirha u nga ha lava ku siva tintambhu leti hundziseriweke eka Ndhawu ya Ntirho (Find yi seketela RegExp ya ntolovelo hi swihambanisi /regexp/g)"
+  }
+}

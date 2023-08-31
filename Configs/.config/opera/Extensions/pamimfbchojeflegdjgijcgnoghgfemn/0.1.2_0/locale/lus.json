@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Kasm ah zawng rawh",
+    "link_string": "Kasm ah Link hawng rawh"
+  },
+  "text": {
+    "header1": "Kasm Open-in-Isolation hmangin links Safely leh Anonymous takin hawng rawh.",
+    "header2": "Kasm Open in Isolation browser extension hian Workspaces isolated browser-a web link hawn theihna tur right-click menu option a pe a. Hei hian URL rinhlelh/ him lo him taka hawn emaw, i privacy vawng reng emaw chu a awlsamin a awlsam hle. Webpage hi remote workspace browser chhunga render a nih avangin, i local computer-a execute ai chuan, him tak leh hming hriat lohvin webpage nen hian i inzawm thei a ni.",
+    "header3": "A chipchiar zawkna chu Kasm documentation en rawh.",
+    "card_title1": "Kasam Thingtlang lam a ni",
+    "card_title2": "Open Method hmanga tih theih",
+    "card_title3": "In hawng rawh",
+    "card_title4": "Advanced Options tih theih a ni",
+    "card_title5": "Search Engine ah hian a awm",
+    "card_title6": "Text thlak leh rawh",
+    "form1": "Go hmang rawh",
+    "form2": "Cast Key hmang rawh",
+    "form3": "Tab thar a awm",
+    "form4": "Window thar a awm"
+  },
+  "title": {
+    "tooltip1": "Go hian Workspace thar ah URL a hawng ang a, Cast Key method hi workspace kal tawh tan a ni",
+    "tooltip2": "Kasm Workspaces session-a text hawn hian string chu URL dik tak a nih loh chuan search engine-ah a pass ang",
+    "tooltip3": "Workspace-a text i hawn chuan Workspace-a string pass te chu thlak i duh mai thei (Find hian standard RegExp with delimiters /regexp/g a support a ni)"
+  }
+}

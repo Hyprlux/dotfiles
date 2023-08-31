@@ -1,0 +1,32 @@
+/*!
+  * vue-router v4.2.2
+  * (c) 2023 Eduardo San Martin Morote
+  * @license MIT
+  */
+
+/*!
+ * EventEmitter2
+ * https://github.com/hij1nx/EventEmitter2
+ *
+ * Copyright (c) 2013 hij1nx
+ * Licensed under the MIT license.
+ */
+
+/*!
+ * OverlayScrollbars
+ * Version: 2.2.0
+ *
+ * Copyright (c) Rene Haas | KingSora.
+ * https://github.com/KingSora
+ *
+ * Released under the MIT license.
+ */
+
+/*! @license DOMPurify 3.0.3 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.0.3/LICENSE */
+
+/**!
+ * Sortable 1.14.0
+ * @author	RubaXa   <trash@rubaxa.org>
+ * @author	owenm    <owen23355@gmail.com>
+ * @license MIT
+ */

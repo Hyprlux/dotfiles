@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Sakani mu Kasm",
+    "link_string": "Tsegulani Ulalo ku Kasm"
+  },
+  "text": {
+    "header1": "Tsegulani maulalo Motetezedwa komanso Mosadziwika pogwiritsa ntchito Kasm Open-in-Isolation.",
+    "header2": "Kasm Open in Isolation msakatuli wowonjezera amapereka njira yodina kumanja kuti mutsegule maulalo awebusayiti mumsakatuli wotalikirana ndi Workspaces. Izi zimapangitsa kuti zikhale zosavuta komanso zosavuta kutsegula ma URL okayikitsa/osatetezeka kapena kusunga zinsinsi zanu. Popeza tsamba lawebusayiti limaperekedwa mkati mwa msakatuli wapamalo ogwirira ntchito, m'malo mogwiritsidwa ntchito pakompyuta yanu, mumatha kulumikizana ndi tsambali mosadziwika bwino.",
+    "header3": "Onani zolemba za Kasm kuti mumve zambiri.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Open Njira",
+    "card_title3": "Tsegulani",
+    "card_title4": "Zosankha Zapamwamba",
+    "card_title5": "Search Engine",
+    "card_title6": "Sinthani Mawu",
+    "form1": "Gwiritsani ntchito Go",
+    "form2": "Gwiritsani Cast Key",
+    "form3": "Tabu Yatsopano",
+    "form4": "Zenera Latsopano"
+  },
+  "title": {
+    "tooltip1": "Go idzatsegula ulalo mu Workspace yatsopano, njira ya Cast Key ndi malo ogwirira ntchito omwe alipo",
+    "tooltip2": "Mukatsegula zolemba mu gawo la Kasm Workspaces pokhapokha chingwecho chili ulalo wovomerezeka chidzaperekedwa ku injini yosakira.",
+    "tooltip3": "Ngati mutsegula zolemba mu Workspace mungafune kusintha zingwe zomwe zadutsa ku Workspace (Pezani zothandizira RegExp yokhazikika yokhala ndi delimiters /regexp/g)"
+  }
+}

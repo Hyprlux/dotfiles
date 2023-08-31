@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "カズムで検索する",
+    "link_string": "Kasm でリンクを開く"
+  },
+  "text": {
+    "header1": "Kasm Open-in-Isolation を使用して、リンクを安全かつ匿名で開きます。",
+    "header2": "Kasm Open in Isolation ブラウザ拡張機能には、Workspaces 分離ブラウザで Web リンクを開くための右クリック メニュー オプションが用意されています。これにより、疑わしい/安全でない URL を安全に開いたり、プライバシーを維持したりすることが簡単かつシームレスになります。 Web ページはローカル コンピューター上で実行されるのではなく、リモート ワークスペース ブラウザー内でレンダリングされるため、安全かつ匿名で Web ページを操作できます。",
+    "header3": "詳細については、Kasm のドキュメントを参照してください。",
+    "card_title1": "カサム・ルーラル",
+    "card_title2": "オープンメソッド",
+    "card_title3": "オープンイン",
+    "card_title4": "高度なオプション",
+    "card_title5": "検索エンジン",
+    "card_title6": "テキストを置換する",
+    "form1": "Goを使用する",
+    "form2": "キャストキーを使用する",
+    "form3": "新しいタブ",
+    "form4": "新しい窓"
+  },
+  "title": {
+    "tooltip1": "Go は新しいワークスペースで URL を開きます。Cast Key メソッドは既存の実行中のワークスペース用です。",
+    "tooltip2": "Kasm Workspaces セッションでテキストを開くと、文字列が有効な URL でない限り、検索エンジンに渡されます。",
+    "tooltip3": "ワークスペースでテキストを開く場合は、ワークスペースに渡された文字列を置き換えることができます (Find は区切り文字 /regexp/g を使用した標準 RegExp をサポートしています)。"
+  }
+}

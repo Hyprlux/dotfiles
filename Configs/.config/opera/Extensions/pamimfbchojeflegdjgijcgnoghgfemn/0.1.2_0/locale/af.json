@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Soek in Kasm vir",
+    "link_string": "Maak skakel oop in Kasm"
+  },
+  "text": {
+    "header1": "Maak skakels veilig en anoniem oop deur Kasm Open-in-Isolation te gebruik.",
+    "header2": "Die Kasm Open in Isolation-blaaieruitbreiding bied 'n regsklikkieslysopsie om webskakels in 'n Workspaces-geïsoleerde blaaier oop te maak. Dit maak dit maklik en naatloos om verdagte/onveilige URL's veilig oop te maak of om jou privaatheid te handhaaf. Aangesien die webblad binne die afgeleë werkruimteblaaier weergegee word, eerder as om op jou plaaslike rekenaar uitgevoer te word, kan jy veilig en anoniem met die webblad omgaan.",
+    "header3": "Sien Kasm-dokumentasie vir bykomende besonderhede.",
+    "card_title1": "Kasam Platteland",
+    "card_title2": "Oop metode",
+    "card_title3": "Maak oop in",
+    "card_title4": "Gevorderde opsies",
+    "card_title5": "Soek-masjien",
+    "card_title6": "Vervang teks",
+    "form1": "Gebruik Go",
+    "form2": "Gebruik Cast Key",
+    "form3": "Nuwe blad",
+    "form4": "Nuwe venster"
+  },
+  "title": {
+    "tooltip1": "Go sal die URL in 'n nuwe werkruimte oopmaak, die Cast Key-metode is vir 'n bestaande lopende werkspasie",
+    "tooltip2": "Wanneer teks in 'n Kasm Workspaces-sessie oopgemaak word, tensy die string 'n geldige URL is, sal dit na 'n soekenjin deurgegee word",
+    "tooltip3": "As u teks in 'n werkspasie oopmaak, wil u dalk stringe vervang wat na die werkspasie gestuur is (Find ondersteun standaard RegExp met skeidingstekens /regexp/g)"
+  }
+}

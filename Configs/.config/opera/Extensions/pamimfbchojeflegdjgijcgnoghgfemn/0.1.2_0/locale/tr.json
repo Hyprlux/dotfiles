@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Kasım'da ara",
+    "link_string": "Bağlantıyı Kasm'da Aç"
+  },
+  "text": {
+    "header1": "Kasm Open-in-Isolation kullanarak bağlantıları Güvenle ve Anonim Olarak Açın.",
+    "header2": "Kasm Open in Isolation tarayıcı uzantısı, web bağlantılarını Workspaces yalıtılmış bir tarayıcıda açmak için bir sağ tıklama menüsü seçeneği sunar. Bu, şüpheli/güvenli olmayan URL'leri güvenli bir şekilde açmayı veya gizliliğinizi korumayı kolay ve sorunsuz hale getirir. Web sayfası, yerel bilgisayarınızda yürütülmek yerine uzak çalışma alanı tarayıcısında işlendiğinden, web sayfasıyla güvenli ve anonim bir şekilde etkileşim kurabilirsiniz.",
+    "header3": "Ek ayrıntılar için Kasm belgelerine bakın.",
+    "card_title1": "kasam kırsalı",
+    "card_title2": "Açık Yöntem",
+    "card_title3": "Açılmak",
+    "card_title4": "Gelişmiş seçenekler",
+    "card_title5": "Arama motoru",
+    "card_title6": "Metni Değiştir",
+    "form1": "Go'yu kullanın",
+    "form2": "Yayın Anahtarını Kullan",
+    "form3": "Yeni sekme",
+    "form4": "Yeni Pencere"
+  },
+  "title": {
+    "tooltip1": "Go, URL'yi yeni bir Çalışma Alanında açacaktır, Cast Key yöntemi mevcut çalışan bir çalışma alanı içindir",
+    "tooltip2": "Bir Kasm Workspaces oturumunda metin açarken, dize geçerli bir URL değilse, bir arama motoruna iletilir",
+    "tooltip3": "Metni bir Çalışma Alanında açıyorsanız, Çalışma Alanına iletilen dizeleri değiştirmek isteyebilirsiniz (Bul, sınırlayıcılar /regexp/g ile standart RegExp'i destekler)"
+  }
+}

@@ -1,0 +1,175 @@
+{
+	"name": "package-json-upgrade",
+	"displayName": "Package Json Upgrade",
+	"description": "Shows available updates in package.json files. Offers quick fix command to update them and to show the changelog.",
+	"version": "2.1.0",
+	"publisher": "codeandstuff",
+	"license": "MIT",
+	"icon": "logo/icon.png",
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"keywords": [
+		"npm",
+		"package.json",
+		"dependencies",
+		"upgrade",
+		"update"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pgsandstrom/package-json-upgrade.git"
+	},
+	"activationEvents": [
+		"onLanguage:json",
+		"onLanguage:jsonc"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Package json upgrade",
+			"properties": {
+				"package-json-upgrade.showUpdatesAtStart": {
+					"type": "boolean",
+					"default": true,
+					"description": "Available updates will be shown directly when a package.json is opened. Otherwise, this must be toggled with a command."
+				},
+				"package-json-upgrade.skipNpmConfig": {
+					"type": "boolean",
+					"default": false,
+					"description": "Skip reading your npm configuration. Check this to skip using configuration such as proxies and caching that might be defined in your npm configuration. Try this out if the extension appears to not be working."
+				},
+				"package-json-upgrade.majorUpgradeColorOverwrite": {
+					"type": "string",
+					"default": "",
+					"description": "Specify a color (like #FF0000) to override the color of major upgrades. Leave empty for default color."
+				},
+				"package-json-upgrade.minorUpgradeColorOverwrite": {
+					"type": "string",
+					"default": "",
+					"description": "Specify a color (like #FFFF00) to override the color of minor upgrades. Leave empty for default color."
+				},
+				"package-json-upgrade.patchUpgradeColorOverwrite": {
+					"type": "string",
+					"default": "",
+					"description": "Specify a color (like #00FF00) to override the color of patch upgrades. Leave empty for default color."
+				},
+				"package-json-upgrade.prereleaseUpgradeColorOverwrite": {
+					"type": "string",
+					"default": "",
+					"description": "Specify a color (like #00FF00) to override the color of prerelease upgrades. Leave empty for default color."
+				},
+				"package-json-upgrade.decorationString": {
+					"type": "string",
+					"default": "\t\tUpdate available: %s",
+					"description": "Customize update string. %s will be replaced by version, so 'Update: %s' will result in 'Update: 1.0.1'."
+				},
+				"package-json-upgrade.ignorePatterns": {
+					"type": "array",
+					"default": [],
+					"description": "A list of regex pattern of packages to not show decoration string for. To ignore all material-ui packages the JSON should be [\"^(?=@material-ui).+$\"]"
+				},
+				"package-json-upgrade.ignoreVersions": {
+					"type": "object",
+					"default": {},
+					"description": "Semver ranges of versions to ignore for specific packages. If you  want to ignore all @types/node versions 12 or greater the JSON should be {\"@types/node\": \">=12\"}. If you want to add several ignored semver ranges you can do {\"@types/node\": [\"=12.0.0\", \"=12.0.1\"]}."
+				},
+				"package-json-upgrade.msUntilRowLoading": {
+					"type": "number",
+					"default": 10000,
+					"description": "Number of milliseconds until 'Loading...' is displayed on each dependency row that has not yet been loaded. 0 to disable, 1 to show immediately."
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "package-json-upgrade.toggle-show",
+				"title": "Toggle showing package.json available updates"
+			},
+			{
+				"command": "package-json-upgrade.update-all",
+				"title": "Update all dependencies in the current package.json file"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "tsc -p ./",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"test-compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"test": "npm run test-jest && npm run test-vscode",
+		"pretest-vscode": "npm run compile",
+		"test-vscode": "node ./out/test-vscode/runTest.js",
+		"test-jest": "jest",
+		"format": "prettier --write \"src/**/*.{json,md,ts,tsx,css,scss}\"",
+		"lint": "eslint --ext .ts --ext .tsx --fix src",
+		"package": "vsce package",
+		"pre-commit": "lint-staged",
+		"pre-push": "npm run lint && npm run typecheck && npm run test",
+		"typecheck": "tsc --noEmit",
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"*.{json,md,css,scss}": [
+			"prettier --write"
+		],
+		"*.{ts,tsx}": [
+			"node ./node_modules/eslint/bin/eslint.js --fix",
+			"prettier --write"
+		]
+	},
+	"dependencies": {
+		"@typescript-eslint/parser": "5.59.7",
+		"libnpmconfig": "1.2.1",
+		"node-fetch": "2.6.11",
+		"npm-registry-fetch": "14.0.5",
+		"semver": "7.3.8"
+	},
+	"devDependencies": {
+		"@jest/globals": "29.5.0",
+		"@types/glob": "7.2.0",
+		"@types/jest": "29.5.1",
+		"@types/mocha": "10.0.1",
+		"@types/node": "14.18.48",
+		"@types/node-fetch": "2.6.4",
+		"@types/npm-registry-fetch": "8.0.4",
+		"@types/semver": "7.5.0",
+		"@types/vscode": "1.74.1",
+		"@typescript-eslint/eslint-plugin": "5.59.7",
+		"@vscode/vsce": "2.19.0",
+		"@vscode/test-electron": "2.3.2",
+		"cross-env": "7.0.3",
+		"eslint": "8.41.0",
+		"eslint-config-prettier": "8.8.0",
+		"eslint-plugin-no-only-tests": "3.1.0",
+		"glob": "7.2.0",
+		"husky": "8.0.3",
+		"jest": "29.5.0",
+		"lint-staged": "13.2.2",
+		"mocha": "10.2.0",
+		"prettier": "2.8.8",
+		"ts-jest": "29.1.0",
+		"ts-loader": "9.4.3",
+		"ts-node": "10.9.1",
+		"typescript": "5.0.4",
+		"webpack": "5.84.1",
+		"webpack-cli": "5.1.1"
+	},
+	"__metadata": {
+		"id": "1f59cde6-3a8c-47e4-b40b-355c1641721a",
+		"publisherId": "31d03940-ac40-40ee-bd05-fefb4d01ab50",
+		"publisherDisplayName": "codeandstuff",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1693498494540,
+		"preRelease": false
+	}
+}

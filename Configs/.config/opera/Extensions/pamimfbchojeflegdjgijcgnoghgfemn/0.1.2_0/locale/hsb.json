@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Pytajće w Kazach",
+    "link_string": "Link w Kasm wotewrěć"
+  },
+  "text": {
+    "header1": "Wěste a anonymne wočinjenje wotlěwa z Kasm Open-in-izolaciju.",
+    "header2": "Browserowe rozšěrjenje Kasm Open w izolaciji skića kontekstowu miopciju k wotewrjenju webstrony w izolowanym workspaces-browseru. To čini to prosće a bjez komdźenja, podhladne/njewěste URLje wěsće wotewrěć abo swoju priwatnu sferu wobchować. Dokelž so webstrona w browseru remotedźěłoweho wobłuka gereněruje a nic na Wašim lokalnym kompjuteru wukonja, móžeće wěsće a anonymnje z webstronu interagować.",
+    "header3": "Dalše informacije namakaće w Kasm-dokumentaciji.",
+    "card_title1": "Kasm-URL",
+    "card_title2": "Wotewrjena metoda ",
+    "card_title3": "Wočinić w",
+    "card_title4": "Rozšěrjene opcije",
+    "card_title5": "Pytanska mašina ",
+    "card_title6": "Tekst narunać ",
+    "form1": "Wužiwajće Go",
+    "form2": "Cast-Key wužiwać",
+    "form3": "Nowy tab",
+    "form4": "Nowe wokno"
+  },
+  "title": {
+    "tooltip1": "Go wotewri URL w nowym dźěłowym wobłuku, cast Key-metoda płaći za wobstejacy dźěłowy wobłuk",
+    "tooltip2": "Hdyž Wy tekst w Kasm Workspaces-posedźenju wotewrjeće, so wón pytanskej mašinje přepoda, chiba zo je slěd znamješkow płaćiwy URL.",
+    "tooltip3": "Hdyž tekst w dźěłowym wobłuku wotewriće, chceće snano slědy znamješkow narunać, kotrež so dźěłowemu wobłukej přepodadźa (Namakaj podpěra standardny regexp z dźělenskimi znamjenjemi /regexp/g)"
+  }
+}

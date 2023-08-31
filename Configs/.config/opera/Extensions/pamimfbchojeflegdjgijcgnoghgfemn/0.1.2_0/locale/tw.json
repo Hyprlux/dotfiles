@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Hwehwɛ wɔ Kasm mu ma",
+    "link_string": "Bue Link wɔ Kasm"
+  },
+  "text": {
+    "header1": "Bue links Ahobammɔ ne Anonymously denam Kasm Open-in-Isolation so.",
+    "header2": "Kasm Open in Isolation browser ntrɛwmu no ma menu option a wobɛbɔ nifa de abue wɛb link ahorow wɔ Workspaces isolated browser mu. Wei ma ɛyɛ mmerɛw na ɛnyɛ den sɛ wobɛbue URL ahorow a ɛyɛ adwenem naayɛ/a ahobammɔ nnim dwoodwoo anaasɛ wobɛkora wo kokoam nsɛm so. Esiane sɛ wɔakyerɛ wɛbsaet krataafa no ase wɔ akyirikyiri adwumayɛbea brawsa no mu, sen sɛ wɔbɛyɛ no wɔ wo mpɔtam hɔ kɔmputa so nti, wubetumi ne wɛbsaet krataafa no adi nkitaho dwoodwoo na wommɔ wo din.",
+    "header3": "Hwɛ Kasm nkrataa ma nsɛm foforo.",
+    "card_title1": "Kasam Nkuraase",
+    "card_title2": "Ɔkwan a Wɔfa so Bue",
+    "card_title3": "Bue Wɔ Mu",
+    "card_title4": "Nneɛma a Wɔapaw a Ɛkɔ Anim",
+    "card_title5": "Nhwehwɛmu Engine",
+    "card_title6": "Fa Nsɛm a Wɔakyerɛw no Si ananmu",
+    "form1": "Fa Go Di dwuma",
+    "form2": "Fa Cast Key di dwuma",
+    "form3": "Tab Foforo",
+    "form4": "Mfɛnsere Foforo"
+  },
+  "title": {
+    "tooltip1": "Go bɛbue URL no wɔ Adwumayɛbea foforo mu, Cast Key kwan no yɛ ma adwumayɛbea a ɛretu mmirika dedaw",
+    "tooltip2": "Sɛ worebue nsɛm wɔ Kasm Workspaces session mu gye sɛ string no yɛ URL a ɛfata a wɔde bɛkɔ search engine",
+    "tooltip3": "Sɛ worebue nsɛm wɔ Adwumayɛbea bi a ebia wobɛpɛ sɛ wode nhama a wɔde akɔ Adwumayɛbea no si ananmu (Find boa RegExp a ɛyɛ gyinapɛn a ɛwɔ delimiters /regexp/g)"
+  }
+}

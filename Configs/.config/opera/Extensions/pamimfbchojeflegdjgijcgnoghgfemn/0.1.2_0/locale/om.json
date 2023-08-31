@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Kasm keessatti barbaadi",
+    "link_string": "Kasm keessatti Link banaa"
+  },
+  "text": {
+    "header1": "Kasm Open-in-Isolation fayyadamuun hidhannoo Nageenyaa fi Maqaa hin beekamneen banaa.",
+    "header2": "Eksteenshiniin biraawzari Kasm Open in Isolation filannoo menu cuqaasuu mirgaa kan walqabsiisota weeb biraawzari adda baafame Iddoowwan Hojii keessatti banuuf kenna. Kunis URL shakkisiisaa/nageenya hin qabne nagaan banuuf ykn iccitii kee eeguuf salphaa fi wal-xaxaa taasisa. Fuulli weebsaayitiin kompiitara naannoo kee irratti raawwatamuu irra, biraawzari iddoo hojii fagoo keessaa waan agarsiifameef, fuula weebsaayitii waliin nagaa fi maqaa malee walqunnamuu dandeessa.",
+    "header3": "Bal'ina dabalataaf galmee Kasm ilaali.",
+    "card_title1": "Baadiyyaa Kasam",
+    "card_title2": "Mala Banaa",
+    "card_title3": "Banaa In",
+    "card_title4": "Filannoo Guddaa",
+    "card_title5": "Search Engine",
+    "card_title6": "Barruu Bakka Buusi",
+    "form1": "Go fayyadami",
+    "form2": "Furtuu Cast fayyadami",
+    "form3": "Caancala Haaraa",
+    "form4": "Foddaa Haaraa"
+  },
+  "title": {
+    "tooltip1": "Go URL Iddoo Hojii haaraa keessatti ni bana, mala Cast Key iddoo hojii hojjechaa jiruuf",
+    "tooltip2": "Yeroo barruu turtii Kasm Workspaces keessatti banamu yoo dhangii URL sirrii ta'e malee gara motora barbaachaatti ni darba",
+    "tooltip3": "Yoo barruu Iddoo Hojii keessatti banuun dhangiiwwan gara Iddoo Hojiitti darban bakka buusuu barbaadda ta'a (Find RegExp istaandaardii daangeessitoota /regexp/g waliin deeggara)"
+  }
+}

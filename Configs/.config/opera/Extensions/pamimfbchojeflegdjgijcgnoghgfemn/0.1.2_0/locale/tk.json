@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Kasm-da gözläň",
+    "link_string": "Kasmda baglanyşyk açyň"
+  },
+  "text": {
+    "header1": "“Kasm Açyk-izolýasiýa” ulanyp, baglanyşyklary ygtybarly we anonim ýagdaýda açyň.",
+    "header2": "“Kasm Open” izolýasiýa brauzeriniň giňelmesi, “Workspaces” izolirlenen brauzerde web baglanyşyklaryny açmak üçin sag düwme menýusyny hödürleýär. Bu şübheli / howply URL-leri ygtybarly açmagy ýa-da gizlinligiňizi goramagy aňsat we bökdençsiz edýär. Web sahypasy ýerli kompýuteriňizde ýerine ýetirilmän, uzakdaky iş meýdançasynyň brauzerinde görkezilendigi sebäpli, web sahypasy bilen howpsuz we anonim aragatnaşyk saklap bilersiňiz.",
+    "header3": "Goşmaça maglumat üçin Kasm resminamalaryna serediň.",
+    "card_title1": "Kasam oba",
+    "card_title2": "Açyk usul",
+    "card_title3": "Aç",
+    "card_title4": "Giňişleýin opsiýalar",
+    "card_title5": "Gözleg motory",
+    "card_title6": "Teksti çalyşyň",
+    "form1": "Go ulanyň",
+    "form2": "Cast düwmesini ulanyň",
+    "form3": "Täze goýma",
+    "form4": "Täze penjire"
+  },
+  "title": {
+    "tooltip1": "Go täze URL-de URL açar, Cast Key usuly bar bolan iş meýdançasy üçin",
+    "tooltip2": "Kasm iş ýerleri sessiýasynda tekst açylanda, setir dogry URL bolmasa, gözleg motoryna geçiriler",
+    "tooltip3": "Iş meýdançasynda tekst açylsa, iş meýdanyna geçen setirleri çalşyp bilersiňiz (Find RegExp standart delimiter / regexp / g bilen goldaýar)"
+  }
+}

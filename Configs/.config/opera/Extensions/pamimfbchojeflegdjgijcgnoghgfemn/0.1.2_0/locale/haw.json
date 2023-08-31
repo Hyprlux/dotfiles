@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Huli ma Kasm no",
+    "link_string": "E wehe i ka loulou ma Kasm"
+  },
+  "text": {
+    "header1": "E wehe i nā loulou me ka palekana a me ka inoa ʻole me ka hoʻohana ʻana iā Kasm Open-in-Isolation.",
+    "header2": "Hāʻawi ka Kasm Open in Isolation browser extension i kahi koho papa kuhikuhi-pololei e wehe i nā loulou pūnaewele ma kahi polokalamu kaʻawale Workspaces. ʻO kēia ka mea maʻalahi a maʻalahi hoʻi ka wehe pono ʻana i nā URL kānalua / palekana a i ʻole e mālama i kāu pilikino. Ma muli o ka hāʻawi ʻia ʻana o ka ʻaoʻao pūnaewele i loko o ka polokalamu kele pūnaewele mamao, ma mua o ka hoʻokō ʻia ʻana ma kāu kamepiula kūloko, hiki iā ʻoe ke launa pū me ka ʻaoʻao pūnaewele me ka palekana a me ka inoa ʻole.",
+    "header3": "E ʻike i ka palapala Kasm no nā kikoʻī hou aku.",
+    "card_title1": "Kasam kuaaina",
+    "card_title2": "Wehewehe",
+    "card_title3": "Wehe i loko",
+    "card_title4": "Nā koho kiʻekiʻe",
+    "card_title5": "ʻEnekini Huli",
+    "card_title6": "Hoʻololi i ke kikokikona",
+    "form1": "E hoʻohana iā Go",
+    "form2": "E hoʻohana i ke kī hoʻolei",
+    "form3": "Tab Hou",
+    "form4": "pukaaniani hou"
+  },
+  "title": {
+    "tooltip1": "E wehe ʻo Go i ka URL ma kahi Workspace hou, ʻo ke ʻano Cast Key no kahi papa hana e holo nei",
+    "tooltip2": "I ka wehe ʻana i ka kikokikona ma kahi hālāwai Kasm Workspaces inā ʻaʻole he URL kūpono ke kaula, e hāʻawi ʻia ia i kahi ʻenekini huli.",
+    "tooltip3": "Inā wehe ʻoe i kahi kikokikona ma kahi Workspace makemake paha ʻoe e pani i nā kaula i hāʻawi ʻia i ka Workspace (E ʻimi e kākoʻo i ka RegExp maʻamau me nā delimiters /regexp/g)"
+  }
+}

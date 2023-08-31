@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "索卡斯姆中",
+    "link_string": "开链接于卡斯姆"
+  },
+  "text": {
+    "header1": "用 Kasm 隔离开链接。",
+    "header2": "Kasm 开浏览器于隔离之中,供一右键单击菜单选项,以开 Web 链接浏览器之间。 此使安开可疑/不安之URL,或持公之私,易与无隙。 网页见于远程浏览器,非行于计算机也,是以足下安匿名地与网页交。",
+    "header3": "有司益详细信息,请参阅 Kasm 文档。",
+    "card_title1": "卡斯姆网址",
+    "card_title2": "开其法 ",
+    "card_title3": "打开方式",
+    "card_title4": "秩选项",
+    "card_title5": "搜索引擎 ",
+    "card_title6": "易文本 ",
+    "form1": "用棋",
+    "form2": "用射密钥",
+    "form3": "新标签",
+    "form4": "新窗口"
+  },
+  "title": {
+    "tooltip1": "Go 开 URL于新事区中,Cast Key 用于正行",
+    "tooltip2": "Kasm 工区会话开文本,非字符串有效 URL,否则传之搜索引擎",
+    "tooltip3": "若区中开文本,庶几代传字符串(Find 支带分隔符 /regexp/g 之准表达式)"
+  }
+}

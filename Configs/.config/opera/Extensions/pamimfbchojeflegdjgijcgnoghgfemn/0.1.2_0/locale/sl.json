@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Išči v Kasmu",
+    "link_string": "Odprite povezavo v Kasmu"
+  },
+  "text": {
+    "header1": "Odprite povezave varno in anonimno z uporabo Kasm Open-in-Isolation.",
+    "header2": "Razširitev brskalnika Kasm Open in Isolation ponuja možnost menija z desnim klikom za odpiranje spletnih povezav v izoliranem brskalniku Workspaces. To omogoča enostavno in brezhibno varno odpiranje sumljivih/nevarnih URL-jev ali ohranjanje vaše zasebnosti. Ker je spletna stran upodobljena znotraj brskalnika oddaljenega delovnega prostora, namesto da se izvede v vašem lokalnem računalniku, lahko varno in anonimno komunicirate s spletno stranjo.",
+    "header3": "Za dodatne podrobnosti glejte dokumentacijo Kasm.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Odprta metoda",
+    "card_title3": "Odpri V",
+    "card_title4": "Napredne možnosti",
+    "card_title5": "Iskalnik",
+    "card_title6": "Zamenjaj besedilo",
+    "form1": "Uporabi Go",
+    "form2": "Uporabi Cast Key",
+    "form3": "Nov zavihek",
+    "form4": "Novo okno"
+  },
+  "title": {
+    "tooltip1": "Go bo odprl URL v novem delovnem prostoru, metoda Cast Key je za obstoječi delujoči delovni prostor",
+    "tooltip2": "Pri odpiranju besedila v seji Kasm Workspaces, razen če je niz veljaven URL, bo posredovan iskalniku",
+    "tooltip3": "Če odprete besedilo v delovnem prostoru, boste morda želeli zamenjati nize, posredovane v delovni prostor (Find podpira standardni RegExp z ločili /regexp/g)"
+  }
+}

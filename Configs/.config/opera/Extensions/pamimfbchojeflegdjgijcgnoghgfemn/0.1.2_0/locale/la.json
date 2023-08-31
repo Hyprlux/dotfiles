@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Quaerere in Kasm for",
+    "link_string": "Open Link in Kasm"
+  },
+  "text": {
+    "header1": "Aperire nexus Tutus et anonymus usus Kasm Open-in-Isolation.",
+    "header2": "The Kasm Open in Isolation browser extension provides a right-click menu option to open web links in a Workspaces desolated browser. Inde facile et inconsutilem facit ut suspecta/non tuta delata tuto aperiat vel intimitatem tuam servet. Cum interretialem paginam inter navigatorem longinquum officinarum, potius quam in computatrum locali tuum exsecutum reddatur, tuto et sine auctore interretiario interretiare potes.",
+    "header3": "Vide Kasm documenta pro additional details.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Ratio aperta",
+    "card_title3": "Apertum in",
+    "card_title4": "Optiones Provectae",
+    "card_title5": "Machina inquirendi",
+    "card_title6": "Reponere Text",
+    "form1": "utere Go",
+    "form2": "Key Usus Mittite",
+    "form3": "Novus tab",
+    "form4": "Nova Fenestra"
+  },
+  "title": {
+    "tooltip1": "Ite aperiet Domicilium in nova Workspace, Clavis Iactus modus est pro currit workspace existentis",
+    "tooltip2": "Cum textum aperiens in sessione Workspaces Kasm nisi chorda URL validum est, ad machinam quaerendam transibitur",
+    "tooltip3": "Si foramen illud in Workspace velis reponere chordis Transierunt ad Workspace (Reperio vexillum RegExp cum delimiters subsidia / regexp / g)"
+  }
+}

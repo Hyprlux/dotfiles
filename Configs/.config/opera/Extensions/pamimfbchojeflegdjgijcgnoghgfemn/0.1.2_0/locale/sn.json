@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Tsvaga muKasm ye",
+    "link_string": "Vhura Link muKasm"
+  },
+  "text": {
+    "header1": "Vhura zvinongedzo Zvakachengeteka uye Zvisingazivikanwe uchishandisa Kasm Open-in-Isolation.",
+    "header2": "Iyo Kasm Vhura muIsolation browser yekuwedzera inopa yekudzvanya-kurudyi menyu sarudzo yekuvhura webhu zvinongedzo muWebhusaiti yakasarudzika browser. Izvi zvinoita kuti zvive nyore uye zvisina musono kuvhura zvakachengeteka maURL anofungidzirwa/asina kuchengeteka kana kuchengetedza zvakavanzika zvako. Sezvo peji rewebhu richipihwa mukati meyekure workspace browser, pane kuurayiwa pakombuta yako yemuno, unokwanisa kupindirana zvakachengeteka uye usingazivikanwe newebhu peji.",
+    "header3": "Ona zvinyorwa zveKasm kuti uwane rumwe ruzivo.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Open Method",
+    "card_title3": "Vhura In",
+    "card_title4": "Advanced Options",
+    "card_title5": "Search Engine",
+    "card_title6": "Tsiva Mashoko",
+    "form1": "Shandisa Go",
+    "form2": "Shandisa Cast Key",
+    "form3": "New Tab",
+    "form4": "Hwindi Idzva"
+  },
+  "title": {
+    "tooltip1": "Enda ichavhura iyo URL munzvimbo itsva yekushanda, iyo Cast Kiyi nzira ndeye iripo inomhanya nzvimbo yekushandira",
+    "tooltip2": "Kana uchivhura mameseji muKasm Workspaces sesheni kunze kwekunge tambo iri URL inoshanda inopfuudzwa kune yekutsvaga injini.",
+    "tooltip3": "Kana uchivhura mameseji muPabasa rekushanda ungangoda kutsiva tambo dzakapfuudzwa kuWorkspace (Tsvaga inotsigira yakajairwa RegExp ine delimiters /regexp/g)"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Kasm ukan thaqhaña",
+    "link_string": "Kasm markan Link jist’araña"
+  },
+  "text": {
+    "header1": "Links jist’araña Seguro ukat Anónimomente Kasm Open-in-Isolation apnaqaña.",
+    "header2": "Kasm Open in Isolation ukan navegador ukan extensión ukax mä menú ukar ch’iqa tuqir ch’iqt’añatakiw uñacht’ayi, mä Workspaces ukan aislado ukan web ukan enlaces ukanakar jist’arañataki. Ukax jasakiw ukat jan kuna jan walt’awimpiw URLs suspectos/jan seguros ukanakar jan kuna usun jist’arañataki jan ukax privacidad ukar uñjañatakiwa. Niyakixay web ukax jaya irnaqäw chiqan navegador ukan uñacht’ayatächixa, jan ukax local computadora ukan phuqhachatächixa, jan kuna usuni ukat jan sutimp uñt’ayas web ukan uñt’ayasiñapataki.",
+    "header3": "Kasm documentación uñakipt’añatakix juk’amp yatxatañataki.",
+    "card_title1": "Kasam Rural ukax mä jach’a markawa",
+    "card_title2": "Jisk’a thakhi",
+    "card_title3": "Jisk’a In",
+    "card_title4": "Nayrar sartañ amtanaka",
+    "card_title5": "Motor de búsqueda ukax mä juk’a pachanakanwa",
+    "card_title6": "Texto ukar mayjt’ayaña",
+    "form1": "Ukax Go",
+    "form2": "Ukaxa Cast Key ukampi luratawa",
+    "form3": "Machaq Tab",
+    "form4": "Machaq Ventana"
+  },
+  "title": {
+    "tooltip1": "Go ukax URL ukax machaq Irnaqañ utar jist’arañapawa, Cast Key uka thakhix mä utjki uka irnaqäw chiqatakiw",
+    "tooltip2": "Kunawsatix mä sesión Kasm Workspaces ukan qillqat jist’aratäki ukhax jan ukax cadena ukax mä URL chiqapäkchi ukhax mä thakhi thaqhiriruw pasañapa",
+    "tooltip3": "Mä Irnaqañ chiqan qillqat jist’arañax inas Irnaqañ chiqar pasat cadenanak mayjt’ayañ munarakchispa (Find ukax RegExp estándar ukarux delimitadores /regexp/g ukamp yanapt’i)"
+  }
+}

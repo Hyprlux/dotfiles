@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Sɔch na Kasm fɔ",
+    "link_string": "Opin Link na Kasm"
+  },
+  "text": {
+    "header1": "Opin link dɛn Sef ɛn Anonymously yuz Kasm Open-in-Isolation.",
+    "header2": "Di Kasm Open in Isolation brawza ɛkstenshɔn de gi rayt-klik mɛnyu opshɔn fɔ opin wɛb link dɛn na wan Wokspɛs isol brawza. Dis de mek am izi ɛn nɔ gɛt wan prɔblɛm fɔ opin URL dɛn we yu nɔ biliv/nɔ sef ɔ fɔ mek yu kɔntinyu fɔ gɛt yu prayvesi. Bikɔs di wɛb pej de rɛnd insay di rimot wokples brawza, pas fɔ ɛksɛkutiv am na yu lokal kɔmpyuta, yu ebul fɔ intarakt wit di wɛb pej sef wan ɛn nɔ no yu nem.",
+    "header3": "Si Kasm dɔkyumentri fɔ ɔda ditel dɛn.",
+    "card_title1": "Kasam Rural we de na di siti",
+    "card_title2": "Opin Mɛtɔd",
+    "card_title3": "Opin Insay",
+    "card_title4": "Advans Opshɔn dɛn",
+    "card_title5": "Sɔch Injin",
+    "card_title6": "Riples Tɛks",
+    "form1": "Yuz Go",
+    "form2": "Yuz Kast Ki",
+    "form3": "Nyu Tab",
+    "form4": "Nyu Windo"
+  },
+  "title": {
+    "tooltip1": "Go go opin di URL na nyu Wokspɛs, di Cast Key we na fɔ wan wokples we dɔn de rɔn",
+    "tooltip2": "We yu opin tɛks na Kasm Wokspɛs sɛshɔn pas di string na valid URL i go pas to sɔch injin",
+    "tooltip3": "If yu de opin tɛks na Wokspɛs yu kin want fɔ riples string dɛn we dɛn pas to di Wokspɛs (Find de sɔpɔt standad RegExp wit dilimita dɛn /regexp/g)"
+  }
+}

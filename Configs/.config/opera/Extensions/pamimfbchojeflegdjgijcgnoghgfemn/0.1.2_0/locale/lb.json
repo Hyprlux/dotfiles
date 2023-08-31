@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Sich an Kasm fir",
+    "link_string": "Open Link am Kasm"
+  },
+  "text": {
+    "header1": "Open Linken Sécher an Anonym mat Kasm Open-in-Isolation.",
+    "header2": "D'Kasm Open in Isolation Browser Extensioun bitt eng Riets-klickt Menüoptioun fir Weblinks an engem Workspaces isoléierten Browser opzemaachen. Dëst mécht et einfach an nahtlos fir verdächteg / onsécher URLen sécher opzemaachen oder Är Privatsphär z'erhalen. Zënter datt d'Websäit am Remote-Aarbechtsberäich-Browser ofgeleet gëtt, anstatt op Ärem lokalen Computer auszeféieren, kënnt Dir sécher an anonym mat der Websäit interagéieren.",
+    "header3": "Gesinn Kasm Dokumentatioun fir zousätzlech Detailer.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Open Method",
+    "card_title3": "Open In",
+    "card_title4": "Fortgeschratt Optiounen",
+    "card_title5": "Sichmaschinn",
+    "card_title6": "Text ersetzen",
+    "form1": "Benotzt Go",
+    "form2": "Benotzt Cast Key",
+    "form3": "Neien Tab",
+    "form4": "Neit Fënster"
+  },
+  "title": {
+    "tooltip1": "Go wäert d'URL an engem neie Workspace opmaachen, d'Cast Key Method ass fir en existente Lafen Workspace",
+    "tooltip2": "Wann Dir Text an enger Kasm Workspaces Sessioun opmaacht, ausser de String eng gëlteg URL ass, gëtt se un eng Sichmotor weiderginn",
+    "tooltip3": "Wann Dir Text an engem Workspace opmaacht wëllt Dir d'Strings ersetzen, déi an den Workspace passéiert sinn (Find ënnerstëtzt Standard RegExp mat Ofgrenzer /regexp/g)"
+  }
+}

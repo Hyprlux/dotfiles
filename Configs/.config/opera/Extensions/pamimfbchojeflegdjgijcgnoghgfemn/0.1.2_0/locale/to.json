@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Kumi ʻi he Kasm ki he",
+    "link_string": "Fakaava ʻa e fehokotakiʻanga ʻi Kasm"
+  },
+  "text": {
+    "header1": "Fakaava ʻa e ngaahi fehokotakiʻanga ʻoku malu mo ʻikai ʻiloʻi ʻo fakaʻaongaʻi ʻa e Kasm-Isolation.",
+    "header2": "ʻOku ʻomi ʻe he Kasm fakaava ʻi he browser ʻa e ngaahi meʻa ke fili mei ai ʻi he menu ke fakaava ʻa e ngaahi fehokotakiʻanga Uepi ʻi ha Workspaces browser. ʻOku ʻai ʻe he meʻa ni ke faingofua mo seamless ke fakaava ʻa e huʻuhuʻu/ʻikai ke malu URLs pe tauhi hoʻo totonu fakafoʻituitui. Koeʻuhi ʻoku fakahoko ʻa e ʻasi ʻi loto ʻi he browser workspace mamaʻo, kae ʻikai tamateʻi ʻi hoʻo komipiuta fakalotofonua, ʻoku ke lava ʻo fengaueʻaki lelei mo fakapulipuli mo e ʻasi.",
+    "header3": "Vakai ki he fakamatala fakapepa Kasm ki ha toe ngaahi fakaikiiki.",
+    "card_title1": "Kasm URL",
+    "card_title2": "Founga fakaava ",
+    "card_title3": "Fakaava ʻi he",
+    "card_title4": "Ngaahi Meʻa ke Fili Ai",
+    "card_title5": "Kumi e misini ",
+    "card_title6": "Fetongi ʻa e Leá ",
+    "form1": "Fakaʻaongaʻi ʻa e ʻalu",
+    "form2": "Fakaʻaongaʻi ʻa e ki kuo li",
+    "form3": "Tab foʻou",
+    "form4": "Window Foʻou"
+  },
+  "title": {
+    "tooltip1": "ʻE fakaava ʻe he ʻalu ʻa e URL ʻi ha Workspace foʻou, ko e founga mahuʻinga kuo li ki ha lele workspace",
+    "tooltip2": "ʻI he taimi ʻoku fakaava ai ʻa e fakamatala ʻi ha fakatahaʻanga Kasm Workspaces tuku kehe kapau ko e afo ko ha URL ʻoku kei ʻaonga, ʻe ʻoatu ia ki ha misini kumi",
+    "tooltip3": "Kapau ʻe fakaava ʻa e fakamatala ʻi ha Workspace mahalo te ke fie maʻu ke fetongi ʻa e ngaahi meʻalea ki he Workspace (kumi ʻa e tuʻunga moʻui RegExp mo delimiters/regexp/g)"
+  }
+}

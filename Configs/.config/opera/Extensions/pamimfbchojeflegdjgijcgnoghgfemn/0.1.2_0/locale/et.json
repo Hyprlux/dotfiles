@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Otsi Kasmist",
+    "link_string": "Ava link Kasmis"
+  },
+  "text": {
+    "header1": "Avage lingid turvaliselt ja anonüümselt, kasutades Kasm Open-in-Isolationit.",
+    "header2": "Brauserilaiendus Kasm Open in Isolation pakub tööruumide isoleeritud brauseris veebilinkide avamiseks paremklõpsuga menüüvalikut. See muudab kahtlaste/ebaturvaliste URL-ide turvalise avamise või privaatsuse säilitamise lihtsaks ja sujuvaks. Kuna veebileht renderdatakse kaugtööruumi brauseris, mitte ei käivitata seda teie kohalikus arvutis, saate veebilehega turvaliselt ja anonüümselt suhelda.",
+    "header3": "Lisateabe saamiseks vaadake Kasmi dokumentatsiooni.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Avatud meetod",
+    "card_title3": "Ava sisse",
+    "card_title4": "Täpsemad suvandid",
+    "card_title5": "Otsingumootor",
+    "card_title6": "Asenda tekst",
+    "form1": "Kasutage Go",
+    "form2": "Kasutage Cast Key",
+    "form3": "Uuel kaardil",
+    "form4": "Uus aken"
+  },
+  "title": {
+    "tooltip1": "Go avab URL-i uues tööruumis, Cast Key meetod on olemasoleva töötava tööruumi jaoks",
+    "tooltip2": "Kasm Workspacesi seansis teksti avamisel edastatakse see otsingumootorile, välja arvatud juhul, kui string on kehtiv URL",
+    "tooltip3": "Kui avate teksti tööruumis, võiksite asendada tööruumi edastatud stringid (Find toetab standardset RegExpi eraldajatega /regexp/g)"
+  }
+}

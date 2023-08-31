@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Bincika a cikin Kasm don",
+    "link_string": "Bude hanyar haɗi a cikin Kasm"
+  },
+  "text": {
+    "header1": "Buɗe hanyoyin haɗin gwiwa lafiya kuma ba tare da suna ba ta amfani da Kasm Buɗe-in-Warewa.",
+    "header2": "Kasm Buɗe a cikin keɓantaccen mai bincike yana ba da zaɓin menu na danna dama don buɗe hanyoyin haɗin yanar gizo a cikin keɓewar mazuruftan Aiki. Wannan yana sa ya zama mai sauƙi da rashin daidaituwa don buɗe URLs masu tuhuma/marasa lafiya a amince ko kiyaye sirrin ku. Tun da an sanya shafin yanar gizon a cikin mai binciken sararin aiki mai nisa, maimakon a aiwatar da shi akan kwamfutar ku ta gida, kuna iya yin mu'amala da shafin yanar gizon cikin aminci da ɓoye.",
+    "header3": "Duba takaddun Kasm don ƙarin cikakkun bayanai.",
+    "card_title1": "Kasam Karkara",
+    "card_title2": "Buɗe Hanyar",
+    "card_title3": "Bude A",
+    "card_title4": "Zaɓuɓɓuka na ci gaba",
+    "card_title5": "Injin Bincike",
+    "card_title6": "Sauya Rubutu",
+    "form1": "Yi amfani da Go",
+    "form2": "Yi amfani da Maɓallin Cast",
+    "form3": "Sabuwar Tab",
+    "form4": "Sabuwar Taga"
+  },
+  "title": {
+    "tooltip1": "Go zai buɗe URL ɗin a cikin sabon Wurin Aiki, Hanyar Maɓallin Cast don wurin aiki mai gudana",
+    "tooltip2": "Lokacin buɗe rubutu a cikin zaman Kasm Workspaces sai dai idan igiyar ta kasance ingantacciyar URL za a wuce zuwa injin bincike.",
+    "tooltip3": "Idan buɗe rubutu a cikin Wurin Aiki kuna iya maye gurbin kirtani da aka wuce zuwa Wurin Aiki (Nemo yana goyan bayan daidaitattun RegExp tare da masu iyakance /regexp/g)"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "םסאקב שפח",
+    "link_string": "Kasm-ב רושיק חתפ"
+  },
+  "text": {
+    "header1": ".Kasm Open-in-Isolation תועצמאב תימינונאו החוטב הרוצב םירושיק חתפ",
+    "header2": ".טנרטניאה ףד םע תימינונאו החוטב היצקארטניא רוציל לוכי התא ,ךלש ימוקמה בשחמב לע",
+    "header3": ".םיפסונ םיטרפל Kasm דועית האר",
+    "card_title1": "ירפכ םאסק",
+    "card_title2": "החותפ הטיש",
+    "card_title3": "ב חתפיהל",
+    "card_title4": "תומדקתמ תויורשפא",
+    "card_title5": "שופיח עונמ",
+    "card_title6": "טסקט ףלחה",
+    "form1": "Go -ב שמתשה",
+    "form2": "Cast חתפמב שמתשה",
+    "form3": "השדח הייסיטרכ",
+    "form4": "שדח ןולח"
+  },
+  "title": {
+    "tooltip1": "Go תטיש ,השדח הדובע תביבסב רתאה תבותכ תא חתפי Cast Key תמייק הדובע תביבסל תדעו",
+    "tooltip2": "שופיח עונמל רבעות איה תיקוח רתא תבותכ איה תזורחמה םא אלא Kasm Workspaces לש הל",
+    "tooltip3": "(regexp/g/ םידירפמ םע יטרדנטס RegExp-ב ךמות Find) Workspace-ל תורבעומה תוזורחמ"
+  }
+}

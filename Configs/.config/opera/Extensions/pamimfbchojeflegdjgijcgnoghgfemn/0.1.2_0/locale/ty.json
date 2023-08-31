@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Ma'imiraa i roto i te Kasm for",
+    "link_string": "Iriti i te hono i Kasm"
+  },
+  "text": {
+    "header1": "Iriti i te mau hono ma te ohie e ma te faaohipa i te Kasm Open-in-Isolation.",
+    "header2": "E horo'a te Kasm Open in Isolation i te hoê ma'itiraa tano no te iriti i te mau hono Itenati i roto i te hoê faanahoraa no te Itenati. Na te reira e faaohie e e faaohie i te iritiraa i te mau uputa no te parururaa i te mau taata e aore râ, no te tape'a i to outou iho oraraa. I te mea e e ravehia te webpage i roto i te faanahoraa roro uira atea no te ohipa, maoti i te faaohipahia i nia i ta outou matini roro uira, e nehenehe outou e ohipa ma te peapea ore e ma te ore e faaite i to outou i'oa i nia i te webpage.",
+    "header3": "A hi'o i te mau api parau no te tahi atu mau haamaramaramaraa.",
+    "card_title1": "Kasm URL",
+    "card_title2": "Te ravea matara noa ",
+    "card_title3": "Iriti i te",
+    "card_title4": "Te mau ravea apî",
+    "card_title5": "Ma'imiraa i te matini ",
+    "card_title6": "Mono i te parau papa'i ",
+    "form1": "Faaohipa i te mau rave'a",
+    "form2": "A faaohipa i te taviri no te parau-ti'a",
+    "form3": "Tapa'o Apî",
+    "form4": "Te haamaramarama apî"
+  },
+  "title": {
+    "tooltip1": "E iriti te URL i te URL i roto i te hoê vahi raveraa ohipa apî, te rave'a Cast Key no te hoê ïa ohipa e vai ra",
+    "tooltip2": "Ia matara ana'e te parau papa'i i roto i te hoê tuhaa pureraa Kasm Workspaces mai te mea e, aita te taura e tano, e faahaerehia ïa te reira i ni'a i te hoê matini ma'imiraa",
+    "tooltip3": "Mai te mea e, e hinaaro outou e mono i te mau taura i horo'ahia'tu i te Workspace (A imi i te mau rave'a no te mono i te mau parau tumu e te delimiters /regexp/g)"
+  }
+}

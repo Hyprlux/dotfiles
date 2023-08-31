@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Qiniqhiayut Kasm haffumunga",
+    "link_string": "Angmaumajuq Atajuq Kasm-mi"
+  },
+  "text": {
+    "header1": "Angmaumajut turrarvikhat Qajangnaittumik imaalu Atirnik uqaqhimaittumik aturlutit Kasm Angmaqtut-Avaliingaaqtitauniq.",
+    "header2": "Kasm Angmaumayuq Avaliingaaqtitaunikkut qiniqhiadjut hivituqyuumiyuq tunihiyuq ihuaqtumik naqilugu piyakhaq angmariangani qaritauyaliqiviit Havagvingni ungahiktumi qiniqhiayunun. Una ayungnaituq uvalu ihuaqtumik angmaumayumik/qayangnaitumik URLsnik uvaluuniin pihimayaangani hiamitailinikkut. Talvanga qaritauyaliqidjutitigun aulalirman iluani avaliqangitunik havakvingmi qiniqhiayukharnik, aulatitihimaitumik nunalaani qaritauyarni, qayangnairutikharnik atiqangitumiklu ilaulukaagianganik qaritauyaliqidjutitigun.",
+    "header3": "Takulugu Kasm titiqqat aallanik naunaitkutikhanik.",
+    "card_title1": "Kasm URL",
+    "card_title2": "Angmaumayuq Qanuriliurutinga ",
+    "card_title3": "Angmaumajuq",
+    "card_title4": "Hivumuuqtut Piyakhat",
+    "card_title5": "Qiniqhianikkut Ingniqutit ",
+    "card_title6": "Himmauhirlugu Titirarhimayuq ",
+    "form1": "Atuqlutin",
+    "form2": "Aturlugit Cast Key",
+    "form3": "Nutaaq Tab",
+    "form4": "Nutaaq Window"
+  },
+  "title": {
+    "tooltip1": "Angmarniaqtuq URL-mik nutaami Havagvingmi, una Cast Key-mik qanuriliurutikhaq tadja atuqtaujumi aulniaqtun havagvingmi",
+    "tooltip2": "Angmakhigumik titiraqhimayunik talvani Kasm Workspacesmi katimadjutikharnik kihiani auladjutikhangit ihuagiyaugumi URLngit pigiaqtitiniaqtun qiniqhiayukharnik ingniqutikharnik",
+    "tooltip3": "Angmaqtirnikkut titirarvikhat Havagvingmi himmauhirumagupkit havagvik qaangiutikpat Havagvingmun (Naunaijarlugu ikajurutikhat atuqpagait RegExp-kut piqarhuni /angiklijunun/g)"
+  }
+}

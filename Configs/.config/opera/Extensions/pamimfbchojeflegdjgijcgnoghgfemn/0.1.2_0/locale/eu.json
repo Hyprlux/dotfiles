@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Bilatu Kasm-en",
+    "link_string": "Ireki Esteka Kasm-en"
+  },
+  "text": {
+    "header1": "Ireki estekak modu seguruan eta anonimoan Kasm Open-in-isolation erabiliz.",
+    "header2": "Kasm Open in Isolation arakatzailearen luzapenak eskuineko botoiaren menuko aukera eskaintzen du Workspaces arakatzaile isolatu batean web estekak irekitzeko. Honek URL susmagarriak/ez seguruak modu seguruan irekitzea edo zure pribatutasuna mantentzea erraz eta erraz egiten du. Web-orria urruneko lan-esparruko arakatzailearen barruan errendatzen denez, tokiko ordenagailuan exekutatu beharrean, web-orriarekin modu seguru eta anonimoan elkarreragin dezakezu.",
+    "header3": "Ikus Kasm dokumentazioa xehetasun gehiago lortzeko.",
+    "card_title1": "Kasam Landa",
+    "card_title2": "Metodo irekia",
+    "card_title3": "Ireki In",
+    "card_title4": "Aukera aurreratuak",
+    "card_title5": "Bilatzailea",
+    "card_title6": "Ordeztu testua",
+    "form1": "Erabili Go",
+    "form2": "Erabili Cast Key",
+    "form3": "Fitxa berria",
+    "form4": "Leiho berria"
+  },
+  "title": {
+    "tooltip1": "Gok URLa irekiko du lan-eremu berri batean, Cast Key metodoa martxan dagoen lan-eremu baterako da",
+    "tooltip2": "Kasm Workspaces saio batean testua irekitzean katea baliozko URL bat ez bada, bilatzaile batera pasatuko da",
+    "tooltip3": "Laneko eremu batean testua irekitzen baduzu, baliteke laneko eremura bidalitako kateak ordezkatu nahi izatea (Find-ek RegExp estandarra onartzen du /regexp/g mugatzaileekin)"
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kasm Extension Options</title>
+    <link rel="stylesheet" href="include/bootstrap.min.css">
+    <link rel="stylesheet" href="options.css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+  </head>
+  <body>
+    <div>
+      <b><p id="header1"></p></b>
+      <p id="header2"></p>
+      <a href="https://kasmweb.com/docs/latest/how_to/kasm_extension.html" target="_blank"><p id="header3"></p></a>
+    </div>
+    <br>
+    <form id="kasm_form" class="needs-validation" novalidate>
+      <div class="card">
+        <div class="card-header">
+	<h5 id="card_title1"></h5>
+        </div>
+        <div class="card-body">
+          <input id="kasm_url" class="form-control" type="url" placeholder="https://app2.kasmweb.com" required></input>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h5 id="card_title2"></h5>
+          <img width="22px" height="22px" src="images/help.svg" data-bs-toggle="tooltip" id="tooltip1"/>
+        </div>
+        <div class="card-body">
+          <div class="form-check">
+            <input id="enable_go" class="form-check-input" type="radio" name="openMethodRadio" value="option1"></input>
+	    <label id="form1" class="form-check-label text-dark" for="enable_go"></label>
+          </div>
+          <div class="form-check">
+            <input id=enable_cast class="form-check-input dark" type="radio" name="openMethodRadio" value="option2"></input>
+            <label id="form2" class="form-check-label text-dark" for="enable_cast"></label>
+            <div class="input-group has-validation">
+              <input id="cast_key" class="form-control" type="text" required></input>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h5 id="card_title3"></h5>
+        </div>
+        <div class="card-body">
+          <div class="form-check">
+            <input id="enable_tab" class="form-check-input" type="radio" name="openInRadio" value="option1"></input>
+            <label id="form3" class="form-check-label text-dark" for="enable_tab"></label>
+          </div>
+          <div class="form-check">
+            <input id=enable_window class="form-check-input dark" type="radio" name="openInRadio" value="option2"></input>
+            <label id="form4" class="form-check-label text-dark" for="enable_window"></label>
+          </div>
+        </div>
+      </div>
+      <div class="accordion bg-light" id="advanced">
+        <div class="accordion-item">
+          <div class="accordion-header" id="heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#advMenu" aria-expanded="false" aria-controls="advMenu">
+              <h5 id="card_title4"></h5>
+            </button>
+          </div>
+          <div id="advMenu" class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#advanced">
+            <div class="accordion-body">
+              <div class="card">
+                <div class="card-header">
+                  <h5 id="card_title5"></h5>
+                  <img width="22px" height="22px" src="images/help.svg" data-bs-toggle="tooltip" id="tooltip2"/>
+                </div>
+                <div class="card-body">
+                  <select id="search_engine" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option value="https://google.com/search?q=">Google</option>
+                    <option value="https://bing.com/search?q=">Bing</option>
+                    <option value="https://search.yahoo.com/search?q=">Yahoo!</option>
+                    <option value="https://yandex.com/search/?text=">Yandex</option>
+                    <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+                    <option value="https://ask.com/web?q=">Ask.com</option>
+                    <option value="https://search.brave.com/search?q=">Brave</option>
+                    <option value="https://search.aol.com/aol/search?q=">AOL</option>
+                    <option value="https://startpage.com/do/dsearch?query=">Startpage</option>
+                    <option value="https://searx.thegpm.org/search?q=">searX (GPM)</option>
+                    <option value="https://qwant.com/?q=">Qwant</option>
+                    <option value="https://searchencrypt.com/search/?q=">Search Encrypt</option>
+                    <option value="https://baidu.com/s?wd=">Baidu</option>
+                    <option value="https://search.naver.com/search.naver?query=">Naver</option>
+                    <option value="custom">Custom</option>
+                  </select>
+                  <div class="input-group has-validation">
+                    <input id="custom_search" class="form-control" type="text"></input>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 id="card_title6"></h5>
+		  <img width="22px" height="22px" src="images/help.svg" data-bs-toggle="tooltip" id="tooltip3">
+                  <button type="button" id="add_regexp" class="btn btn-secondary">&#65291;</button>
+                </div>
+                <div class="card-body">
+                  <div id="regexp_inputs"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <button id="save" type="submit" onsubmit="" class="btn btn-primary">Save</button>
+        <label id="save_confirm" for="save"> Options saved. </label>
+      </div>
+    </form>
+    <script src="include/bootstrap.bundle.min.js"></script>
+    <script src="include/jquery.slim.min.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

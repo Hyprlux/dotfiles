@@ -1,0 +1,23 @@
+{
+   "background": {
+      "service_worker": "menu.js"
+   },
+   "description": "Open links safely in Kasm Isolation",
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsD3F/WNIaJ3wlKj+C6ug7UJWcz5CyNgNClL0ZGF5ffv4ca9mZNaxapIAJOjFQLRmu7vqNWP40/9mdHfZXH2zNKzKsUgj2roCzaOgwpGLM8u1Noi4wrmjOa7hRdZH9mg2U6eNPcyzBHpRp3A1uiSeesjoM6RpVOgBmmxIpgZXUxzR+4c24gV0lFzPz7u9dEwe/1RTRLPOceRgQYZ3d0ndiMT+fywLdt6yE79e+yNgPa+jswzSPsxw/ne/VsUWmKs+6sL2lqx+R+mbx7Rc7n9ibjFDOexD5LDaEzLCeODvGI/HVuXyQlWRiMnupXXx3DcGzxB3FIfNj4/5ay20qDZqgwIDAQAB",
+   "manifest_version": 3,
+   "name": "Kasm - Open In Isolation",
+   "options_page": "options.html",
+   "options_ui": {
+      "browser_style": false,
+      "open_in_tab": false,
+      "page": "options.html"
+   },
+   "permissions": [ "contextMenus", "storage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.2"
+}

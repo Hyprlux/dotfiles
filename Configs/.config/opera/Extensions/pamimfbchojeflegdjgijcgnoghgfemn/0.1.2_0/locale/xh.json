@@ -1,0 +1,29 @@
+{
+  "no_translate": {
+    "default_url": "https://my.kasm.server"
+  },
+  "menu": {
+    "search_string": "Khangela kwiKasm",
+    "link_string": "Vula ikhonkco kwiKasm"
+  },
+  "text": {
+    "header1": "Vula amakhonkco ngokuKhuselekileyo kwaye ngokungaziwa usebenzisa i-Kasm Open-in-Isolation.",
+    "header2": "I-Kasm Vula kwi-browser ye-Isolation eyongezelelweyo ibonelela ngokucofa-ekunene kwimenyu yokukhetha ukuvula amakhonkco ewebhu kwi-Workspaces ekwanti isikhangeli. Oku kwenza kube lula kwaye kungenamthungo ukuvula ngokukhuselekileyo ii-URL ezikrokrisayo/ezingakhuselekanga okanye ukugcina ubumfihlo bakho. Kuba iphepha lewebhu linikezelwa ngaphakathi kwesikhangeli sendawo yokusebenza ekude, endaweni yokuba isetyenziswe kwikhompyuter yakho yasekhaya, uyakwazi ukusebenzisana ngokukhuselekileyo nangokungaziwa kwiphepha lewebhu.",
+    "header3": "Jonga amaxwebhu eKasm ngeenkcukacha ezongezelelweyo.",
+    "card_title1": "Kasam Rural",
+    "card_title2": "Vula Indlela",
+    "card_title3": "Vula ngaphakathi",
+    "card_title4": "Iinketho eziPhezulu",
+    "card_title5": "Injini yokukhangela",
+    "card_title6": "Buyisela Isiqendu",
+    "form1": "Sebenzisa iGo",
+    "form2": "Sebenzisa iSitshixo sokuCasa",
+    "form3": "Ithebhu entsha",
+    "form4": "Ifestile entsha"
+  },
+  "title": {
+    "tooltip1": "I-Go izakuvula i-URL kwindawo entsha yokusebenzela, indlela yeSitshixo sokuCasa yeyomsebenzi okhoyo osebenzayo",
+    "tooltip2": "Xa uvula okubhaliweyo kwiseshoni yeeNdawo zokuSebenza zeKasm ngaphandle kokuba umtya uyi-URL esebenzayo iya kudluliselwa kwinjini yokukhangela.",
+    "tooltip3": "Ukuba uvula okubhaliweyo kwiNdawo yokuSebenza ungafuna ukutshintsha uluhlu lwamagama olugqithiselwe kwiNdawo yokuSebenza (Fumana ixhasa iRegExp esemgangathweni enedelimiters /regexp/g)"
+  }
+}
