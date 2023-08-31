@@ -1,3 +1,0 @@
-[submodule "Configs/.config/waybar/wireguard-manager"]
-	path = Configs/.config/waybar/wireguard-manager
-	url = https://github.com/Klafyvel/wireguard-manager
