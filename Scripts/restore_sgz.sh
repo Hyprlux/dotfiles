@@ -85,6 +85,18 @@ else
 fi
 
 
+# virtualbox
+if pkg_installed virtualbox
+  then
+
+  if (groups ewanl != virtualbox) then
+    sudo usermod -a -G vboxusers ewanl
+  else
+    echo "User is already in vboxusers group, skipping..."
+  fi
+else
+  echo "WARNING: virtualbox is not installed..."
+
 # zsh
 if pkg_installed zsh
     then
