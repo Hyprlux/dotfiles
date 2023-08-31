@@ -96,6 +96,7 @@ if pkg_installed virtualbox
   fi
 else
   echo "WARNING: virtualbox is not installed..."
+fi
 
 # zsh
 if pkg_installed zsh
