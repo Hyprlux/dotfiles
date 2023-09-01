@@ -19,7 +19,7 @@ do
 
     if [ ! -d "${tgt}" ]
     then
-        mkdir -p ${tgt}
+        sudo mkdir -p ${tgt}
         echo "${tgt} directory created..."
     fi
 

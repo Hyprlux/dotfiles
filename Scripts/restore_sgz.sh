@@ -14,16 +14,14 @@ fi
 if pkg_installed sddm
     then
 
-    if [ ! -d /usr/lib/sddm/sddm.conf.d ] ; then
-        sudo mkdir -p /usr/lib/sddm/sddm.conf.d
+    if [ ! -d /etc/sddm.conf.d ] ; then
+        sudo mkdir -p /etc/sddm.conf.d
     fi
 
-    if [ ! -f /usr/lib/sddm/sddm.conf.d/default.t2.bkp ] ; then
+    if [ ! -f /etc/sddm/sddm.conf.d/kde_settings.t2.bkp ] ; then
         echo "configuring sddm..."
-        sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /usr/lib/sddm/sddm.conf.d/default.t2.bkp
-        sudo sed -i "/^DisplayServer=/c\DisplayServer=wayland
-        /^Current=/c\Current=ittu
-        /^CursorTheme=/c\CursorTheme=Eevee" /usr/lib/sddm/sddm.conf.d/default.conf
+        sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
+        sudo cp /usr/share/sddm/themes/ittu/kde_settings.conf /etc/sddm.conf.d/
     fi
 
     if [ ! -f /usr/share/sddm/themes/ittu/components/artwork/gifs/${USER}.gif ] ; then
@@ -33,7 +31,7 @@ if pkg_installed sddm
 
     # Set keyboard layout to es
     if [ ! -f /etc/X11/xorg.conf.d/00-keyboard.conf ] ; then
-        sudo locale-ctl set-x11-keymap es
+        sudo localectl set-x11-keymap es
     fi
 
 else
@@ -61,7 +59,7 @@ if pkg_installed grub
         fi
 
         sudo sed -i "/^GRUB_DEFAULT=/c\GRUB_DEFAULT=saved
-        /^GRUB_GFXMODE=/c\GRUB_GFXMODE=1280x1024x32,auto
+        /^GRUB_GFXMODE=/c\GRUB_GFXMODE=1920x1080x32,auto
         /^#GRUB_THEME=/c\GRUB_THEME=\"/boot/grub/themes/yorha-1920x1080/theme.txt\"
         /^#GRUB_SAVEDEFAULT=true/c\GRUB_SAVEDEFAULT=true" /etc/default/grub
 
@@ -89,7 +87,7 @@ fi
 if pkg_installed virtualbox
   then
 
-  if (groups ewanl != virtualbox) then
+  if (groups ewanl != vboxusers) then
     sudo usermod -a -G vboxusers ewanl
   else
     echo "User is already in vboxusers group, skipping..."
@@ -97,6 +95,7 @@ if pkg_installed virtualbox
 else
   echo "WARNING: virtualbox is not installed..."
 fi
+
 
 # zsh
 if pkg_installed zsh
