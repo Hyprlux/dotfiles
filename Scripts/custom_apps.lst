@@ -4,6 +4,7 @@ spotify
 spicetify-cli
 audacity
 citra-qt-git
+cemu-git
 drawio-desktop
 discord
 filezilla
@@ -28,3 +29,4 @@ termius
 upscayl-appimage
 wine
 winetricks
+ntfs-3g
