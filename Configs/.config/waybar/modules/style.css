@@ -113,15 +113,6 @@ tooltip {
 #custom-sr_end,
 #custom-rl_end,
 #custom-rr_end,
-
-#custom-wireguard {
-    background: @main-bg;
-    opacity: 1;
-    margin: 4px 0px 4px 0px;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
 #tray {
     color: @main-color;
     background: @main-bg;
@@ -170,4 +161,13 @@ tooltip {
     border-radius: ${c_radius}px 0px 0px ${c_radius}px;
     margin-left: ${e_margin}px;
     padding-left: ${e_paddin}px;
+}
+
+#custom-wireguard {
+    color: @main-color;
+    background: @main-bg;
+    opacity: 1;
+    margin: 4px 0px 4px 0px;
+    padding-left: 4px;
+    padding-right: 4px;
 }

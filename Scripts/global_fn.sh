@@ -103,7 +103,8 @@ amd_detect()
 
 laptop_detect()
 {
-    if [ `dmidecode --string chassis-type | grep -i laptop | wc -l` -gt 0 ]
+    # 10 = Notebook
+    if [ `cat /sys/class/dmi/id/chassis_type | grep -i 10 | wc -l` -gt 0 ]
     then
         #echo "laptop detected..."
         return 0
