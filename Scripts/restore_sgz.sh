@@ -20,7 +20,10 @@ if pkg_installed sddm
 
     if [ ! -f /etc/sddm/sddm.conf.d/kde_settings.t2.bkp ] ; then
         echo "configuring sddm..."
-        sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
+        
+        if [ -f /etc/sddm.conf.d/kde_settings.conf ] ; then
+            sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
+        fi
         sudo cp /usr/share/sddm/themes/ittu/kde_settings.conf /etc/sddm.conf.d/
     fi
 
