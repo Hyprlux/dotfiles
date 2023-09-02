@@ -7,5 +7,6 @@ Font_UzumasaMini|/usr/local/share/fonts
 Gtk_TokyoNight|/usr/share/themes
 Icon_TelaPurple|/usr/share/icons
 Cursor_Eevee|/usr/share/icons
+Code_Extensions|$HOME/.vscode
 Grub_Yorha|/boot/grub/themes
 Sddm_Ittu|/usr/share/sddm/themes
