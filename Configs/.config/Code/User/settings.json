@@ -8,5 +8,9 @@
     "security.workspace.trust.enabled": false,
     "editor.fontFamily": "'Maple Mono', 'monospace', monospace",
     "editor.minimap.scale": 2,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.external.linuxExec": "kitty",
+    "terminal.explorerKind": "both",
+    "terminal.sourceControlRepositoriesKind": "both",
+    "telemetry.telemetryLevel": "off"
 }
