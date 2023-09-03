@@ -26,14 +26,9 @@ if pkg_installed spotify && pkg_installed spicetify-cli && pkg_installed spiceti
     sudo chmod a+wr /opt/spotify/Apps -R
     
     # Setup spicetify themes (Dribbblish)
-    cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
+    cd /usr/share/spicetify-cli/Themes/Dribbblish
     spicetify config current_theme Dribbblish color_scheme rosepine
     spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
-
-    if [ `ls -A ~/.config/spicetify/Backup | wc -l` -eq 0 ]
-        then
-        spicetify backup apply
-    fi
     
-    spicetify apply
+    spicetify backup apply
 fi
