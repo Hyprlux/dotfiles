@@ -1,0 +1,2 @@
+1||top|( hyprland/workspaces hyprland/window )|( clock )|( cpu memory ) ( network bluetooth pulseaudio pulseaudio#microphone custom/updates ) ( tray ) ( custom/wallchange custom/wbar custom/cliphist custom/power )
+0|25|top|( hyprland/workspaces hyprland/window ) ( custom/wireguard )|( clock )|( cpu memory ) ( network bluetooth pulseaudio pulseaudio#microphone custom/updates ) ( battery ) ( tray ) ( custom/wallchange custom/wbar custom/cliphist custom/power )
