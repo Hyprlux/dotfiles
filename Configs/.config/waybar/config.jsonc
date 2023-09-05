@@ -53,7 +53,7 @@
         }
     },
     "clock": {
-        "format": "{: %H:%M %p 󰃭 %a %d}",
+        "format": "{: %H:%M 󰃭 %a %d}",
         "format-alt": "{:󰥔 %I:%M %p  %b %Y}",
         "tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
@@ -126,18 +126,6 @@
         "on-click": "~/.config/hypr/scripts/systemupdate.sh up",
         "interval": 86400, // once every day
         "tooltip": true
-    },
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "tray": {
         "icon-size": 12,
