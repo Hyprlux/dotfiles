@@ -14,6 +14,15 @@ fi
 
 CloneDir=`dirname $(realpath $CloneDir)`
 
+# discord
+if pkg_installed discord
+    then
+    discord &> /dev/null &
+    sleep 2
+    killall discord
+
+    sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
+fi
 
 # spotify
 if pkg_installed spotify && pkg_installed spicetify-cli && pkg_installed spicetify-themes-git
