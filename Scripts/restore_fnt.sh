@@ -28,5 +28,8 @@ do
 
 done
 
+echo "Setting correct permissions for .vscode..."
+sudo chown -R ${USER}:${USER} ${HOME}/.vscode
+
 echo "rebuilding font cache..."
 fc-cache -f
