@@ -2,10 +2,10 @@
     	"exec": "exec ~/.config/waybar/tailscale-manager/tailscale-manager.sh -s",
     	"format": "{icon}",
     	"format-icons": {
-            "true": "<span color=\"#50fa7b\">VPN: 🔒</span>",
-            "false": "<span color=\"#ff5555\">VPN: 🔓</span>",
+            "connected": "<span color=\"#50fa7b\">VPN: 🔒</span>",
+            "disconnected": "<span color=\"#ff5555\">VPN: 🔓</span>",
     	},
-    	"interval": "once",
+    	"interval": 2,
     	"on-click": "~/.config/waybar/tailscale-manager/tailscale-manager.sh -t",
     	"return-type": "json",
     },
