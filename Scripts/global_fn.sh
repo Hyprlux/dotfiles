@@ -103,13 +103,15 @@ amd_detect()
 
 laptop_detect()
 {
-    # 10 = Notebook
-    if [ `cat /sys/class/dmi/id/chassis_type | grep -i 10 | wc -l` -gt 0 ]
-    then
-        #echo "laptop detected..."
-        return 0
-    else
-        #echo "laptop not detected..."
-        return 1
+    if [ -d /sys/class/power_supply/ ]; then
+        for supply in /sys/class/power_supply/*; do
+            if [ -e "$supply/type" ]; then
+                type=$(cat "$supply/type")
+                if [ "$type" == "Battery" ]; then
+                    return 0  # It's a laptop
+                fi
+            fi
+        done
     fi
+    return 1  # It's not a laptop
 }
