@@ -22,7 +22,7 @@ function toggle_tailscale() {
     if [ "$TAILSCALE_STATUS" == "true" ]; then
         SUDO_ASKPASS="$SUDO_ASKPASS" sudo -A tailscale down
     else
-        SUDO_ASKPASS="$SUDO_ASKPASS" sudo -A tailscale up & disown
+        SUDO_ASKPASS="$SUDO_ASKPASS" sudo -A tailscale up
     fi
 }
 
