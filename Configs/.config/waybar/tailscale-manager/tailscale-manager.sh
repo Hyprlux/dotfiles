@@ -1,32 +1,39 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-SERVICE_NAME="tailscaled"
-STATUS_CONNECTED_STR='{"text":"Connected","class":"connected","alt":"connected"}'
-STATUS_DISCONNECTED_STR='{"text":"Disconnected","class":"disconnected","alt":"disconnected"}'
+SUDO_ASKPASS=~/.config/waybar/tailscale-manager/tailscale-manager.sh
 
 function askpass() {
-  rofi -dmenu -password -no-fixed-num-lines -p "Sudo password : " -theme ~/.config/waybar/tailscale-manager/rofi.rasi 
+    rofi -dmenu -password -no-fixed-num-lines -p "Sudo password: " -theme ~/.config/waybar/tailscale-manager/rofi.rasi
 }
 
-function status_tailscale() {
-  systemctl is-active $SERVICE_NAME >/dev/null 2>&1
-  return $?
+function tailscale_status() {
+    TAILSCALE_STATUS=$(tailscale status -json | jq -r '.Self.Online')
+
+    if [ "$TAILSCALE_STATUS" == "true" ]; then
+        echo '{"text":"Connected","class":"connected","alt":"connected"}'
+    else
+        echo '{"text":"Disconnected","class":"disconnected","alt":"disconnected"}'
+    fi
 }
 
 function toggle_tailscale() {
-  status_tailscale && \
-     SUDO_ASKPASS=~/.config/waybar/tailscale-manager/tailscale-manager.sh sudo -A systemctl stop $SERVICE_NAME || \
-     SUDO_ASKPASS=~/.config/waybar/tailscale-manager/tailscale-manager.sh sudo -A systemctl start $SERVICE_NAME
+    TAILSCALE_STATUS=$(tailscale status -json | jq -r '.Self.Online')
+    
+    if [ "$TAILSCALE_STATUS" == "true" ]; then
+        SUDO_ASKPASS="$SUDO_ASKPASS" sudo -A tailscale down
+    else
+        SUDO_ASKPASS="$SUDO_ASKPASS" sudo -A tailscale up & disown
+    fi
 }
 
-case $1 in
-  -s | --status)
-    status_tailscale && echo $STATUS_CONNECTED_STR || echo $STATUS_DISCONNECTED_STR
-    ;;
-  -t | --toggle)
-    toggle_tailscale
-    ;;
-  *)
-    askpass
-    ;;
+case "$1" in
+    -s | --status)
+        tailscale_status
+        ;;
+    -t | --toggle)
+        toggle_tailscale
+        ;;
+    *)
+        askpass
+        ;;
 esac
