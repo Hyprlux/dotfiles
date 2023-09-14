@@ -56,6 +56,18 @@ do
         if [ ! -f "${CacheDir}/${theme}/${wpBaseName}" ] ; then
             convert "${wpFullName}" -thumbnail 500x500^ -gravity center -extent 500x500 "${CacheDir}/${theme}/${wpBaseName}"
         fi
+
+        if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.rofi" ] ; then
+            convert -strip -resize 2000 -gravity center -extent 2000 -quality 90 "${wpFullName}" ${CacheDir}/${theme}/${wpBaseName}.rofi
+        fi
+
+        if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.blur" ] ; then
+            convert -strip -scale 10% -blur 0x3 -resize 100% "${wpFullName}" ${CacheDir}/${theme}/${wpBaseName}.blur
+        fi
+
+        if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.dcol" ] ; then
+            magick "${wpFullName}" -colors 6 -define histogram:unique-colors=true -format "%c" histogram:info: > ${CacheDir}/${theme}/${wpBaseName}.dcol
+        fi
     done
 
 done
