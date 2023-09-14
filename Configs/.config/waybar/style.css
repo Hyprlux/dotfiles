@@ -163,7 +163,7 @@ tooltip {
     padding-left: 3px;
 }
 
-#custom-wireguard {
+#custom-tailscale {
     background: @main-bg;
     opacity: 1;
     margin: 4px 0px 4px 0px;
