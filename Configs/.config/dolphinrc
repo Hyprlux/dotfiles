@@ -1,24 +1,17 @@
-MenuBar=Disabled
-
 [$Version]
-update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
 
 [General]
-ShowSelectionToggle=false
-ShowStatusBar=false
 Version=202
-ViewPropsTimestamp=2023,4,26,16,58,48.324
-
-[IconsMode]
-MaximumTextLines=1
-PreviewSize=112
-
-[InformationPanel]
-dateFormat=ShortFormat
+ViewPropsTimestamp=2023,9,4,13,38,23.051
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
-Places Icons Static Size=16
+Places Icons Static Size=22
 
 [KPropertiesDialog]
 1920x1080 screen: Window-Maximized=true
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
