@@ -160,7 +160,7 @@
         "exec": "echo ; echo  switch menubar",
         "on-click": "sleep 0.1 && ~/.config/hypr/scripts/quickapps.sh",
         "on-click-right": "~/.config/hypr/scripts/wbarconfgen.sh n",
-        "on-click-middle": "~/.config/hypr/scripts/wbarconfgen.sh",
+        "on-click-middle": "~/.config/hypr/scripts/wbarconfgen.sh p",
         "interval" : 86400,
         "tooltip": true
     },
