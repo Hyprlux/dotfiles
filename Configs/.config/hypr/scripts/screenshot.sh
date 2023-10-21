@@ -4,27 +4,30 @@ if [ -z "$XDG_PICTURES_DIR" ] ; then
     XDG_PICTURES_DIR="$HOME/Pictures"
 fi
 
+ScrDir=`dirname $(realpath $0)`
+source $ScrDir/globalcontrol.sh
+swpy_dir="$HOME/.config/swappy"
 save_dir="${2:-$XDG_PICTURES_DIR}"
 save_file=$(date +'%y%m%d_%Hh%Mm%Ss_screenshot.png')
 
-gtkMode=`gsettings get org.gnome.desktop.interface color-scheme | sed "s/'//g" | awk -F '-' '{print $2}'`
-ncolor="-h string:bgcolor:#191724 -h string:fgcolor:#faf4ed -h string:frcolor:#56526e"
+mkdir -p $save_dir
+mkdir -p $swpy_dir
+echo -e "[Default]\nsave_dir=$save_dir\nsave_filename_format=$save_file" > $swpy_dir/config
 
-if [ "${gtkMode}" == "light" ] ; then
-    ncolor="-h string:bgcolor:#f4ede8 -h string:fgcolor:#9893a5 -h string:frcolor:#908caa"
-fi
-
-if [ ! -d "$save_dir" ] ; then
-    mkdir -p $save_dir
-fi
+function print_error
+{
+cat << "EOF"
+    ./screenshot.sh <action>
+    ...valid actions are...
+        p : print current screen
+        s : snip current screen
+EOF
+}
 
 case $1 in
-p) grim $save_dir/$save_file ;;
-s) grim -g "$(slurp)" - | swappy -f - ;;
-*)  echo "...valid options are..."
-    echo "p : print screen to $save_dir"
-    echo "s : snip current screen to $save_dir"   
-    exit 1 ;;
+p)  grim $save_dir/$save_file ;;
+s)  grim -g "$(slurp)" - | swappy -f - ;;
+*)  print_error ;;
 esac
 
 if [ -f "$save_dir/$save_file" ] ; then

@@ -64,10 +64,6 @@ do
         if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.blur" ] ; then
             convert -strip -scale 10% -blur 0x3 -resize 100% "${wpFullName}" ${CacheDir}/${theme}/${wpBaseName}.blur
         fi
-
-        if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.dcol" ] ; then
-            magick "${CacheDir}/${theme}/${wpBaseName}.blur" -colors 6 -define histogram:unique-colors=true -format "%c" histogram:info: > ${CacheDir}/${theme}/${wpBaseName}.dcol
-        fi
     done
 
 done

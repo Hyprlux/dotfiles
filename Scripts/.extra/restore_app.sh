@@ -17,9 +17,9 @@ CloneDir=`dirname $(realpath $CloneDir)`
 # discord
 if pkg_installed discord
     then
-    discord &> /dev/null &
-    sleep 2
-    killall discord
+#    discord &> /dev/null &
+#    sleep 2
+#    killall discord
 
     sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
 fi

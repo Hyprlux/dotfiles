@@ -1,8 +1,17 @@
 #!/usr/bin/env sh
 
-theme_file="$HOME/.config/hypr/themes/theme.conf"
+# set variables
+
+SrcDir=`dirname $(realpath $0)`
+source $SrcDir/globalcontrol.sh
 roconf="~/.config/rofi/quickapps.rasi"
 
+if [ $# -ge 1 ] ; then
+    dockWidth=$(( (70 * $#) - $# ))
+else
+    echo "usage: ./quickapps.sh <app1> <app2> ... <app[n]>"
+    exit 1
+fi
 
 # set position
 
@@ -41,19 +50,17 @@ fi
 
 # read hypr theme border
 
-hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $theme_file | sed 's/ //g'`
 wind_border=$(( hypr_border * 3/2 ))
 elem_border=`[ $hypr_border -eq 0 ] && echo "5" || echo $hypr_border`
-r_override="window {border-radius: ${wind_border}px;} entry {border-radius: ${elem_border}px;} element {border-radius: ${elem_border}px;}"
+r_override="window{width:$dockWidth;border-radius:${wind_border}px;} listview{columns:$#;} element{border-radius:${elem_border}px;}"
 
+# launch rofi menu
 
-# clipboard action
-
-RofiSel=$( echo -e "opera\nkitty\ncode\ndolphin\nsteam" | while read qapp
+RofiSel=$( for qapp in "$@"
 do
     Lkp=`grep "$qapp" /usr/share/applications/* | grep 'Exec=' | awk -F ':' '{print $1}' | head -1`
     Ico=`grep 'Icon=' $Lkp | awk -F '=' '{print $2}' | head -1`
     echo -en "${qapp}\x00icon\x1f${Ico}\n"
-done | rofi -dmenu -theme-str "${r_override}" -theme-str "${pos}" -config $roconf)
+done | rofi -no-fixed-num-lines -dmenu -theme-str "${r_override}" -theme-str "${pos}" -config $roconf)
 
 $RofiSel &

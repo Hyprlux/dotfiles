@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+ScrDir=`dirname $(realpath $0)`
+source $ScrDir/globalcontrol.sh
 
 # define functions
 
@@ -62,13 +64,6 @@ fi
 shift $((OPTIND -1))
 step="${2:-5}"
 icodir="~/.config/dunst/icons/vol"
-
-gtkMode=`gsettings get org.gnome.desktop.interface color-scheme | sed "s/'//g" | awk -F '-' '{print $2}'`
-ncolor="-h string:bgcolor:#191724 -h string:fgcolor:#faf4ed -h string:frcolor:#56526e"
-
-if [ "${gtkMode}" == "light" ] ; then
-    ncolor="-h string:bgcolor:#f4ede8 -h string:fgcolor:#9893a5 -h string:frcolor:#908caa"
-fi
 
 case $1 in
     i) pamixer $srce -i ${step}

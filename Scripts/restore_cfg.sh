@@ -64,8 +64,22 @@ done
 
 if nvidia_detect ; then
     cp ${CfgDir}/.config/hypr/nvidia.conf ${HOME}/.config/hypr/nvidia.conf
-    echo -e 'source = ~/.config/hypr/nvidia.conf\n' >> ${HOME}/.config/hypr/hyprland.conf
+    echo -e 'source = ~/.config/hypr/nvidia.conf # auto sourced vars for nvidia\n' >> ${HOME}/.config/hypr/hyprland.conf
 fi
+
+
+# detect if user is ewanl
+if [ $(whoami) == "ewanl" ] ; then
+    read -p "Add meme wallpapers? (y/n) " -r
+
+    if [[ $REPLY =~ ^[Nn]$ ]]
+    then
+        rm -rf ~/.config/swww/Tokyo-Night/nier.jpeg
+    fi
+else
+    rm -rf ~/.config/swww/Tokyo-Night/nier.jpeg
+fi
+
 
 ./create_cache.sh
 ./restore_lnk.sh

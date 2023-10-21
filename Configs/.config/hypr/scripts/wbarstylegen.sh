@@ -3,6 +3,8 @@
 
 # detect hypr theme and initialize variables
 
+ScrDir=`dirname $(realpath $0)`
+source $ScrDir/globalcontrol.sh
 waybar_dir="$HOME/.config/waybar"
 modules_dir="$waybar_dir/modules"
 in_file="$waybar_dir/modules/style.css"

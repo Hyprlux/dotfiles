@@ -3,5 +3,6 @@
         "return-type": "json",
         "format": " {}",
         "interval" : 5, // once every 5 seconds
-        "tooltip": true
+        "tooltip": true,
+        "max-length": 1000
     },

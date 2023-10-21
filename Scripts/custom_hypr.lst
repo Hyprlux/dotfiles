@@ -27,10 +27,12 @@ swaylock-effects-git
 wlogout
 grim
 slurp
+emote
 swappy
 cliphist
 polkit-kde-agent
 xdg-desktop-portal-hyprland
+pacman-contrib
 imagemagick
 qt5-imageformats
 pavucontrol
@@ -55,4 +57,3 @@ plasma-workspace
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-rofi-emoji

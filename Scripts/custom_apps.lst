@@ -3,6 +3,7 @@ steam
 spotify
 spicetify-cli
 spicetify-themes-git
+syncthing
 audacity
 citra-qt-git
 cemu-git
@@ -20,7 +21,6 @@ libreoffice-still
 libreoffice-still-es
 prismlauncher
 obs-studio
-onedrivegui
 virtualbox
 virtualbox-host-modules-arch
 virtualbox-guest-iso

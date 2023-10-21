@@ -21,6 +21,8 @@ if pkg_installed sddm
     if [ ! -f /etc/sddm/sddm.conf.d/kde_settings.t2.bkp ] ; then
         echo "configuring sddm..."
         
+        sudo tar -xzf ${CloneDir}/Source/arcs/Sddm_Ittu.tar.gz -C /usr/share/sddm/themes/
+        
         if [ -f /etc/sddm.conf.d/kde_settings.conf ] ; then
             sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
         fi
@@ -49,6 +51,7 @@ if pkg_installed grub
         then
         echo "configuring grub..."
         sudo cp /etc/default/grub /etc/default/grub.t2.bkp
+        sudo tar -xzf ${CloneDir}/Source/arcs/Grub_Yorha.tar.gz -C /boot/grub/themes/
 
         if nvidia_detect
             then
@@ -74,6 +77,17 @@ else
     echo "WARNING: grub is not installed..."
 fi
 
+# pacman
+if [ -f /etc/pacman.conf ] && [ ! -f /etc/pacman.conf.t2.bkp ]
+    then
+
+    echo "adding extra spice to pacman..."
+    sudo cp /etc/pacman.conf /etc/pacman.conf.t2.bkp
+    sudo sed -i "/^#Color/c\Color\nILoveCandy
+    /^#VerbosePkgLists/c\VerbosePkgLists
+    /^#ParallelDownloads/c\ParallelDownloads = 5" /etc/pacman.conf
+fi
+
 
 # dolphin
 if pkg_installed dolphin && pkg_installed xdg-utils
@@ -86,15 +100,27 @@ else
 fi
 
 
+# swappy
+if pkg_installed swappy
+    then
+    xdg-mime default swappy.desktop application/png
+    echo "setting" `xdg-mime query default "application/png"` "as default image viewer..."
+else
+    echo "WARNING: swappy is not installed..."
+fi
+
+
 # virtualbox
 if pkg_installed virtualbox
   then
 
-  if (groups ewanl != vboxusers) then
-    sudo usermod -a -G vboxusers ewanl
-  else
-    echo "User is already in vboxusers group, skipping..."
-  fi
+    if id -nGz "$USER" | grep -qzxF "vboxusers"; then
+        sudo usermod -a -G vboxusers "$USER"
+
+        echo "Added $USER successfully to the group vboxusers."
+    else
+        echo "User is already in vboxusers group, skipping..."
+    fi
 else
   echo "WARNING: virtualbox is not installed..."
 fi
