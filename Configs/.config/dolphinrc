@@ -12,6 +12,12 @@ Places Icons Static Size=22
 [KPropertiesDialog]
 1920x1080 screen: Window-Maximized=true
 
+[PlacesPanel]
+IconSize=16
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
+
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled
