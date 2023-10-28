@@ -1,8 +1,8 @@
 #!/bin/bash
-#|---/ /+----------------------------+---/ /|#
-#|--/ /-| Script to configure system |--/ /-|#
-#|-/ /--| Ew4n1011/Prasanth Rangan   |-/ /--|#
-#|/ /---+----------------------------+/ /---|#
+#|---/ /+--------------------------+---/ /|#
+#|--/ /-| Script to configure etc  |--/ /-|#
+#|-/ /--| Ew4n1011/Prasanth Rangan |-/ /--|#
+#|/ /---+--------------------------+/ /---|#
 
 source global_fn.sh
 if [ $? -ne 0 ] ; then
@@ -27,6 +27,7 @@ if pkg_installed sddm
             sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
         fi
         sudo cp /usr/share/sddm/themes/ittu/kde_settings.conf /etc/sddm.conf.d/
+        setfacl -m u:sddm:x /home/${USER}
     fi
 
     if [ ! -f /usr/share/sddm/themes/ittu/components/artwork/gifs/${USER}.gif ] ; then

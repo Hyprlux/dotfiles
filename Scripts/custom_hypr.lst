@@ -10,7 +10,6 @@ network-manager-applet
 bluez
 bluez-utils
 blueman
-brightnessctl
 bc
 sddm-git
 qt5-wayland
@@ -33,8 +32,13 @@ cliphist
 polkit-kde-agent
 xdg-desktop-portal-hyprland
 pacman-contrib
+python-pyamdgpuinfo
+parallel
+jq
 imagemagick
 qt5-imageformats
+ffmpegthumbs
+brightnessctl
 pavucontrol
 pamixer
 nwg-look
