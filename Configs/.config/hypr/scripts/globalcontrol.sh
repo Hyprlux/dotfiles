@@ -2,6 +2,7 @@
 
 # wallpaper var
 ConfDir="$HOME/.config"
+CloneDir="$HOME/dotfiles"
 ThemeCtl="$ConfDir/swww/wall.ctl"
 cacheDir="$ConfDir/swww/.cache"
 
