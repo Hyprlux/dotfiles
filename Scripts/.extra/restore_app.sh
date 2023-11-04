@@ -14,6 +14,15 @@ fi
 
 CloneDir=`dirname $(realpath $CloneDir)`
 
+# icons
+if [ -f /usr/share/applications/rofi-theme-selector.desktop ] && [ -f /usr/share/applications/rofi.desktop ]
+    then
+    sudo rm /usr/share/applications/rofi-theme-selector.desktop
+    sudo rm /usr/share/applications/rofi.desktop
+fi
+sudo sed -i "/^Icon=/c\Icon=adjust-colors" /usr/share/applications/nwg-look.desktop
+sudo sed -i "/^Icon=/c\Icon=spectacle" /usr/share/applications/swappy.desktop
+
 # discord
 if pkg_installed discord
     then
@@ -40,4 +49,20 @@ if pkg_installed spotify && pkg_installed spicetify-cli && pkg_installed spiceti
     spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
     
     spicetify backup apply
+fi
+
+# firefox
+if pkg_installed firefox
+    then
+    firefox &> /dev/null &
+    sleep 3
+    killall firefox
+
+    FoxRel=`ls -l ~/.mozilla/firefox/ | grep .default-release | awk '{print $NF}'`
+    if [ `echo $FoxRel | wc -w` -eq 1 ]
+        then
+        tar -xzf ${CloneDir}/Source/arcs/Firefox_UserConfig.tar.gz -C ~/.mozilla/firefox/${FoxRel}/
+    else
+        echo "ERROR: Please cleanup Firefox default-release directories"
+    fi
 fi
