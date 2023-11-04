@@ -104,12 +104,31 @@ fi
 # swappy
 if pkg_installed swappy
     then
-    xdg-mime default swappy.desktop application/png
-    echo "setting" `xdg-mime query default "application/png"` "as default image viewer..."
+    xdg-mime default swappy.desktop image/png
+    xdg-mime default swappy.desktop image/jpeg
+    echo "setting" `xdg-mime query default "image/png"` "as default image viewer (png)..."
+    echo "setting" `xdg-mime query default "image/jpeg"` "as default image viewer (jpeg)..."
 else
     echo "WARNING: swappy is not installed..."
 fi
 
+# gparted
+if pkg_installed gparted
+    then
+    sudo sed -i "Exec=/usr/bin/gparted %f/c\Exec=sudo -E /usr/bin/gparted" /usr/share/applications/gparted.desktop
+    sudo sh -c "echo '$(whoami) ALL=NOPASSWD:SETENV: /usr/bin/gparted' >> /etc/sudoers"
+else
+    echo "WARNING: gparted is not installed..."
+fi
+
+# cisco packet tracer
+if pkg_installed packettracer
+    then
+    sudo sed -i "Exec=/opt/packettracer/packettracer %f/c\Exec=env QT_QPA_PLATFORM=xcb /opt/packettracer/packettracer" /usr/share/applications/cisco-pt.desktop
+    
+else
+    echo "WARNING: packettracer is not installed..."
+fi
 
 # virtualbox
 if pkg_installed virtualbox
