@@ -1,5 +1,5 @@
 #!/bin/bash
 
-discord --start-minimized &
+vencord-desktop --start-minimized &
 sleep 1
-wmctrl -c "discord"
+wmctrl -c "vencord-desktop"
