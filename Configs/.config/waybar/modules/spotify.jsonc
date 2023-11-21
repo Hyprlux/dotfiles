@@ -4,5 +4,6 @@
         "return-type": "json",
         "on-click": "playerctl play-pause --player spotify",
         "on-scroll-up": "playerctl next --player spotify",
-        "on-scroll-down": "playerctl previous --player spotify"
+        "on-scroll-down": "playerctl previous --player spotify",
+        "escape": true
     },
