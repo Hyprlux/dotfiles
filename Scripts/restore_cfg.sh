@@ -23,10 +23,10 @@ fi
 cat restore_cfg.lst | while read lst
 do
 
-    pth=`echo $lst | awk -F '|' '{print $1}'`
-    cfg=`echo $lst | awk -F '|' '{print $2}'`
-    pkg=`echo $lst | awk -F '|' '{print $3}'`
-    pth=`eval echo $pth`
+    bkpFlag=`echo $lst | awk -F '|' '{print $1}'`
+    eval pth=`echo $lst | awk -F '|' '{print $2}'`
+    cfg=`echo $lst | awk -F '|' '{print $3}'`
+    pkg=`echo $lst | awk -F '|' '{print $4}'`
 
     while read pkg_chk
     do
@@ -41,7 +41,7 @@ do
     do
         tgt=`echo $pth | sed "s+^${HOME}++g"`
 
-        if [ -d $pth/$cfg_chk ] || [ -f $pth/$cfg_chk ]
+        if ( [ -d $pth/$cfg_chk ] || [ -f $pth/$cfg_chk ] ) && [ "${bkpFlag}" == "Y" ]
             then
 
             if [ ! -d $BkpDir$tgt ] ; then
@@ -62,13 +62,10 @@ do
 
 done
 
-cp -r $BkpDir/.config/swww/.cache $HOME/.config/swww
-
 if nvidia_detect ; then
     cp ${CfgDir}/.config/hypr/nvidia.conf ${HOME}/.config/hypr/nvidia.conf
     echo -e 'source = ~/.config/hypr/nvidia.conf # auto sourced vars for nvidia\n' >> ${HOME}/.config/hypr/hyprland.conf
 fi
-
 
 # detect if user is ewanl
 if [ $(whoami) == "ewanl" ] ; then
@@ -81,7 +78,6 @@ if [ $(whoami) == "ewanl" ] ; then
 else
     rm -rf ~/.config/swww/Tokyo-Night/nier.jpeg
 fi
-
 
 ./create_cache.sh
 ./restore_lnk.sh
