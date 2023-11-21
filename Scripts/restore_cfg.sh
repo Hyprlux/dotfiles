@@ -62,6 +62,8 @@ do
 
 done
 
+cp -r $BkpDir/.config/swww/.cache $HOME/.config/swww
+
 if nvidia_detect ; then
     cp ${CfgDir}/.config/hypr/nvidia.conf ${HOME}/.config/hypr/nvidia.conf
     echo -e 'source = ~/.config/hypr/nvidia.conf # auto sourced vars for nvidia\n' >> ${HOME}/.config/hypr/hyprland.conf
