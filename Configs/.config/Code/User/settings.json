@@ -12,5 +12,8 @@
     "terminal.external.linuxExec": "kitty",
     "terminal.explorerKind": "both",
     "terminal.sourceControlRepositoriesKind": "both",
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "workbench.productIconTheme": "bongocat",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true
 }

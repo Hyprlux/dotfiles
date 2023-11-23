@@ -17,16 +17,16 @@ then
 fi
 
 # set variables
-ctlFile="$HOME/.config/swww/wall.ctl"
+ctlFile="$HOME/.config/hypr/theme.ctl"
 ctlLine=`grep '^1|' $ctlFile`
-export CacheDir="$HOME/.config/swww/.cache"
+export cacheDir="$HOME/.config/swww/.cache"
 
 # evaluate options
 while getopts "fc" option ; do
     case $option in
     f ) # force remove cache
-        rm -Rf ${CacheDir}
-        echo "Cache dir ${CacheDir} cleared...";;
+        rm -Rf ${cacheDir}
+        echo "Cache dir ${cacheDir} cleared...";;
     c ) # use custom wallpaper
         shift $((OPTIND -1))
         inWall="$1"
@@ -36,7 +36,7 @@ while getopts "fc" option ; do
         if [[ -f "${inWall}" ]] ; then
             if [ `echo "$ctlLine" | wc -l` -eq "1" ] ; then
                 curTheme=$(echo "$ctlLine" | cut -d '|' -f 2)
-                sed -i "/^1|/c\1|${curTheme}|${inWall}" "$ctlFile"
+                awk -F '|' -v thm="${curTheme}" -v wal="${inWall}" '{OFS=FS} {if($2==thm)$NF=wal;print$0}' "${ThemeCtl}" > /tmp/t2 && mv /tmp/t2 "${ThemeCtl}"
             else
                 echo "ERROR : $ctlFile Unable to fetch theme..."
                 exit 1
@@ -59,20 +59,20 @@ imagick_t2 () {
     wpFullName="$2"
     wpBaseName=$(basename "${wpFullName}")
 
-    if [ ! -f "${CacheDir}/${theme}/${wpBaseName}" ]; then
-        convert "${wpFullName}" -thumbnail 500x500^ -gravity center -extent 500x500 "${CacheDir}/${theme}/${wpBaseName}"
+    if [ ! -f "${cacheDir}/${theme}/${wpBaseName}" ]; then
+        convert "${wpFullName}" -thumbnail 500x500^ -gravity center -extent 500x500 "${cacheDir}/${theme}/${wpBaseName}"
     fi
 
-    if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.rofi" ]; then
-        convert -strip -resize 2000 -gravity center -extent 2000 -quality 90 "${wpFullName}" "${CacheDir}/${theme}/${wpBaseName}.rofi"
+    if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.rofi" ]; then
+        convert -strip -resize 2000 -gravity center -extent 2000 -quality 90 "${wpFullName}" "${cacheDir}/${theme}/${wpBaseName}.rofi"
     fi
 
-    if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.blur" ]; then
-        convert -strip -scale 10% -blur 0x3 -resize 100% "${wpFullName}" "${CacheDir}/${theme}/${wpBaseName}.blur"
+    if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.blur" ]; then
+        convert -strip -scale 10% -blur 0x3 -resize 100% "${wpFullName}" "${cacheDir}/${theme}/${wpBaseName}.blur"
     fi
 
-    if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.dcol" ]; then
-        magick "${wpFullName}" -colors 4 -define histogram:unique-colors=true -format "%c" histogram:info: > "${CacheDir}/${theme}/${wpBaseName}.dcol"
+    if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.dcol" ]; then
+        magick "${wpFullName}" -colors 4 -define histogram:unique-colors=true -format "%c" histogram:info: > "${cacheDir}/${theme}/${wpBaseName}.dcol"
     fi
 }
 
@@ -81,12 +81,16 @@ imagick_t2 () {
 export -f imagick_t2
 while read ctlLine
 do
-    theme=$(echo $ctlLine | cut -d '|' -f 2)
-    fullPath=$(echo "$ctlLine" | cut -d '|' -f 3 | sed "s+~+$HOME+")
+    theme=$(echo $ctlLine | awk -F '|' '{print $2}')
+    fullPath=$(echo "$ctlLine" | awk -F '|' '{print $NF}'| sed "s+~+$HOME+")
     wallPath=$(dirname "$fullPath")
-    mkdir -p ${CacheDir}/${theme}
+    mkdir -p ${cacheDir}/${theme}
 
     mapfile -d '' wpArray < <(find "${wallPath}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 | sort -z)
     echo "Creating thumbnails for ${theme} [${#wpArray[@]}]"
     parallel --bar imagick_t2 ::: "${theme}" ::: "${wpArray[@]}"
+    codex=$(echo $ctlLine | awk -F '|' '{print $3}' | cut -d '~' -f 1)
+    if [ $(code --list-extensions |  grep -wc "${codex}") -eq 0 ] ; then
+        code --install-extension "${codex}"
+    fi
 done < $ctlFile

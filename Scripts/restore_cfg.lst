@@ -1,7 +1,7 @@
 Y|${HOME}|.zshrc .p10k.zsh|zsh pokemon-colorscripts-git
 Y|${HOME}/.config/Code/User|settings.json|visual-studio-code-bin
 Y|${HOME}/.config|dunst|dunst
-Y|${HOME}/.config/hypr|animations.conf hyprland.conf keybindings.conf monitors.conf windowrules.conf userprefs.conf scripts themes|hyprland
+Y|${HOME}/.config/hypr|animations.conf hyprland.conf keybindings.conf monitors.conf windowrules.conf userprefs.conf theme.ctl scripts themes|hyprland
 Y|${HOME}/.config|kitty|kitty
 Y|${HOME}/.config|Kvantum|kvantum
 Y|${HOME}/.config|neofetch|neofetch

@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 ScrDir=`dirname $(realpath $0)`
+source $ScrDir/globalcontrol.sh
 WalDir="$HOME/.config/swww"
-WalCtl="$WalDir/wall.ctl"
 RofDir="$HOME/.config/rofi"
 
 roficn=0
@@ -73,4 +73,4 @@ do
         done
 
     done
-done < $WalCtl
+done < $ThemeCtl

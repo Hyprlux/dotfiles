@@ -3,7 +3,7 @@
 # wallpaper var
 ConfDir="$HOME/.config"
 CloneDir="$HOME/dotfiles"
-ThemeCtl="$ConfDir/swww/wall.ctl"
+ThemeCtl="$ConfDir/hypr/theme.ctl"
 cacheDir="$ConfDir/swww/.cache"
 
 # theme var
