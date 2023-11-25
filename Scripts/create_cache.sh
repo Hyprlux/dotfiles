@@ -89,8 +89,4 @@ do
     mapfile -d '' wpArray < <(find "${wallPath}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 | sort -z)
     echo "Creating thumbnails for ${theme} [${#wpArray[@]}]"
     parallel --bar imagick_t2 ::: "${theme}" ::: "${wpArray[@]}"
-    codex=$(echo $ctlLine | awk -F '|' '{print $3}' | cut -d '~' -f 1)
-    if [ $(code --list-extensions |  grep -wc "${codex}") -eq 0 ] ; then
-        code --install-extension "${codex}"
-    fi
 done < $ctlFile
