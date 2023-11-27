@@ -80,7 +80,6 @@ EOF
         done
 
         echo -e "\nnvidia-dkms\nnvidia-utils" >> install_pkg.lst
-        sed -i "s/^hyprland-git/hyprland-nvidia-git/g" install_pkg.lst
 
     elif amd_detect ; then
     
