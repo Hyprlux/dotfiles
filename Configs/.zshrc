@@ -61,8 +61,9 @@ alias pl='$aurhelper -Qs' # list installed package
 alias pa='$aurhelper -Ss' # list availabe package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | sudo pacman -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
-alias vc='code .'  # gui code editor
+alias vc='code .' # gui code editor
 alias mkdocs='~/venv/bin/mkdocs' # link mkdocs venv binary
+alias kssh='kitty +kitten ssh' # ssh with kitty
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
