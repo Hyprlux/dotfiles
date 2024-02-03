@@ -1,1 +1,0 @@
-1|Tokyo-Night|enkia.tokyo-night~Tokyo Night Storm|~/.config/swww/Tokyo-Night/cat_lofi_cafe.png

@@ -1,3 +1,0 @@
-1||top|( hyprland/workspaces hyprland/window )|( clock custom/spotify )|( cpu memory custom/gpuinfo ) ( network bluetooth pulseaudio pulseaudio#microphone custom/updates ) ( tray ) ( custom/wallchange custom/wbar custom/cliphist custom/power )
-0||top|( hyprland/workspaces hyprland/window ) ( custom/tailscale )|( clock custom/spotify )|( cpu memory custom/gpuinfo ) ( network bluetooth pulseaudio pulseaudio#microphone custom/updates ) ( battery ) ( tray ) ( custom/wallchange custom/wbar custom/cliphist custom/power )
-0||top|( hyprland/workspaces hyprland/window )|( clock custom/spotify )|( cpu memory custom/gpuinfo ) ( network bluetooth pulseaudio pulseaudio#microphone custom/updates ) ( battery ) ( tray ) ( custom/wallchange custom/wbar custom/cliphist custom/power )
