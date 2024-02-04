@@ -31,6 +31,7 @@ org.gnome.eog #ImageViewer
 # org.kde.kdenlive #Kdenlive
 com.obsproject.Studio #Obs
 # com.github.rafostar.Clapper #Clapper
+# com.github.unrud.VideoDownloader #VideoDownloader
 
 # Gaming
 # hu.kramo.Cartridges #Cartridges
