@@ -21,6 +21,7 @@ Vagrant.configure("2") do |config|
     config.vm.provision "shell", inline: <<-SHELL
       pacman -Syu --noconfirm
       bash /vagrant/Scripts/install.sh
+      sudo reboot
     SHELL
   end
 end
