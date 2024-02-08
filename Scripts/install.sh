@@ -1,7 +1,7 @@
 #!/bin/bash
 #|---/ /+--------------------------+---/ /|#
 #|--/ /-| Main installation script |--/ /-|#
-#|-/ /--| Ew4n1011/Prasanth Rangan |-/ /--|#
+#|-/ /--| Prasanth Rangan          |-/ /--|#
 #|/ /---+--------------------------+/ /---|#
 
 cat <<"EOF"
@@ -17,6 +17,7 @@ cat <<"EOF"
 -----------------------------------------------------------------
 
 EOF
+
 
 #--------------------------------#
 # import variables and functions #
@@ -195,3 +196,4 @@ EOF
         service_ctl $service
     done < system_ctl.lst
 fi
+

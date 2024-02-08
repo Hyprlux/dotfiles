@@ -143,3 +143,4 @@ echo -e "\033[0;32m[Restoring]\033[0m restore_cfg.sh \"${Fav_Theme}\" \"${Theme_
 ./restore_cfg.sh "$Fav_Theme" "$Theme_Dir/Configs"
 
 rm "${Fav_Theme}restore_cfg.lst"
+

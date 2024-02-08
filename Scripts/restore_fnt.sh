@@ -30,3 +30,4 @@ done
 
 echo "rebuilding font cache..."
 fc-cache -f
+

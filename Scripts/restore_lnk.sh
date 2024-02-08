@@ -28,3 +28,4 @@ if printenv HYPRLAND_INSTANCE_SIGNATURE &> /dev/null
     echo "reloading hyprland..."
     hyprctl reload
 fi
+
