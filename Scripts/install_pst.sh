@@ -21,16 +21,6 @@ if pkg_installed sddm
     fi
 
     if [ ! -f /etc/sddm.conf.d/kde_settings.t2.bkp ] ; then
-        echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m configuring sddm..."
-        echo -e "Select sddm theme:\n1) Ittu\n2) Candy\n3) Corners"
-        read -p "Enter option number : " sddmopt
-
-        case $sddmopt in
-        1) sddmtheme="Ittu";;
-        2) sddmtheme="Candy";;
-        *) sddmtheme="Corners";;
-        esac
-
         if [ -f /etc/sddm.conf.d/kde_settings.conf ] ; then
             sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
         fi
