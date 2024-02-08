@@ -1,4 +1,4 @@
-"tray": {
-    "icon-size": ${i_size},
-    "spacing": 5
-},
+    "tray": {
+        "icon-size": ${i_size},
+        "spacing": 5
+    },
