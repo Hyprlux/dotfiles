@@ -89,11 +89,9 @@ if [ $(whoami) == "ewanl" ] ; then
 
     if [[ $REPLY =~ ^[Nn]$ ]]
     then
-        rm -rf ~/.config/swww/Tokyo-Night/nier.jpeg
         rm -rf ~/.config/swww/Tokyo-Night/chiquicat.png
     fi
 else
-    rm -rf ~/.config/swww/Tokyo-Night/nier.jpeg
     rm -rf ~/.config/swww/Tokyo-Night/chiquicat.png
 fi
 
