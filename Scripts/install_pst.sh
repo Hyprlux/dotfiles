@@ -63,13 +63,13 @@ else
 fi
 
 # gparted
-if pkg_installed gparted
-    then
-    sudo sed -i "Exec=/usr/bin/gparted %f/c\Exec=sudo -E /usr/bin/gparted" /usr/share/applications/gparted.desktop
-    sudo sh -c "echo '$(whoami) ALL=NOPASSWD:SETENV: /usr/bin/gparted' >> /etc/sudoers"
-else
-    echo -e "\033[0;33m[WARNING]\033[0m gparted is not installed..."
-fi
+#if pkg_installed gparted
+#    then
+#    sudo sed -i "Exec=/usr/bin/gparted %f/c\Exec=sudo -E /usr/bin/gparted" /usr/share/applications/gparted.desktop
+#    sudo sh -c "echo '$(whoami) ALL=NOPASSWD:SETENV: /usr/bin/gparted' >> /etc/sudoers"
+#else
+#    echo -e "\033[0;33m[WARNING]\033[0m gparted is not installed..."
+#fi
 
 # cisco packet tracer
 if pkg_installed packettracer
