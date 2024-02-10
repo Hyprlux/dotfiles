@@ -94,12 +94,7 @@ EOF
     # prepare package list #
     #----------------------#
     shift $((OPTIND - 1))
-    cust_pkg=$1
     cp custom_hypr.lst install_pkg.lst
-
-    if [ -f "$cust_pkg" ] && [ ! -z "$cust_pkg" ]; then
-        cat $cust_pkg >>install_pkg.lst
-    fi
 
     #-----------------------#
     # add shell to the list #
