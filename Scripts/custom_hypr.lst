@@ -34,6 +34,7 @@ pacman-contrib
 python-pyamdgpuinfo
 parallel
 jq
+bc
 imagemagick
 qt5-imageformats
 ffmpegthumbs
