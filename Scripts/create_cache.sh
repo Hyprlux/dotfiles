@@ -78,15 +78,15 @@ imagick_t2 () {
     wpBaseName=$(basename "${wpFullName}")
 
     if [ ! -f "${cacheDir}/${theme}/${wpBaseName}" ]; then
-        convert "${wpFullName}" -thumbnail 500x500^ -gravity center -extent 500x500 "${cacheDir}/${theme}/${wpBaseName}"
+        convert "${wpFullName}"[0] -thumbnail 500x500^ -gravity center -extent 500x500 "${cacheDir}/${theme}/${wpBaseName}"
     fi
 
     if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.rofi" ]; then
-        convert -strip -resize 2000 -gravity center -extent 2000 -quality 90 "${wpFullName}" "${cacheDir}/${theme}/${wpBaseName}.rofi"
+        convert -strip -resize 2000 -gravity center -extent 2000 -quality 90 "${wpFullName}"[0] "${cacheDir}/${theme}/${wpBaseName}.rofi"
     fi
 
     if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.blur" ]; then
-        convert -strip -scale 10% -blur 0x3 -resize 100% "${wpFullName}" "${cacheDir}/${theme}/${wpBaseName}.blur"
+        convert -strip -scale 10% -blur 0x3 -resize 100% "${wpFullName}"[0] "${cacheDir}/${theme}/${wpBaseName}.blur"
     fi
 
     if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.dcol" ] ; then
@@ -129,9 +129,10 @@ do
     fullPath=$(echo "$ctlLine" | awk -F '|' '{print $NF}' | sed "s+~+$HOME+")
     wallPath=$(dirname "$fullPath")
     mkdir -p ${cacheDir}/${theme}
-    mapfile -d '' wpArray < <(find "${wallPath}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 | sort -z)
+    mapfile -d '' wpArray < <(find "${wallPath}" -type f \( -iname "*.gif" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 | sort -z)
     echo "Creating thumbnails for ${theme} [${#wpArray[@]}]"
     parallel --bar imagick_t2 ::: "${theme}" ::: "${wpArray[@]}"
+    
     if [ ! -z "$(echo $ctlLine | awk -F '|' '{print $3}')" ] ; then
         codex=$(echo $ctlLine | awk -F '|' '{print $3}' | cut -d '~' -f 1)
         if [ $(code --list-extensions |  grep -iwc "${codex}") -eq 0 ] ; then
