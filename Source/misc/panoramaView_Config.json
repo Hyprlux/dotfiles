@@ -1,0 +1,60 @@
+{
+	"file": {
+		"type": "panoramaView",
+		"version": 1
+	},
+	"windows": [
+		{
+			"groups": [
+				{
+					"id": 0,
+					"name": "Home",
+					"rect": {
+						"x": 0,
+						"y": 0,
+						"w": 0.5,
+						"h": 0.5,
+						"i": 0.5,
+						"j": 0.5
+					}
+				},
+				{
+					"id": 1,
+					"name": "School",
+					"rect": {
+						"x": 0.5,
+						"y": 0,
+						"w": 0.5,
+						"h": 0.5,
+						"i": 1,
+						"j": 0.5
+					}
+				},
+				{
+					"id": 2,
+					"name": "Exams",
+					"rect": {
+						"x": 0,
+						"y": 0.5,
+						"w": 1,
+						"h": 0.5,
+						"i": 1,
+						"j": 1
+					}
+				}
+			],
+			"tabs": [
+				{
+					"url": 	"moz-extension://9c504233-3b21-4ad5-aef8-b24e192c2894/index.html",
+					"title": "New Tab",
+					"groupId": 0,
+					"index": 1,
+					"lastAccessed": 1708161684416,
+					"pinned": false
+				}
+			],
+			"activeGroup": 0,
+			"groupIndex": 4
+		}
+	]
+}
