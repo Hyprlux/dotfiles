@@ -1,10 +1,11 @@
 #!/usr/bin/env sh
 
+# lock instance
 
-lockFile="/tmp/hyrpdots$(id -u)swwwallpaper.lock"
- [ -e "$lockFile" ] &&  notify-send -a "Hyprdots" "An instance of the script is already running..." && exit  1 
+lockFile="/tmp/hyprdots$(id -u)swwwallpaper.lock"
+[ -e "$lockFile" ] && echo "An instance of the script is already running..." && exit  1 
 touch "${lockFile}"
-trap 'rm -f ${lockFile}'  EXIT
+trap 'rm -f ${lockFile}' EXIT
 
 # define functions
 

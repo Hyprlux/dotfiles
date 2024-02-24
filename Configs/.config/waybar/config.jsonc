@@ -16,7 +16,7 @@
     
         "modules-left": ["custom/padd","custom/l_end","hyprland/workspaces","hyprland/window","custom/cliphist","custom/r_end","custom/padd"],
         "modules-center": ["custom/padd","custom/l_end","clock","custom/spotify","custom/r_end","custom/padd"],
-        "modules-right": ["custom/padd","custom/l_end","cpu","memory","custom/gpuinfo","custom/r_end","custom/l_end","network","bluetooth","pulseaudio","pulseaudio#microphone","custom/updates","custom/r_end","custom/l_end","tray","custom/r_end","custom/l_end","custom/wallchange","custom/mode","custom/wbar","custom/cliphist","custom/power","custom/r_end","custom/padd"],
+        "modules-right": ["custom/padd","custom/l_end","cpu","memory","custom/gpuinfo","custom/r_end","custom/l_end","network","bluetooth","pulseaudio","pulseaudio#microphone","custom/updates","custom/keybindhint","custom/r_end","custom/l_end","tray","custom/r_end","custom/l_end","custom/wallchange","custom/theme","custom/wbar","custom/cliphist","custom/power","custom/r_end","custom/padd"],
     
     
     // sourced from modules based on config.ctl //
@@ -41,7 +41,7 @@
     
         "custom/wbar": {
             "format": "{}", //    //
-            "exec": "echo ; echo  switch menubar //  dock",
+            "exec": "echo ; echo  switch bar //  dock",
             "on-click": "~/.config/hypr/scripts/wbarconfgen.sh n",
             "on-click-right": "~/.config/hypr/scripts/wbarconfgen.sh p",
             "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/quickapps.sh kitty firefox spotify code dolphin",
@@ -49,14 +49,19 @@
             "tooltip": true
         },
     
-        "custom/mode": {
+        "custom/theme": {
             "format": "{}",
-            "exec": "echo ; echo 󰟡 switch mode",
+            "exec": "echo ; echo 󰟡 switch theme",
             "on-click": "~/.config/hypr/scripts/themeswitch.sh -n",
             "on-click-right": "~/.config/hypr/scripts/themeswitch.sh -p",
             "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/themeselect.sh",
             "interval" : 86400, // once every day
             "tooltip": true
+        },
+
+        "custom/keybindhint": {
+            "format": " ",
+            "on-click": "Hyprdots show binds",
         },
     
         "custom/wallchange": {
