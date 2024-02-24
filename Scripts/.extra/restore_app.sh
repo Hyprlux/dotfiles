@@ -1,7 +1,7 @@
 #!/bin/bash
 #|---/ /+-----------------------------+---/ /|#
 #|--/ /-| Script to configure my apps |--/ /-|#
-#|-/ /--| Prasanth Rangan             |-/ /--|#
+#|-/ /--| Prasanth Rangan/Ew4n1011    |-/ /--|#
 #|/ /---+-----------------------------+/ /---|#
 
 ScrDir=`dirname "$(dirname "$(realpath "$0")")"`
@@ -50,13 +50,15 @@ if pkg_installed spotify && pkg_installed spicetify-cli
     touch ~/.config/spotify/prefs
 
     sptfyConf=$(spicetify -c)
-    sed -i "/^prefs_path/ s+=.*$+= $HOME/.config/spotify+g" "${sptfyConf}"
+    sed -i "/^prefs_path/ s+=.*$+= $HOME/.config/spotify/prefs+g" "${sptfyConf}"
     tar -xzf ${CloneDir}/Source/arcs/Spotify_Sleek.tar.gz -C ~/.config/spicetify/Themes
-
+    spicetify backup apply
+    
     # Setup spicetify themes (Dribbblish)
     cd /usr/share/spicetify-cli/Themes/Dribbblish
     spicetify config current_theme Dribbblish color_scheme rosepine
     spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
+    spicetify apply
 fi
 
 
