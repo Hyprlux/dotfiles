@@ -1,7 +1,7 @@
 #!/bin/bash
 #|---/ /+------------------------------------+---/ /|#
 #|--/ /-| Script to restore personal configs |--/ /-|#
-#|-/ /--| Prasanth Rangan                    |-/ /--|#
+#|-/ /--| Prasanth Rangan/Ew4n1011           |-/ /--|#
 #|/ /---+------------------------------------+/ /---|#
 
 source global_fn.sh
@@ -95,5 +95,5 @@ else
     rm -rf ~/.config/swww/Tokyo-Night/chiquicat.png
 fi
 
-./create_cache.sh
+./create_cache.sh "${ThemeOverride}"
 ./restore_lnk.sh
