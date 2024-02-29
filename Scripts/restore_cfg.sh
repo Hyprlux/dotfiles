@@ -96,4 +96,4 @@ else
 fi
 
 ./create_cache.sh "${ThemeOverride}"
-./restore_lnk.sh
+[ -z "${ThemeOverride}" ] && ./restore_lnk.sh
