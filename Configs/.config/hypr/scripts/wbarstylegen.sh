@@ -7,6 +7,7 @@ ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
 waybar_dir="${XDG_CONFIG_HOME:-$HOME/.config}/waybar"
 modules_dir="$waybar_dir/modules"
+conf_ctl="$waybar_dir/config.ctl"
 in_file="$waybar_dir/modules/style.css"
 out_file="$waybar_dir/style.css"
 src_file="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/themes/theme.conf"
@@ -108,6 +109,7 @@ case ${w_position} in
         export x3="top" 
         export x4="bottom" ;;
 esac
+
 
 # list modules and generate theme style
 
