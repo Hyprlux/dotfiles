@@ -1,105 +1,127 @@
-pipewire
-pipewire-alsa
-pipewire-audio
-pipewire-jack
-pipewire-pulse
-gst-plugin-pipewire
-wireplumber
-networkmanager
-network-manager-applet
-bluez
-bluez-utils
-blueman
-sddm
-qt5-wayland
-qt6-wayland
-qt5-quickcontrols
-qt5-quickcontrols2
-qt5-graphicaleffects
-hyprland
-dunst
-rofi-lbonn-wayland-git
-waybar
-swww
-swaylock-effects-git
-wlogout
-grimblast-git
-hyprpicker-git
-slurp
-swappy
-cliphist
-polkit-kde-agent
-xdg-desktop-portal-hyprland
-pacman-contrib
-python-pyamdgpuinfo
-parallel
-jq
-bc
-imagemagick
-qt5-imageformats
-ffmpegthumbs
-kde-cli-tools
-brightnessctl
-pavucontrol
-pamixer
-nwg-look
-kvantum
-qt5ct
-qt6ct
-firefox
-kitty
-neofetch
-dolphin
-visual-studio-code-bin
-vim
-ark
-eza|zsh
-oh-my-zsh-git|zsh
-zsh-theme-powerlevel10k|zsh oh-my-zsh-git
-pokemon-colorscripts-git|zsh
-lsd|fish
-starship|fish
-hyprdots-ctl
-gparted
-wmctrl
-plasma-workspace
-noto-fonts-emoji
-#neovim
-#trash-cli-git
-#downgrade
-steam
-gamemode
-#gamescope
-mangohud
-#cava
-spotify
-spicetify-cli
-spicetify-themes-git
-syncthing
-audacity
-#citra-qt-git
-#cemu-git
-#ryujinx-git
-#ryusak-bin
-drawio-desktop
-filezilla
-gimp
-htop
-kcalc
-qbittorrent
-libreoffice-still
-libreoffice-still-es
-#prismlauncher
-obs-studio
-virtualbox
-virtualbox-host-modules-arch
-virtualbox-guest-iso
-virtualbox-unattended-templates
-virtualbox-ext-oracle
-#pcsx2
-#slack-desktop
-#termius
-#upscayl-appimage
-wine
-winetricks
-ntfs-3g
+# --------------------------------------------------- // System
+pipewire                                               # audio/video server
+pipewire-alsa                                          # pipewire alsa client
+pipewire-audio                                         # pipewire audio client
+pipewire-jack                                          # pipewire jack client
+pipewire-pulse                                         # pipewire pulseaudio client
+gst-plugin-pipewire                                    # pipewire gstreamer client
+wireplumber                                            # pipewire session manager
+pavucontrol                                            # pulseaudio volume control
+pamixer                                                # pulseaudio cli mixer
+networkmanager                                         # network manager
+network-manager-applet                                 # network manager system tray utility
+bluez                                                  # bluetooth protocol stack
+bluez-utils                                            # bluetooth utility cli
+blueman                                                # bluetooth manager gui
+brightnessctl                                          # screen brightness control
+
+
+# --------------------------------------------------- // Display Manager
+sddm                                                   # display manager for KDE plasma
+qt5-quickcontrols                                      # for sddm theme ui elements
+qt5-quickcontrols2                                     # for sddm theme ui elements
+qt5-graphicaleffects                                   # for sddm theme effects
+plasma-workspace                                       # for sddm theme ittu
+
+
+# --------------------------------------------------- // Window Manager
+hyprland                                               # wlroots-based wayland compositor
+dunst                                                  # notification daemon
+rofi-lbonn-wayland-git                                 # application launcher
+waybar                                                 # system bar
+swww                                                   # wallpaper
+swaylock-effects-git                                   # lock screen
+wlogout                                                # logout menu
+grimblast-git                                          # screenshot tool
+hyprpicker-git                                         # color picker
+slurp                                                  # region select for screenshot/screenshare
+swappy                                                 # screenshot editor
+cliphist                                               # clipboard manager
+wmctrl                                                 # interact with X window manager
+
+
+# --------------------------------------------------- // Dependencies
+polkit-kde-agent                                       # authentication agent
+xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
+pacman-contrib                                         # for system update check
+python-pyamdgpuinfo                                    # for amd gpu info
+parallel                                               # for parallel processing
+jq                                                     # for json processing
+imagemagick                                            # for image processing
+qt5-imageformats                                       # for dolphin image thumbnails
+ffmpegthumbs                                           # for dolphin video thumbnails
+kde-cli-tools                                          # for dolphin file type defaults
+noto-fonts-emoji                                       # add support for emojis
+
+
+# --------------------------------------------------- // Theming
+nwg-look                                               # gtk configuration tool
+qt5ct                                                  # qt5 configuration tool
+qt6ct                                                  # qt6 configuration tool
+kvantum                                                # svg based qt theme engine
+qt5-wayland                                            # wayland support in qt5
+qt6-wayland                                            # wayland support in qt6
+
+
+# --------------------------------------------------- // Applications
+firefox                                                # browser
+kitty                                                  # terminal
+dolphin                                                # kde file manager
+ark                                                    # kde file archiver
+vim                                                    # terminal text editor
+visual-studio-code-bin                                 # ide text editor
+gparted                                                # disk manager
+
+
+# --------------------------------------------------- // Shell
+eza|zsh                                                # file lister for zsh
+oh-my-zsh-git|zsh                                      # plugin manager for zsh
+zsh-theme-powerlevel10k|zsh oh-my-zsh-git              # theme for zsh
+lsd|fish                                               # file lister for fish
+starship|fish                                          # customizable shell prompt
+neofetch                                               # fetch tool
+pokemon-colorscripts-git|zsh                           # display pokemon sprites
+
+
+# --------------------------------------------------- // Hyprdots
+hyprdots-ctl                                           # cli tool to manage hyprdots
+
+# --------------------------------------------------- // Optional apps
+#neovim                                                # cli text editor, based on vim
+#trash-cli-git                                         # cli trash bin
+#downgrade                                             # downgrade packages
+steam                                                  # steam game launcher
+gamemode                                               # optimise games
+#gamescope                                             # valve's steam deck ui
+mangohud                                               # monitor system performance in-game
+#cava                                                  # audio visualizer
+spotify                                                # music player
+spicetify-cli                                          # theming spotify
+spicetify-themes-git                                   # spicetify themes
+#syncthing                                             # sync storage between devices
+audacity                                               # audio editor
+#citra-qt-git                                          # 3ds emulator
+#cemu-git                                              # wiiu emulator
+#ryujinx-git                                           # switch emulator
+drawio-desktop                                         # diagram maker/editor
+filezilla                                              # ftp client
+gimp                                                   # image editor
+htop                                                   # cli system resource viewer 
+kcalc                                                  # kde calculator
+qbittorrent                                            # torrent downloader
+libreoffice-still                                      # office editor
+libreoffice-still-es                                   # spanish support for libreoffice
+#prismlauncher                                         # open source minecraft launcher
+virtualbox                                             # vm client
+virtualbox-host-modules-arch                           # dependency for virtualbox
+virtualbox-guest-iso                                   # virtualbox guest additions iso
+virtualbox-unattended-templates                        # unattended install for virtualbox
+virtualbox-ext-oracle                                  # virtualbox extensions pack
+#pcsx2                                                 # ps2 emulator
+#rpsc3-git                                             # ps3 emulator
+#slack-desktop                                         # chat client
+#termius                                               # ssh/ftp client
+#upscayl-appimage                                      # upscale images
+wine                                                   # run windows apps on linux
+winetricks                                             # modify wine
+ntfs-3g                                                # add support for ntfs
