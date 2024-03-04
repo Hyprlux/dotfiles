@@ -1,10 +1,26 @@
 #!/usr/bin/env sh
 
+# Restores the shader after screenhot has been taken
+restore_shader() {
+	if [ -n "$shader" ]; then
+		hyprshade on "$shader"
+	fi
+}
+
+# Saves the current shader and turns it off
+save_shader() {
+	shader=$(hyprshade current)
+	hyprshade off
+	trap restore_shader EXIT
+}
+
+save_shader # Saving the current shader
+
 if [ -z "$XDG_PICTURES_DIR" ] ; then
     XDG_PICTURES_DIR="$HOME/Pictures"
 fi
 
-ScrDir=`dirname "$(realpath "$0")"`
+ScrDir=$(dirname "$(realpath "$0")")
 source $ScrDir/globalcontrol.sh
 swpy_dir="${XDG_CONFIG_HOME:-$HOME/.config}/swappy"
 save_dir="${2:-$XDG_PICTURES_DIR/Screenshots}"
