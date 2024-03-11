@@ -29,6 +29,7 @@
             "persistent-workspaces": {
             }
         },
+
         "hyprland/window": {
             "format": "  {}",
             "rotate": 0,
@@ -45,6 +46,7 @@
             },
             "max-length": 1000
         },
+        
         "clock": {
             "format": "󱑍 {:%H:%M 󰃭 %A, %d %B %Y }",
             "rotate": 0,
@@ -69,6 +71,7 @@
                 "on-scroll-down": "shift_down"
             }
         },
+
         "custom/spotify": {
             "exec": "/usr/bin/python3 /home/ewanl/.config/waybar/modules/mediaplayer.py --player spotify",
             "format": " {}",
@@ -77,12 +80,13 @@
             "on-click": "playerctl play-pause --player spotify",
             "on-click-right": "playerctl next --player spotify",
             "on-click-middle": "playerctl previous --player spotify",
-            "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -p spotify i",
-            "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -p spotify d",
+            "on-scroll-up": "~/.config/hyprdots/scripts/volumecontrol.sh -p spotify i",
+            "on-scroll-down": "~/.config/hyprdots/scripts/volumecontrol.sh -p spotify d",
             "max-length": 25,
             "escape": true,
             "tooltip": true
         },
+
         "cpu": {
             "interval": 10,
             "format": "󰍛 {usage}%",
@@ -90,11 +94,12 @@
             "format-alt": "{icon0}{icon1}{icon2}{icon3}",
             "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
         },
+
         "memory": {
             "states": {
                 "c": 90, // critical
                 "h": 60, // high
-                "m": 30, // medium
+                "m": 30  // medium
             },
             "interval": 30,
             "format": "󰾆 {used}GB",
@@ -107,8 +112,9 @@
             "tooltip": true,
             "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
         },
+
         "custom/cpuinfo": {
-            "exec": " ~/.config/hypr/scripts/cpuinfo.sh",
+            "exec": " ~/.config/hyprdots/scripts/cpuinfo.sh",
             "return-type": "json",
             "format": "{}",
             "rotate": 0,
@@ -116,46 +122,49 @@
             "tooltip": true,
             "max-length": 1000
         },
+
         "custom/gpuinfo": {
-            "exec": " ~/.config/hypr/scripts/gpuinfo.sh",
+            "exec": " ~/.config/hyprdots/scripts/gpuinfo.sh",
             "return-type": "json",
             "format": "{}",
             "rotate": 0,
             "interval": 5, // once every 5 seconds
             "tooltip": true,
             "max-length": 1000,
-            "on-click": "~/.config/hypr/scripts/gpuinfo.sh --toggle",
+            "on-click": "~/.config/hyprdots/scripts/gpuinfo.sh --toggle"
         },
     
         "custom/gpuinfo#nvidia": {
-            "exec": " ~/.config/hypr/scripts/gpuinfo.sh --use nvidia ",
+            "exec": " ~/.config/hyprdots/scripts/gpuinfo.sh --use nvidia ",
             "return-type": "json",
             "format": "{}",
             "rotate": 0,
             "interval": 5, // once every 5 seconds
             "tooltip": true,
-            "max-length": 1000,
+            "max-length": 1000
         },
     
         "custom/gpuinfo#amd": {
-            "exec": " ~/.config/hypr/scripts/gpuinfo.sh --use amd ",
+            "exec": " ~/.config/hyprdots/scripts/gpuinfo.sh --use amd ",
             "return-type": "json",
             "format": "{}",
             "rotate": 0,
             "interval": 5, // once every 5 seconds
             "tooltip": true,
-            "max-length": 1000,
+            "max-length": 1000
         },
     
         "custom/gpuinfo#intel": {
-            "exec": " ~/.config/hypr/scripts/gpuinfo.sh --use intel ",
+            "exec": " ~/.config/hyprdots/scripts/gpuinfo.sh --use intel ",
             "return-type": "json",
             "format": "{}",
             "rotate": 0,
             "interval": 5, // once every 5 seconds
             "tooltip": true,
-            "max-length": 1000,
-        },    "network": {
+            "max-length": 1000
+        },    
+        
+        "network": {
             "tooltip": true,
             "format-wifi": " ",
             "rotate": 0,
@@ -165,9 +174,10 @@
             "format-disconnected": "󰖪 ",
             "tooltip-format-disconnected": "Disconnected",
             "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
-            "interval": 2,
+            "interval": 2
         },
-            "bluetooth": {
+        
+        "bluetooth": {
             "format": "",
             "rotate": 0,
             "format-disabled": "",
@@ -180,14 +190,16 @@
             "tooltip-format-connected": "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}",
             "tooltip-format-enumerate-connected": "{device_alias}",
             "tooltip-format-enumerate-connected-battery": "{device_alias}\t{icon} {device_battery_percentage}%"
-        },    "pulseaudio": {
+        },    
+        
+        "pulseaudio": {
             "format": "{icon} {volume}",
             "rotate": 0,
             "format-muted": "婢",
             "on-click": "pavucontrol -t 3",
-            "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -o m",
-            "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -o i",
-            "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -o d",
+            "on-click-middle": "~/.config/hyprdots/scripts/volumecontrol.sh -o m",
+            "on-scroll-up": "~/.config/hyprdots/scripts/volumecontrol.sh -o i",
+            "on-scroll-down": "~/.config/hyprdots/scripts/volumecontrol.sh -o d",
             "tooltip-format": "{icon} {desc} // {volume}%",
             "scroll-step": 5,
             "format-icons": {
@@ -206,75 +218,83 @@
             "format-source": "",
             "format-source-muted": "",
             "on-click": "pavucontrol -t 4",
-            "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -i m",
-            "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -i i",
-            "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -i d",
+            "on-click-middle": "~/.config/hyprdots/scripts/volumecontrol.sh -i m",
+            "on-scroll-up": "~/.config/hyprdots/scripts/volumecontrol.sh -i i",
+            "on-scroll-down": "~/.config/hyprdots/scripts/volumecontrol.sh -i d",
             "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
             "scroll-step": 5
         },
+
         "custom/updates": {
-            "exec": "~/.config/hypr/scripts/systemupdate.sh",
+            "exec": "~/.config/hyprdots/scripts/systemupdate.sh",
             "return-type": "json",
             "format": "󰮯 {}",
             "rotate": 0,
-            "on-click": "~/.config/hypr/scripts/systemupdate.sh up",
-            "interval": 3600, // once every hour
-            "tooltip": true,
+            "on-click": "~/.config/hyprdots/scripts/systemupdate.sh up",
+            "interval": 3600, // once every hour (in seconds)
+            "tooltip": true
         },
         "custom/keybindhint": {
             "format": " ",
             "rotate": 0,
-            "on-click": "Hyprdots show binds",
-        },    "tray": {
+            "on-click": "Hyprdots show binds"
+        },    
+        
+        "tray": {
             "icon-size": 12,
             "rotate": 0,
             "spacing": 5
         },
+
         "custom/wallchange": {
             "format": "{}",
             "rotate": 0,
             "exec": "echo ; echo 󰆊 switch wallpaper",
-            "on-click": "~/.config/hypr/scripts/swwwallpaper.sh -n",
-            "on-click-right": "~/.config/hypr/scripts/swwwallpaper.sh -p",
-            "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/swwwallselect.sh",
+            "on-click": "~/.config/hyprdots/scripts/swwwallpaper.sh -n",
+            "on-click-right": "~/.config/hyprdots/scripts/swwwallpaper.sh -p",
+            "on-click-middle": "sleep 0.1 && ~/.config/hyprdots/scripts/swwwallselect.sh",
             "interval" : 86400, // once every day
             "tooltip": true
         },
+
         "custom/theme": {
             "format": "{}",
             "rotate": 0,
             "exec": "echo ; echo 󰟡 switch theme",
-            "on-click": "~/.config/hypr/scripts/themeswitch.sh -n",
-            "on-click-right": "~/.config/hypr/scripts/themeswitch.sh -p",
-            "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/themeselect.sh",
+            "on-click": "~/.config/hyprdots/scripts/themeswitch.sh -n",
+            "on-click-right": "~/.config/hyprdots/scripts/themeswitch.sh -p",
+            "on-click-middle": "sleep 0.1 && ~/.config/hyprdots/scripts/themeselect.sh",
             "interval" : 86400, // once every day
             "tooltip": true
         },
+
         "custom/wbar": {
             "format": "{}", //    //
             "rotate": 0,
             "exec": "echo ; echo  switch bar //  dock",
-            "on-click": "~/.config/hypr/scripts/wbarconfgen.sh n",
-            "on-click-right": "~/.config/hypr/scripts/wbarconfgen.sh p",
-            "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/quickapps.sh kitty firefox spotify code dolphin",
+            "on-click": "~/.config/hyprdots/scripts/wbarconfgen.sh n",
+            "on-click-right": "~/.config/hyprdots/scripts/wbarconfgen.sh p",
+            "on-click-middle": "sleep 0.1 && ~/.config/hyprdots/scripts/quickapps.sh kitty firefox spotify code dolphin",
             "interval" : 86400,
             "tooltip": true
         },
+
         "custom/cliphist": {
             "format": "{}",
             "rotate": 0,
             "exec": "echo ; echo 󰅇 clipboard history",
-            "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh c",
-            "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
-            "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w",
+            "on-click": "sleep 0.1 && ~/.config/hyprdots/scripts/cliphist.sh c",
+            "on-click-right": "sleep 0.1 && ~/.config/hyprdots/scripts/cliphist.sh d",
+            "on-click-middle": "sleep 0.1 && ~/.config/hyprdots/scripts/cliphist.sh w",
             "interval" : 86400, // once every day
             "tooltip": true
         },
+
         "custom/power": {
             "format": "{}",
             "rotate": 0,
             "exec": "echo ; echo  logout",
-            "on-click": "~/.config/hypr/scripts/logoutlaunch.sh 2",
+            "on-click": "~/.config/hyprdots/scripts/logoutlaunch.sh 2",
             "interval" : 86400, // once every day
             "tooltip": true
         },
