@@ -41,4 +41,4 @@ get_aurhlpr()
     then
         aurhlpr="paru"
     fi
-}w
+}
