@@ -84,4 +84,4 @@ pokemon-colorscripts-git|zsh                           # display pokemon sprites
 
 
 # --------------------------------------------------- // Hyprdots
-hyprdots-ctl                                           # cli tool to manage hyprdots
+hyprdots-ctl-git                                       # cli tool to manage hyprdots
