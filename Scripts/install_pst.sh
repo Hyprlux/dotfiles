@@ -14,7 +14,7 @@ fi
 # themepatcher
 echo -e "\033[0;32m[THEMEPATCHER]\033[0m additional themes available..."
 awk -F '"' '{print "["NR"]",$2}' "${scrDir}/themepatcher.lst"
-prompt_timer 10 "Patch these additional themes? [Y/n]"
+prompt_timer 60 "Patch these additional themes? [Y/n]"
 thmopt=${promptIn,,}
 
 if [ "${thmopt}" = "y" ] ; then
@@ -129,7 +129,7 @@ if ! pkg_installed flatpak
 
     echo -e "\033[0;32m[FLATPAK]\033[0m flatpak application list..."
     awk -F '#' '$1 != "" {print "["++count"]", $1}' "${scrDir}/.extra/custom_flat.lst"
-    prompt_timer 10 "Install these flatpaks? [Y/n]"
+    prompt_timer 60 "Install these flatpaks? [Y/n]"
     fpkopt=${promptIn,,}
 
     if [ "${fpkopt}" = "y" ] ; then

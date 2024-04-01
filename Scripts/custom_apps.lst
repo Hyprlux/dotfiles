@@ -6,7 +6,7 @@ steam                                                  # steam game launcher
 gamemode                                               # optimise games
 #gamescope                                             # valve's steam deck ui
 mangohud                                               # monitor system performance in-game
-#cava                                                  # audio visualizer
+cava                                                   # audio visualizer
 spotify                                                # music player
 spicetify-cli                                          # theming spotify
 spicetify-themes-git                                   # spicetify themes
@@ -37,5 +37,5 @@ virtualbox-ext-oracle                                  # virtualbox extensions p
 wine                                                   # run windows apps on linux
 winetricks                                             # modify wine
 ntfs-3g                                                # add support for ntfs
-libinput-gestures                                      # add touchpad gestures support
-gestures                                               # gestures editor
+#libinput-gestures                                     # add touchpad gestures support
+#gestures                                              # gestures editor
