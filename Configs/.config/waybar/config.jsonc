@@ -73,7 +73,7 @@
         },
 
         "custom/spotify": {
-            "exec": "/usr/bin/python3 /home/ewanl/.config/waybar/modules/mediaplayer.py --player spotify",
+            "exec": "/usr/bin/env python3 /home/ewanl/.config/waybar/modules/mediaplayer.py --player spotify",
             "format": " {}",
             "rotate": 0,
             "return-type": "json",
@@ -234,6 +234,7 @@
             "interval": 3600, // once every hour (in seconds)
             "tooltip": true
         },
+
         "custom/keybindhint": {
             "format": " ",
             "rotate": 0,
