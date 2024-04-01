@@ -1,4 +1,4 @@
-#!/bin/bash
+#!usr/bin/env bash
 #|---/ /+-------------------------------------+---/ /|#
 #|--/ /-| Script to apply pre install configs |--/ /-|#
 #|-/ /--| Ew4n1011/Prasanth Rangan            |-/ /--|#
@@ -45,7 +45,7 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]
             /^GRUB_GFXMODE=/c\GRUB_GFXMODE=1920x1080x32,auto
             /^#GRUB_THEME=/c\GRUB_THEME=\"/usr/share/grub/themes/yorha-1920x1080/theme.txt\"
             /^#GRUB_SAVEDEFAULT=true/c\GRUB_SAVEDEFAULT=true" /etc/default/grub ;;
-        *) echo -e "\033[0;32m[BOOTLOADER]\033[0m: Skipping grub theme..." 
+        *) echo -e "\033[0;32m[BOOTLOADER]\033[0m: Skipping grub theme..."
             sudo sed -i "s/^GRUB_THEME=/#GRUB_THEME=/g" /etc/default/grub ;;
         esac
 
