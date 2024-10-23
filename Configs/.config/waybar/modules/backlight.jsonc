@@ -7,3 +7,4 @@
         "on-scroll-down": "brightnessctl set 1%-",
         "min-length": 6
     },
+

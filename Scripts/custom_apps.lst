@@ -1,41 +1,24 @@
-# --------------------------------------------------- // Optional apps
-#neovim                                                # cli text editor, based on vim
-#trash-cli-git                                         # cli trash bin
-#downgrade                                             # downgrade packages
-steam                                                  # steam game launcher
-gamemode                                               # optimise games
-#gamescope                                             # valve's steam deck ui
-mangohud                                               # monitor system performance in-game
+# --------------------------------------------------- // System
+# downgrade                                            # downgrade packages
+# trash-cli-git                                        # cli to manage trash files
+# libinput-gestures                                    # actions touchpad gestures using libinput
+# gestures                                             # gui for libinput-gestures
+
+# --------------------------------------------------- // Dependencies
+xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
+emote                                                  # emoji picker gtk3
+
+# --------------------------------------------------- // Gaming
+steam                                                  # gaming platform
+prismlauncher                                          # open source minecraft launcher
+gamemode                                               # daemon and library for game optimisations
+mangohud                                               # system performance overlay
+# gamescope                                            # micro-compositor for gaming
+
+# --------------------------------------------------- // Music
 cava                                                   # audio visualizer
-spotify                                                # music player
-spicetify-cli                                          # theming spotify
-spicetify-themes-git                                   # spicetify themes
-#syncthing                                             # sync storage between devices
-audacity                                               # audio editor
-#citra-qt-git                                          # 3ds emulator
-#cemu-git                                              # wiiu emulator
-#ryujinx-git                                           # switch emulator
-drawio-desktop                                         # diagram maker/editor
-filezilla                                              # ftp client
-gimp                                                   # image editor
-htop                                                   # cli system resource viewer 
-kcalc                                                  # kde calculator
-qbittorrent                                            # torrent downloader
-libreoffice-still                                      # office editor
-libreoffice-still-es                                   # spanish support for libreoffice
-#prismlauncher                                         # open source minecraft launcher
-virtualbox                                             # vm client
-virtualbox-host-modules-arch                           # dependency for virtualbox
-virtualbox-guest-iso                                   # virtualbox guest additions iso
-virtualbox-unattended-templates                        # unattended install for virtualbox
-virtualbox-ext-oracle                                  # virtualbox extensions pack
-#pcsx2                                                 # ps2 emulator
-#rpsc3-git                                             # ps3 emulator
-#slack-desktop                                         # chat client
-#termius                                               # ssh/ftp client
-#upscayl-appimage                                      # upscale images
-wine                                                   # run windows apps on linux
-winetricks                                             # modify wine
-ntfs-3g                                                # add support for ntfs
-#libinput-gestures                                     # add touchpad gestures support
-#gestures                                              # gestures editor
+spotify                                                # proprietary music streaming service
+spicetify-cli                                          # cli to customize spotify client
+
+# --------------------------------------------------- // Apps
+# neovim                                               # vim based text editor

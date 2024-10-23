@@ -2,17 +2,17 @@
 configuration {
     modi:                        "drun,filebrowser,window,run";
     show-icons:                  true;
-    display-drun:                "";
-    display-run:                 "";
-    display-filebrowser:         "";
-    display-window:              "";
+    display-drun:                " ";
+    display-run:                 " ";
+    display-filebrowser:         " ";
+    display-window:              " ";
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 10";
-    icon-theme:                  "Tela-circle-purple";
+    icon-theme:                  "Tela-circle-dracula";
 }
 
-@theme "~/.config/rofi/themes/theme.rasi"
+@theme "~/.config/rofi/theme.rasi"
 
 
 // Main //
@@ -23,10 +23,8 @@ window {
     fullscreen:                  false;
     enabled:                     true;
     cursor:                      "default";
-    spacing:                     0px;
-    padding:                     0px;
-    border:                      2px;
-    border-radius:               40px;
+    spacing:                     0em;
+    padding:                     0em;
     border-color:                @main-br;
     background-color:            @main-bg;
 }
@@ -62,8 +60,6 @@ mode-switcher {
 }
 button {
     cursor:                      pointer;
-    vertical-align:              0.50;
-    horizontal-align:            0.47;
     border-radius:               3em;
     background-color:            @main-bg;
     text-color:                  @main-fg;
@@ -116,11 +112,6 @@ element {
     background-color:            transparent;
     text-color:                  @main-fg;
 }
-@media(max-aspect-ratio: 1.8) {
-    element {
-        orientation:             vertical;
-    }
-}
 element selected.normal {
     background-color:            @select-bg;
     text-color:                  @select-fg;
@@ -137,4 +128,19 @@ element-text {
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
+}
+
+// Error message //
+error-message {
+    text-color:                  @main-fg;
+    background-color:            @main-bg;
+    text-transform:              capitalize;
+    children:                    [ "textbox" ];
+}
+
+textbox {
+    text-color:                  inherit;
+    background-color:            inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
 }

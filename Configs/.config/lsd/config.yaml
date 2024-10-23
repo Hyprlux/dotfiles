@@ -86,3 +86,4 @@ symlink-arrow: ⇒
 # Whether to display block headers.
 # Possible values: false, true
 header: true
+

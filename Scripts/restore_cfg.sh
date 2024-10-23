@@ -1,101 +1,83 @@
-#!usr/bin/env bash
-#|---/ /+------------------------------------+---/ /|#
-#|--/ /-| Script to restore personal configs |--/ /-|#
-#|-/ /--| Prasanth Rangan/Ew4n1011           |-/ /--|#
-#|/ /---+------------------------------------+/ /---|#
+#!/usr/bin/env bash
+#|---/ /+-----------------------------------+---/ /|#
+#|--/ /-| Script to restore hyprlux configs |--/ /-|#
+#|-/ /--| Prasanth Rangan                   |-/ /--|#
+#|/ /---+-----------------------------------+/ /---|#
 
 scrDir=$(dirname "$(realpath "$0")")
 source "${scrDir}/global_fn.sh"
-if [ $? -ne 0 ] ; then
+if [ $? -ne 0 ]; then
     echo "Error: unable to source global_fn.sh..."
     exit 1
 fi
 
 CfgLst="${1:-"${scrDir}/restore_cfg.lst"}"
-CfgDir="${2:-${CloneDir}/Configs}"
+CfgDir="${2:-${cloneDir}/Configs}"
 ThemeOverride="${3:-}"
 
-if [ ! -f "${CfgLst}" ] || [ ! -d "${CfgDir}" ] ; then
-    echo "ERROR : '${CfgLst}' or '${CfgDir}' does not exist..."
+if [ ! -f "${CfgLst}" ] || [ ! -d "${CfgDir}" ]; then
+    echo "ERROR: '${CfgLst}' or '${CfgDir}' does not exist..."
     exit 1
 fi
 
-BkpDir="${HOME}/.config/cfg_backups/$(date +'%y%m%d_%Hh%Mm%Ss')"
+BkpDir="${HOME}/.config/cfg_backups/$(date +'%y%m%d_%Hh%Mm%Ss')${ThemeOverride}"
 
-if [ -d "${BkpDir}" ] ; then
-    echo "ERROR : ${BkpDir} exists!"
+if [ -d "${BkpDir}" ]; then
+    echo "ERROR: ${BkpDir} exists!"
     exit 1
 else
     mkdir -p "${BkpDir}"
 fi
 
-cat "${CfgLst}" | while read lst
-do
+cat "${CfgLst}" | while read lst; do
 
-    ovrWrte=`echo "${lst}" | awk -F '|' '{print $1}'`
-    bkpFlag=`echo "${lst}" | awk -F '|' '{print $2}'`
-    pth=`echo "${lst}" | awk -F '|' '{print $3}'`
-    pth=`eval echo "${pth}"`
-    cfg=`echo "${lst}" | awk -F '|' '{print $4}'`
-    pkg=`echo "${lst}" | awk -F '|' '{print $5}'`
+    ovrWrte=$(echo "${lst}" | awk -F '|' '{print $1}')
+    bkpFlag=$(echo "${lst}" | awk -F '|' '{print $2}')
+    pth=$(echo "${lst}" | awk -F '|' '{print $3}')
+    pth=$(eval echo "${pth}")
+    cfg=$(echo "${lst}" | awk -F '|' '{print $4}')
+    pkg=$(echo "${lst}" | awk -F '|' '{print $5}')
 
-    while read -r pkg_chk
-    do
-        if ! pkg_installed "${pkg_chk}"
-            then
-            echo -e "\033[0;33m[SKIP]\033[0m ${pth}/${cfg} as dependency ${pkg_chk} is not installed..."
+    while read -r pkg_chk; do
+        if ! pkg_installed "${pkg_chk}"; then
+            echo -e "\033[0;33m[skip]\033[0m ${pth}/${cfg} as dependency ${pkg_chk} is not installed..."
             continue 2
         fi
-    done < <( echo "${pkg}" | xargs -n 1 )
+    done < <(echo "${pkg}" | xargs -n 1)
 
-    echo "${cfg}" | xargs -n 1 | while read -r cfg_chk
-    do
+    echo "${cfg}" | xargs -n 1 | while read -r cfg_chk; do
         if [[ -z "${pth}" ]]; then continue; fi
-        tgt=`echo "${pth}" | sed "s+^${HOME}++g"`
+        tgt=$(echo "${pth}" | sed "s+^${HOME}++g")
 
-        if ( [ -d "${pth}/${cfg_chk}" ] || [ -f "${pth}/${cfg_chk}" ] ) && [ "${bkpFlag}" == "Y" ]
-            then
+        if ( [ -d "${pth}/${cfg_chk}" ] || [ -f "${pth}/${cfg_chk}" ] ) && [ "${bkpFlag}" == "Y" ]; then
 
-            if [ ! -d "${BkpDir}${tgt}" ] ; then
+            if [ ! -d "${BkpDir}${tgt}" ]; then
                 mkdir -p "${BkpDir}${tgt}"
             fi
 
             [ "${ovrWrte}" == "Y" ] && mv "${pth}/${cfg_chk}" "${BkpDir}${tgt}" || cp -r "${pth}/${cfg_chk}" "${BkpDir}${tgt}"
-            echo -e "\033[0;34m[BACKUP]\033[0m ${pth}/${cfg_chk} --> ${BkpDir}${tgt}..."
+            echo -e "\033[0;34m[backup]\033[0m ${pth}/${cfg_chk} --> ${BkpDir}${tgt}..."
         fi
 
-        if [ ! -d "${pth}" ] ; then
+        if [ ! -d "${pth}" ]; then
             mkdir -p "${pth}"
         fi
 
-        if [ ! -f "${pth}/${cfg_chk}" ] ; then
+        if [ ! -f "${pth}/${cfg_chk}" ]; then
             cp -r "${CfgDir}${tgt}/${cfg_chk}" "${pth}"
-            echo -e "\033[0;32m[RESTORE]\033[0m ${pth} <-- ${CfgDir}${tgt}/${cfg_chk}..."
-        elif [ "${ovrWrte}" == "Y" ] ; then
+            echo -e "\033[0;32m[restore]\033[0m ${pth} <-- ${CfgDir}${tgt}/${cfg_chk}..."
+        elif [ "${ovrWrte}" == "Y" ]; then
             cp -r "${CfgDir}$tgt/${cfg_chk}" "${pth}"
-            echo -e "\033[0;32m[RESTORE]\033[0m ${pth} <-- ${CfgDir}${tgt}/${cfg_chk}..."
+            echo -e "\033[0;33m[overwrite]\033[0m ${pth} <-- ${CfgDir}${tgt}/${cfg_chk}..."
         else
-            echo -e "\033[0;33m[PRESERVE]\033[0m Skipping ${pth}/${cfg_chk} to preserve user setting..."
+            echo -e "\033[0;33m[preserve]\033[0m Skipping ${pth}/${cfg_chk} to preserve user setting..."
         fi
     done
 
 done
 
-if nvidia_detect && [ $(grep '^source = ~/.config/hypr/nvidia.conf' ${HOME}/.config/hypr/hyprland.conf | wc -l) -eq 0 ] ; then
-    echo -e 'source = ~/.config/hypr/nvidia.conf # auto sourced vars for nvidia\n' >> ${HOME}/.config/hypr/hyprland.conf
-fi
-
-# detect if user is ewanl
-if [ $(whoami) == "ewanl" ] ; then
-    read -p "Add meme wallpapers? (y/n) " -r
-
-    if [[ $REPLY =~ ^[Nn]$ ]]
-    then
-        rm -rf ~/.config/swww/Tokyo-Night/chiquicat.png
+if [ -z "${ThemeOverride}" ]; then
+    if nvidia_detect && [ $(grep '^source = ~/.config/hypr/nvidia.conf' "${HOME}/.config/hypr/hyprland.conf" | wc -l) -eq 0 ]; then
+        echo -e 'source = ~/.config/hypr/nvidia.conf # auto sourced vars for nvidia\n' >> "${HOME}/.config/hypr/hyprland.conf"
     fi
-else
-    rm -rf ~/.config/swww/Tokyo-Night/chiquicat.png
 fi
-
-"${scrDir}/create_cache.sh" "${ThemeOverride}"
-[ -z "${ThemeOverride}" ] && "${scrDir}/restore_lnk.sh"
