@@ -39,7 +39,6 @@ if pkg_installed firefox; then
         cp -r ~/.mozilla/firefox "${BkpDir}"
     fi
 
-    tar -xzf ${cloneDir}/Source/arcs/Firefox_UserConfig.tar.gz -C "${FoxRel}"
     tar -xzf ${cloneDir}/Source/arcs/Firefox_Extensions.tar.gz -C ~/.mozilla/
 
     find ~/.mozilla/extensions -maxdepth 1 -type f -name "*.xpi" | while read fext
