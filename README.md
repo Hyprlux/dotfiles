@@ -1,3 +1,4 @@
+###### *<div align="right"><sub>// design by t2</sub></div>*
 > [!IMPORTANT]
 > This is a fork of [prasanthrangan](https://github.com/prasanthrangan)'s [hyprdots](https://github.com/prasanthrangan/hyprdots) repo, with some of my own tweaks. Be sure to check out his repo, it's very cool and well done!
 
