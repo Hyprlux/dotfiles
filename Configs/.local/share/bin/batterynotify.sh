@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 undock=false
 scrDir=$(dirname "$(realpath "$0")")

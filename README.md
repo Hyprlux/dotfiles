@@ -157,7 +157,7 @@ For more information, visit [Ew4n1011/Hyprlux-themes](https://github.com/Ew4n101
 | <kbd>Super</kbd> + <kbd>F</kbd>                                                                          | Launch web browser (firefox)                                      |
 | <kbd>Super</kbd> + <kbd>S</kbd>                                                                          | Launch music player (spotify)                                     |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd>                                                      | Launch system monitor (htop/btop or fallback to top)              |
-| <kbd>Super</kbd> + <kbd>A</kbd>                                                                          | Launch application launcher (rofi)                                |
+| <kbd>Super</kbd> + <kbd>O</kbd>                                                                          | Launch application launcher (rofi)                                |
 | <kbd>Super</kbd> + <kbd>Tab</kbd>                                                                        | Launch window switcher (rofi)                                     |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd>                                                       | Launch file explorer (rofi)                                       |
 | <kbd>F10</kbd>                                                                                           | Toggle audio mute                                                 |
