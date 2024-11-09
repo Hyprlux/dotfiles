@@ -1,4 +1,5 @@
-###### *<div align="right"><sub>// design by t2</sub></div>*
+###### _<div align="right"><sub>// design by t2</sub></div>_
+
 > [!IMPORTANT]
 > This is a fork of [prasanthrangan](https://github.com/prasanthrangan)'s [hyprdots](https://github.com/prasanthrangan/hyprdots) repo, with some of my own tweaks. Be sure to check out his repo, it's very cool and well done!
 
@@ -150,7 +151,7 @@ For more information, visit [Ew4n1011/Hyprlux-themes](https://github.com/Ew4n101
 | <kbd>Super</kbd> + <kbd>L</kbd>                                                                          | Launch lock screen                                                |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                                                       | Toggle pin on focused window                                      |
 | <kbd>Super</kbd> + <kbd>Backspace</kbd>                                                                  | Launch logout menu                                                |
-| <kbd>Ctrl</kbd> + <kbd>Esc</kbd>                                                                         | Toggle waybar                                                     |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd>                                                          | Toggle waybar                                                     |
 | <kbd>Super</kbd> + <kbd>Enter</kbd>                                                                      | Launch terminal emulator (kitty)                                  |
 | <kbd>Super</kbd> + <kbd>E</kbd>                                                                          | Launch file manager (dolphin)                                     |
 | <kbd>Super</kbd> + <kbd>C</kbd>                                                                          | Launch text editor (vscode)                                       |
