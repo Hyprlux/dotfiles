@@ -34,7 +34,7 @@ While installing dotfiles alongside another [DE](https://wiki.archlinux.org/titl
 To install, execute the following commands:
 
 ```shell
-pacman -Sy git
+pacman -S --needed git base-devel
 git clone --depth 1 https://github.com/Ew4n1011/Hyprlux ~/hyprlux
 cd ~/hyprlux/Scripts
 ./install.sh
