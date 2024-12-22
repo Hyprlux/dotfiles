@@ -20,7 +20,8 @@ https://github.com/Ew4n1011/Hyprlux/assets/106020512/7f8fadc8-e293-4482-a851-e9c
 
 <br><div align="center"><img width="12%" src="https://raw.githubusercontent.com/Ew4n1011/Hyprlux/Hyprlux/Source/assets/arch.png"/><br></div>
 
-## Installation
+<a id="installation"></a>  
+<img src="Source/assets/Installation.gif" width="200"/>
 
 The installation script is designed for a minimal [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) install, but **may** work on some [Arch-based distros](https://wiki.archlinux.org/title/Arch-based_distributions).
 While installing dotfiles alongside another [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) should work, due to it being a heavily customized setup, it **will** conflict with your [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt) theming, [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https://wiki.archlinux.org/title/GRUB), etc. and is at your own risk.
@@ -48,7 +49,8 @@ cd ~/hyprlux/Scripts
 > ./install.sh custom_apps.lst
 > ```
 
-### Updating
+<a id="updating"></a>  
+<img src="Source/assets/Updating.gif" width="200"/>
 
 To update dotfiles, you will need to pull the latest changes from GitHub and restore the configs by running the following commands:
 
@@ -67,7 +69,8 @@ git pull
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Themes
+<a id="themes"></a>  
+<img src="Source/assets/Themes.gif" width="200"/>
 
 All our official themes are stored in a separate repository, allowing users to install them using themepatcher.
 For more information, visit [Ew4n1011/Hyprlux-themes](https://github.com/Ew4n1011/Hyprlux-themes).
@@ -90,7 +93,8 @@ For more information, visit [Ew4n1011/Hyprlux-themes](https://github.com/Ew4n101
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Styles
+<a id="styles"></a>  
+<img src="Source/assets/Styles.gif" width="200"/>
 
 <div align="center"><table><tr>Theme Select</tr><tr><td>
 <img src="https://raw.githubusercontent.com/Ew4n1011/Hyprlux/Hyprlux/Source/assets/theme_select_1.png"/></td><td>
@@ -136,7 +140,8 @@ For more information, visit [Ew4n1011/Hyprlux-themes](https://github.com/Ew4n101
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Keybindings
+<a id="keybindings"></a>  
+<img src="Source/assets/Keybindings.gif" width="200"/>
 
 <div align="center">
 
