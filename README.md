@@ -18,7 +18,7 @@
 
 https://github.com/Ew4n1011/Hyprlux/assets/106020512/7f8fadc8-e293-4482-a851-e9c6464f5265
 
-<br><div align="center"><img width="12%" src="https://raw.githubusercontent.com/Ew4n1011/Hyprlux/Hyprlux/Source/assets/arch.png"/><br></div>
+<br><div align="center"><img width="12%" src="Source/assets/Arch.svg"/><br></div>
 
 <a id="installation"></a>  
 <img src="Source/assets/Installation.gif" width="200"/>
