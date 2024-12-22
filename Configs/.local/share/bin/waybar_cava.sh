@@ -126,5 +126,4 @@ data_format = ascii
 ascii_max_range = ${bar_range}
 EOF
 
-cava -p "$config_file" | sed -u "${dict}" &
-disown
+cava -p "$config_file" | sed -u "${dict}"
