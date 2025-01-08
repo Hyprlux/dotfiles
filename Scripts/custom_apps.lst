@@ -3,6 +3,8 @@
 # trash-cli-git                                        # cli to manage trash files
 # libinput-gestures                                    # actions touchpad gestures using libinput
 # gestures                                             # gui for libinput-gestures
+htop                                                   # monitor system hardware
+ntfs-3g                                                # support for ntfs
 
 # --------------------------------------------------- // Dependencies
 xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
@@ -20,5 +22,22 @@ cava                                                   # audio visualizer
 spotify                                                # proprietary music streaming service
 spicetify-cli                                          # cli to customize spotify client
 
+# --------------------------------------------------- // Office apps
+libreoffice-fresh                                      # open source microsoft office
+libreoffice-fresh-es                                   # libreoffice spanish translation
+
+# --------------------------------------------------- // Virtualisation
+virtualbox                                             # VM client
+virtualbox-host-modules-arch                           # Kernel modules needed for virtualbox
+virtualbox-guest-iso                                   # Virtualbox guest additions ISO
+virtualbox-ext-oracle                                  # Virtualbox extensions pack
+
 # --------------------------------------------------- // Apps
 # neovim                                               # vim based text editor
+drawio-desktop                                         # diagrams
+filezilla                                              # sftp/ftp gui client
+gimp                                                   # image editor
+kcalc                                                  # calculator
+qbittorrent                                            # bittorrent client
+wine                                                   # Windows emulation
+winetricks                                             # toolkit for wine
